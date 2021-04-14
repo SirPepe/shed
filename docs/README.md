@@ -6,5 +6,6 @@
 
 ### Modules
 
+- [assert](modules/assert.md)
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)

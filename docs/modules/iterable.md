@@ -24,6 +24,26 @@ function (if provided) is invoked with one argument (the current value).
 Examples:
 
 ```typescript
+const input = [
+  { x: 0, y: "a" },
+  { x: 1, y: "b" },
+  { x: 2, y: "a" },
+  { x: 3, y: "c" },
+  { x: 4, y: "b" },
+];
+
+const fromProperty = groupBy(input, "y");
+// returns: Map {
+//   "a" => [{ x: 0, y: "a" }, { x: 2, y: "a" }],
+//   "b" => [{ x: 1, y: "b" }, { x: 4, y: "b" }],
+//   "c" => [{ x: 3, y: "c" }],
+// }
+
+const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
+// returns: Map {
+//   1 => [{ x: 0, y: "a" }, { x: 2, y: "a" }, { x: 3, y: "c" }],
+//   0 => [{ x: 1, y: "b" }, { x: 4, y: "b" }, { x: 5, y: "b" }],
+// }
 ```
 
 #### Type parameters:
@@ -42,7 +62,7 @@ Name | Type |
 
 **Returns:** *Map*<T[Key], T[]\>
 
-Defined in: iterable.ts:12
+Defined in: [iterable.ts:32](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L32)
 
 ▸ **groupBy**<T, Key\>(`input`: *Iterable*<T\>, `selector`: (`element`: T) => Key): *Map*<Key, T[]\>
 
@@ -62,7 +82,7 @@ Name | Type |
 
 **Returns:** *Map*<Key, T[]\>
 
-Defined in: iterable.ts:16
+Defined in: [iterable.ts:36](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L36)
 
 ___
 
@@ -97,7 +117,7 @@ Name | Type |
 
 **Returns:** *Map*<T[Key], T\>
 
-Defined in: iterable.ts:48
+Defined in: [iterable.ts:68](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L68)
 
 ▸ **mapBy**<T, Key\>(`values`: *Iterable*<T\>, `selector`: (`arg`: T) => Key): *Map*<Key, T\>
 
@@ -117,7 +137,7 @@ Name | Type |
 
 **Returns:** *Map*<Key, T\>
 
-Defined in: iterable.ts:52
+Defined in: [iterable.ts:72](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L72)
 
 ___
 
@@ -150,7 +170,7 @@ Name | Type |
 
 **Returns:** [T[], T[]]
 
-Defined in: iterable.ts:83
+Defined in: [iterable.ts:103](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L103)
 
 ▸ **partition**<T, U\>(`input`: *Iterable*<T \| U\>, `predicate`: (`element`: T \| U) => element is T): [T[], U[]]
 
@@ -170,4 +190,4 @@ Name | Type |
 
 **Returns:** [T[], U[]]
 
-Defined in: iterable.ts:87
+Defined in: [iterable.ts:107](https://github.com/SirPepe/shed/blob/3f4a6cc/src/iterable.ts#L107)

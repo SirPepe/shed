@@ -7,6 +7,26 @@
  * Examples:
  *
  * ```typescript
+ * const input = [
+ *   { x: 0, y: "a" },
+ *   { x: 1, y: "b" },
+ *   { x: 2, y: "a" },
+ *   { x: 3, y: "c" },
+ *   { x: 4, y: "b" },
+ * ];
+ *
+ * const fromProperty = groupBy(input, "y");
+ * // returns: Map {
+ * //   "a" => [{ x: 0, y: "a" }, { x: 2, y: "a" }],
+ * //   "b" => [{ x: 1, y: "b" }, { x: 4, y: "b" }],
+ * //   "c" => [{ x: 3, y: "c" }],
+ * // }
+ *
+ * const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
+ * // returns: Map {
+ * //   1 => [{ x: 0, y: "a" }, { x: 2, y: "a" }, { x: 3, y: "c" }],
+ * //   0 => [{ x: 1, y: "b" }, { x: 4, y: "b" }, { x: 5, y: "b" }],
+ * // }
  * ```
  */
 export function groupBy<T, Key extends keyof T>(
