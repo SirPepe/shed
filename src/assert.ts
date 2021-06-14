@@ -13,7 +13,7 @@ export function assertIs<T>(
   x: T | undefined | null,
   msg = `Expected value to be defined, but found ${x}`
 ): asserts x is T {
-  if (!x) {
+  if (typeof x === "undefined" || x === null) {
     throw new Error(msg);
   }
 }
@@ -33,7 +33,8 @@ export function assertIsNot<T>(
   x: T | undefined | null,
   msg = `Expected value to be null or undefined, but found ${typeof x}`
 ): asserts x is undefined | null {
-  if (x) {
-    throw new Error(msg);
+  if (typeof x === "undefined" || x === null) {
+    return;
   }
+  throw new Error(msg);
 }
