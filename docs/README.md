@@ -6,6 +6,8 @@
 
 ### Modules
 
+- [BiMap](modules/bimap.md)
 - [assert](modules/assert.md)
+- [error](modules/error.md)
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)
