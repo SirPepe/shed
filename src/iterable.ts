@@ -72,14 +72,15 @@ export function mapBy<T, Key extends keyof T>(
 ): Map<T[Key], T>;
 export function mapBy<T, Key>(
   values: Iterable<T>,
-  selector: (arg: T) => Key
+  selector: (element: T, index: number) => Key
 ): Map<Key, T>;
 export function mapBy(values: Iterable<any>, selector: any): Map<any, any> {
   const result = new Map();
   const keySelector =
     typeof selector === "function" ? selector : (x: any) => x[selector];
+  let i = 0;
   for (const value of values) {
-    const key = keySelector(value);
+    const key = keySelector(value, i++);
     if (result.has(key)) {
       throw new Error(
         `mapBy(): Key "${key}" already exists for value "${value}"`
