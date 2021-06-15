@@ -66,7 +66,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[iterable.ts:32](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L32)
+[src/iterable.ts:32](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L32)
 
 ▸ **groupBy**<T, Key\>(`input`, `selector`): `Map`<Key, T[]\>
 
@@ -82,7 +82,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 | Name | Type |
 | :------ | :------ |
 | `input` | `Iterable`<T\> |
-| `selector` | (`element`: `T`) => `Key` |
+| `selector` | (`element`: `T`, `index`: `number`) => `Key` |
 
 #### Returns
 
@@ -90,7 +90,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[iterable.ts:36](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L36)
+[src/iterable.ts:36](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L36)
 
 ___
 
@@ -129,7 +129,7 @@ Examples:
 
 #### Defined in
 
-[iterable.ts:68](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L68)
+[src/iterable.ts:69](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L69)
 
 ▸ **mapBy**<T, Key\>(`values`, `selector`): `Map`<Key, T\>
 
@@ -145,7 +145,7 @@ Examples:
 | Name | Type |
 | :------ | :------ |
 | `values` | `Iterable`<T\> |
-| `selector` | (`arg`: `T`) => `Key` |
+| `selector` | (`element`: `T`, `index`: `number`) => `Key` |
 
 #### Returns
 
@@ -153,7 +153,7 @@ Examples:
 
 #### Defined in
 
-[iterable.ts:72](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L72)
+[src/iterable.ts:73](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L73)
 
 ___
 
@@ -190,7 +190,7 @@ Examples:
 
 #### Defined in
 
-[iterable.ts:103](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L103)
+[src/iterable.ts:105](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L105)
 
 ▸ **partition**<T, U\>(`input`, `predicate`): [`T`[], `U`[]]
 
@@ -214,4 +214,4 @@ Examples:
 
 #### Defined in
 
-[iterable.ts:107](https://github.com/SirPepe/shed/blob/09bef43/src/iterable.ts#L107)
+[src/iterable.ts:109](https://github.com/SirPepe/shed/blob/1c0eb31/src/iterable.ts#L109)
