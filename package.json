@@ -33,25 +33,25 @@
     "release": "npm run prepareRelease && npm run release-it"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^18.0.0",
-    "@rollup/plugin-node-resolve": "^11.2.1",
-    "@types/jest": "^26.0.22",
-    "eslint": "^7.17.0",
-    "jest": "^26.6.3",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@types/jest": "^26.0.23",
+    "eslint": "^7.28.0",
+    "jest": "^27.0.0",
     "release-it": "^14.9.0",
-    "rollup": "^2.44.0",
-    "rollup-plugin-license": "^2.3.0",
+    "rollup": "^2.51.2",
+    "rollup-plugin-license": "^2.5.0",
     "rollup-plugin-terser": "^7.0.2",
-    "typedoc": "^0.20.12",
-    "typedoc-plugin-markdown": "^3.6.0",
-    "typescript": "^4.2.0"
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-markdown": "^3.9.0",
+    "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.13.10",
-    "core-js": "^3.8.2"
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "core-js": "^3.14.0"
   }
 }
