@@ -37,6 +37,23 @@ describe("array", () => {
       const actual = groupBy(input, (value) => value.y.charCodeAt(0));
       expect(actual).toEqual(new Map(expected));
     });
+
+    it("groups arrays of objects by a selector function's return type (with index)", () => {
+      const input = [
+        { x: 0, y: "c" },
+        { x: 1, y: "b" },
+        { x: 2, y: "a" },
+        { x: 3, y: "c" },
+        { x: 4, y: "b" },
+        { x: 5, y: "a" },
+      ];
+      const expected: Array<[number, Array<{ x: number; y: string }>]> = [
+        [99, [input[0], input[1], input[2]]],
+        [102, [input[3], input[4], input[5]]],
+      ];
+      const actual = groupBy(input, (value, i) => value.y.charCodeAt(0) + i);
+      expect(actual).toEqual(new Map(expected));
+    });
   });
 
   describe("partition()", () => {

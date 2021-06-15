@@ -35,14 +35,15 @@ export function groupBy<T, Key extends keyof T>(
 ): Map<T[Key], T[]>;
 export function groupBy<T, Key>(
   input: Iterable<T>,
-  selector: (element: T) => Key
+  selector: (element: T, index: number) => Key
 ): Map<Key, T[]>;
 export function groupBy(input: Iterable<any>, selector: any): Map<any, any> {
   const result = new Map();
   const keySelector =
     typeof selector === "function" ? selector : (x: any) => x[selector];
+  let i = 0;
   for (const element of input) {
-    const key = keySelector(element);
+    const key = keySelector(element, i++);
     const values = result.get(key);
     if (values) {
       values.push(element);
