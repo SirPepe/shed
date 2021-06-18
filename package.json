@@ -30,7 +30,7 @@
     "build-js": "rollup -c",
     "build": "npm run clean && npm run build-ts && npm run build-js && npm run docs",
     "prepareRelease": "rm -rf node_modules && npm install && npm run build && npm run test",
-    "release": "npm run prepareRelease && npm run release-it"
+    "release": "npm run release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
