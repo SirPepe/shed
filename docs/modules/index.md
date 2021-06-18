@@ -11,7 +11,9 @@
 - [assertIsNot](index.md#assertisnot)
 - [fail](index.md#fail)
 - [groupBy](index.md#groupby)
+- [identity](index.md#identity)
 - [mapBy](index.md#mapby)
+- [noop](index.md#noop)
 - [partition](index.md#partition)
 
 ## References
@@ -46,9 +48,21 @@ Re-exports: [groupBy](iterable.md#groupby)
 
 ___
 
+### identity
+
+Re-exports: [identity](function.md#identity)
+
+___
+
 ### mapBy
 
 Re-exports: [mapBy](iterable.md#mapby)
+
+___
+
+### noop
+
+Re-exports: [noop](function.md#noop)
 
 ___
 
