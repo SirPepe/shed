@@ -12,6 +12,8 @@
 - [fail](index.md#fail)
 - [groupBy](index.md#groupby)
 - [identity](index.md#identity)
+- [is](index.md#is)
+- [isNot](index.md#isnot)
 - [mapBy](index.md#mapby)
 - [noop](index.md#noop)
 - [partition](index.md#partition)
@@ -51,6 +53,18 @@ ___
 ### identity
 
 Re-exports: [identity](function.md#identity)
+
+___
+
+### is
+
+Re-exports: [is](guard.md#is)
+
+___
+
+### isNot
+
+Re-exports: [isNot](guard.md#isnot)
 
 ___
 

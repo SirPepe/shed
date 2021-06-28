@@ -15,8 +15,10 @@
 
 ▸ **assertIs**<T\>(`x`, `msg?`): asserts x is T
 
-Throws an exceptions when the first argument is null or undefined. Works
-as a type assertion in TypeScript. The inverse of `assertIsNot()`.
+Throws an exception when the first argument is null or undefined. The second
+argument can be used to customize the exception, but is entirely optional.
+This function works as a type assertion in TypeScript and is the inverse of
+`assertIsNot()`.
 
 Example:
 
@@ -44,7 +46,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:12](https://github.com/SirPepe/shed/blob/5726277/src/assert.ts#L12)
+[src/assert.ts:14](https://github.com/SirPepe/shed/blob/cc4b0c5/src/assert.ts#L14)
 
 ___
 
@@ -52,8 +54,10 @@ ___
 
 ▸ **assertIsNot**<T\>(`x`, `msg?`): asserts x is undefined \| null
 
-Throws an exceptions when the first argument is not null or undefined. Works
-as a type assertion in TypeScript. The inverse of `assertIs()`.
+Throws an exception when the first argument is not null or undefined. The
+second argument can be used to customize the exception, but is entirely
+optional. This function works as a type assertion in TypeScript and is the
+inverse of `assertIs()`.
 
 Example:
 
@@ -81,4 +85,4 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:32](https://github.com/SirPepe/shed/blob/5726277/src/assert.ts#L32)
+[src/assert.ts:35](https://github.com/SirPepe/shed/blob/cc4b0c5/src/assert.ts#L35)

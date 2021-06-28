@@ -5,8 +5,9 @@
 [UnsafeMap](../modules/unsafemap.md).UnsafeMap
 
 Just like a regular map, but throws when attempting to get a key that is not
-in the map. Because `get()` returns `V` instead of `V | undefined` this makes
-life in TypeScript easier
+in the map (effectively adding a type assertion to `get()`). Because `get()`
+returns `V` instead of `V | undefined` this makes life in TypeScript somewhat
+easier.
 
 ## Type parameters
 
@@ -73,7 +74,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:7](https://github.com/SirPepe/shed/blob/5726277/src/UnsafeMap.ts#L7)
+[src/UnsafeMap.ts:8](https://github.com/SirPepe/shed/blob/cc4b0c5/src/UnsafeMap.ts#L8)
 
 ## Properties
 
@@ -111,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:7](https://github.com/SirPepe/shed/blob/5726277/src/UnsafeMap.ts#L7)
+[src/UnsafeMap.ts:8](https://github.com/SirPepe/shed/blob/cc4b0c5/src/UnsafeMap.ts#L8)
 
 ___
 
@@ -270,7 +271,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:16](https://github.com/SirPepe/shed/blob/5726277/src/UnsafeMap.ts#L16)
+[src/UnsafeMap.ts:17](https://github.com/SirPepe/shed/blob/cc4b0c5/src/UnsafeMap.ts#L17)
 
 ___
 

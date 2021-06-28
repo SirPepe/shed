@@ -11,5 +11,6 @@
 - [assert](modules/assert.md)
 - [error](modules/error.md)
 - [function](modules/function.md)
+- [guard](modules/guard.md)
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)

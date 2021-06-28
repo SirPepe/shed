@@ -44,7 +44,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/5726277/src/function.ts#L29)
+[src/function.ts:29](https://github.com/SirPepe/shed/blob/cc4b0c5/src/function.ts#L29)
 
 ___
 
@@ -76,4 +76,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/5726277/src/function.ts#L15)
+[src/function.ts:15](https://github.com/SirPepe/shed/blob/cc4b0c5/src/function.ts#L15)
