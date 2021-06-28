@@ -9,7 +9,8 @@ describe("assert", () => {
       expect(() => assertIs(undefined)).toThrow();
     });
   });
-  describe("partition()", () => {
+
+  describe("assertIsNot()", () => {
     test("asserts that a value is nullish", () => {
       expect(() => assertIsNot(42)).toThrow();
       expect(() => assertIsNot("")).toThrow();
