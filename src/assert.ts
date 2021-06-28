@@ -1,6 +1,8 @@
 /**
- * Throws an exceptions when the first argument is null or undefined. Works
- * as a type assertion in TypeScript. The inverse of `assertIsNot()`.
+ * Throws an exception when the first argument is null or undefined. The second
+ * argument can be used to customize the exception, but is entirely optional.
+ * This function works as a type assertion in TypeScript and is the inverse of
+ * `assertIsNot()`.
  *
  * Example:
  *
@@ -17,10 +19,11 @@ export function assertIs<T>(
     throw new Error(msg);
   }
 }
-
 /**
- * Throws an exceptions when the first argument is not null or undefined. Works
- * as a type assertion in TypeScript. The inverse of `assertIs()`.
+ * Throws an exception when the first argument is not null or undefined. The
+ * second argument can be used to customize the exception, but is entirely
+ * optional. This function works as a type assertion in TypeScript and is the
+ * inverse of `assertIs()`.
  *
  * Example:
  *
