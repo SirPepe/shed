@@ -6,10 +6,52 @@
 
 ### Functions
 
+- [debounceRaf](function.md#debounceraf)
 - [identity](function.md#identity)
 - [noop](function.md#noop)
 
 ## Functions
+
+### debounceRaf
+
+▸ **debounceRaf**<A\>(`func`): (...`args`: `A`) => `void`
+
+Returns a function that fires `func()` when the next frame renders, at most
+once per frame.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `A` | `A`: `any`[] |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `func` | (...`args`: `A`) => `unknown` |
+
+#### Returns
+
+`fn`
+
+▸ (...`args`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `A` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[src/function.ts:37](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L37)
+
+___
 
 ### identity
 
@@ -44,7 +86,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/cc4b0c5/src/function.ts#L29)
+[src/function.ts:29](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L29)
 
 ___
 
@@ -76,4 +118,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/cc4b0c5/src/function.ts#L15)
+[src/function.ts:15](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L15)

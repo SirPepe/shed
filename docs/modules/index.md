@@ -9,6 +9,7 @@
 - [BiMap](index.md#bimap)
 - [assertIs](index.md#assertis)
 - [assertIsNot](index.md#assertisnot)
+- [debounceRaf](index.md#debounceraf)
 - [fail](index.md#fail)
 - [groupBy](index.md#groupby)
 - [identity](index.md#identity)
@@ -35,6 +36,12 @@ ___
 ### assertIsNot
 
 Re-exports: [assertIsNot](assert.md#assertisnot)
+
+___
+
+### debounceRaf
+
+Re-exports: [debounceRaf](function.md#debounceraf)
 
 ___
 

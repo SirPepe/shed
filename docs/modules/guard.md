@@ -45,7 +45,7 @@ x is T
 
 #### Defined in
 
-[src/guard.ts:14](https://github.com/SirPepe/shed/blob/cc4b0c5/src/guard.ts#L14)
+[src/guard.ts:14](https://github.com/SirPepe/shed/blob/2ccbe12/src/guard.ts#L14)
 
 ___
 
@@ -83,4 +83,4 @@ x is undefined \| null
 
 #### Defined in
 
-[src/guard.ts:34](https://github.com/SirPepe/shed/blob/cc4b0c5/src/guard.ts#L34)
+[src/guard.ts:34](https://github.com/SirPepe/shed/blob/2ccbe12/src/guard.ts#L34)
