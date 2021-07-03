@@ -29,3 +29,22 @@ export function noop (...args: any[]): void {}
 export function identity<T>(x: T): T {
   return x;
 }
+
+/**
+ * Returns a function that fires `func()` when the next frame renders, at most
+ * once per frame.
+ * */
+export function debounceRaf<A extends any[]>(
+  func: (...args: A) => unknown,
+): (...args: A) => void {
+  let handle: number | undefined;
+  return function(...args: A): void {
+    if (typeof handle !== "undefined") {
+      cancelAnimationFrame(handle);
+    }
+    handle = requestAnimationFrame(() => {
+      handle = undefined;
+      func(...args);
+    });
+  };
+};
