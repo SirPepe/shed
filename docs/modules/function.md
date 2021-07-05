@@ -14,7 +14,7 @@
 
 ### debounceRaf
 
-▸ **debounceRaf**<A\>(`func`): (...`args`: `A`) => `void`
+▸ **debounceRaf**<T, A\>(`func`): (`this`: `T`, ...`args`: `A`) => `void`
 
 Returns a function that fires `func()` when the next frame renders, at most
 once per frame.
@@ -23,24 +23,26 @@ once per frame.
 
 | Name | Type |
 | :------ | :------ |
+| `T` | `T` |
 | `A` | `A`: `any`[] |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `func` | (...`args`: `A`) => `unknown` |
+| `func` | (`this`: `T`, ...`args`: `A`) => `unknown` |
 
 #### Returns
 
 `fn`
 
-▸ (...`args`): `void`
+▸ (`this`, ...`args`): `void`
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `this` | `T` |
 | `...args` | `A` |
 
 ##### Returns
@@ -49,7 +51,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:37](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L37)
+[src/function.ts:37](https://github.com/SirPepe/shed/blob/6a3c00b/src/function.ts#L37)
 
 ___
 
@@ -86,7 +88,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L29)
+[src/function.ts:29](https://github.com/SirPepe/shed/blob/6a3c00b/src/function.ts#L29)
 
 ___
 
@@ -118,4 +120,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/2ccbe12/src/function.ts#L15)
+[src/function.ts:15](https://github.com/SirPepe/shed/blob/6a3c00b/src/function.ts#L15)

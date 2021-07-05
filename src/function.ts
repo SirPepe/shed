@@ -33,18 +33,18 @@ export function identity<T>(x: T): T {
 /**
  * Returns a function that fires `func()` when the next frame renders, at most
  * once per frame.
- * */
-export function debounceRaf<A extends any[]>(
-  func: (...args: A) => unknown,
-): (...args: A) => void {
+ */
+export function debounceRaf<T, A extends any[]>(
+  func: (this: T, ...args: A) => unknown,
+): (this: T, ...args: A) => void {
   let handle: number | undefined;
-  return function(...args: A): void {
+  return function(this: T, ...args: A): void {
     if (typeof handle !== "undefined") {
       cancelAnimationFrame(handle);
     }
     handle = requestAnimationFrame(() => {
       handle = undefined;
-      func(...args);
+      func.call(this, ...args);
     });
   };
 };
