@@ -16,6 +16,8 @@
 - [is](index.md#is)
 - [isNot](index.md#isnot)
 - [mapBy](index.md#mapby)
+- [move](index.md#move)
+- [moved](index.md#moved)
 - [noop](index.md#noop)
 - [partition](index.md#partition)
 
@@ -78,6 +80,18 @@ ___
 ### mapBy
 
 Re-exports: [mapBy](iterable.md#mapby)
+
+___
+
+### move
+
+Re-exports: [move](array.md#move)
+
+___
+
+### moved
+
+Re-exports: [moved](array.md#moved)
 
 ___
 

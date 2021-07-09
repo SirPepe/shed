@@ -8,6 +8,7 @@
 
 - [BiMap](modules/bimap.md)
 - [UnsafeMap](modules/unsafemap.md)
+- [array](modules/array.md)
 - [assert](modules/assert.md)
 - [error](modules/error.md)
 - [function](modules/function.md)

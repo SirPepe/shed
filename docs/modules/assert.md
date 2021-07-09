@@ -46,7 +46,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:14](https://github.com/SirPepe/shed/blob/6a3c00b/src/assert.ts#L14)
+[src/assert.ts:14](https://github.com/SirPepe/shed/blob/6760343/src/assert.ts#L14)
 
 ___
 
@@ -85,4 +85,4 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:35](https://github.com/SirPepe/shed/blob/6a3c00b/src/assert.ts#L35)
+[src/assert.ts:35](https://github.com/SirPepe/shed/blob/6760343/src/assert.ts#L35)
