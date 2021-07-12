@@ -66,7 +66,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[src/iterable.ts:32](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L32)
+[src/iterable.ts:32](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L32)
 
 ▸ **groupBy**<T, Key\>(`input`, `selector`): `Map`<Key, T[]\>
 
@@ -90,7 +90,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[src/iterable.ts:36](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L36)
+[src/iterable.ts:36](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L36)
 
 ___
 
@@ -129,7 +129,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:69](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L69)
+[src/iterable.ts:69](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L69)
 
 ▸ **mapBy**<T, Key\>(`values`, `selector`): `Map`<Key, T\>
 
@@ -153,7 +153,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:73](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L73)
+[src/iterable.ts:73](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L73)
 
 ___
 
@@ -190,7 +190,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:105](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L105)
+[src/iterable.ts:105](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L105)
 
 ▸ **partition**<T, U\>(`input`, `predicate`): [`T`[], `U`[]]
 
@@ -214,4 +214,4 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:109](https://github.com/SirPepe/shed/blob/6760343/src/iterable.ts#L109)
+[src/iterable.ts:109](https://github.com/SirPepe/shed/blob/7c3ac3f/src/iterable.ts#L109)

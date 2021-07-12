@@ -15,3 +15,4 @@
 - [guard](modules/guard.md)
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)
+- [object](modules/object.md)

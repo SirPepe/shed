@@ -7,6 +7,7 @@
 ### References
 
 - [BiMap](index.md#bimap)
+- [UnsafeMap](index.md#unsafemap)
 - [assertIs](index.md#assertis)
 - [assertIsNot](index.md#assertisnot)
 - [debounceRaf](index.md#debounceraf)
@@ -19,6 +20,7 @@
 - [move](index.md#move)
 - [moved](index.md#moved)
 - [noop](index.md#noop)
+- [omitted](index.md#omitted)
 - [partition](index.md#partition)
 
 ## References
@@ -26,6 +28,12 @@
 ### BiMap
 
 Re-exports: [BiMap](../classes/bimap.bimap-1.md)
+
+___
+
+### UnsafeMap
+
+Re-exports: [UnsafeMap](../classes/unsafemap.unsafemap-1.md)
 
 ___
 
@@ -98,6 +106,12 @@ ___
 ### noop
 
 Re-exports: [noop](function.md#noop)
+
+___
+
+### omitted
+
+Re-exports: [omitted](object.md#omitted)
 
 ___
 
