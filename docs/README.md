@@ -16,3 +16,4 @@
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)
 - [object](modules/object.md)
+- [string](modules/string.md)

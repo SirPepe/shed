@@ -37,4 +37,4 @@ Returns a new object created from the input object, but without the keys in
 
 #### Defined in
 
-src/object.ts:5
+[src/object.ts:5](https://github.com/SirPepe/shed/blob/2f24553/src/object.ts#L5)

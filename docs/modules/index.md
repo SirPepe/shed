@@ -16,12 +16,14 @@
 - [identity](index.md#identity)
 - [is](index.md#is)
 - [isNot](index.md#isnot)
+- [lowercaseFirst](index.md#lowercasefirst)
 - [mapBy](index.md#mapby)
 - [move](index.md#move)
 - [moved](index.md#moved)
 - [noop](index.md#noop)
 - [omitted](index.md#omitted)
 - [partition](index.md#partition)
+- [uppercaseFirst](index.md#uppercasefirst)
 
 ## References
 
@@ -85,6 +87,12 @@ Re-exports: [isNot](guard.md#isnot)
 
 ___
 
+### lowercaseFirst
+
+Re-exports: [lowercaseFirst](string.md#lowercasefirst)
+
+___
+
 ### mapBy
 
 Re-exports: [mapBy](iterable.md#mapby)
@@ -118,3 +126,9 @@ ___
 ### partition
 
 Re-exports: [partition](iterable.md#partition)
+
+___
+
+### uppercaseFirst
+
+Re-exports: [uppercaseFirst](string.md#uppercasefirst)
