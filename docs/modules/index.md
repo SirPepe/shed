@@ -23,6 +23,7 @@
 - [noop](index.md#noop)
 - [omitted](index.md#omitted)
 - [partition](index.md#partition)
+- [picked](index.md#picked)
 - [uppercaseFirst](index.md#uppercasefirst)
 
 ## References
@@ -126,6 +127,12 @@ ___
 ### partition
 
 Re-exports: [partition](iterable.md#partition)
+
+___
+
+### picked
+
+Re-exports: [picked](object.md#picked)
 
 ___
 

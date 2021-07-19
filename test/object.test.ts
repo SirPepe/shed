@@ -1,4 +1,4 @@
-import { omitted } from "../src/object";
+import { omitted, picked } from "../src/object";
 
 describe("object", () => {
   describe("omitted()", () => {
@@ -15,6 +15,28 @@ describe("object", () => {
       const c = omitted(input, "a", "b", "c", "d");
       expect(c).toEqual({});
       expect(c).not.toBe(input);
+      expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
+    });
+  });
+
+  describe("picked()", () => {
+    test("creates new objects containing only some keys", () => {
+      const input = { a: 0, b: 1, c: 2, d: 3 };
+      const a = picked(input, "a");
+      expect(a).toEqual({ a: 0 });
+      expect(a).not.toBe(input);
+      expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
+      const b = picked(input, "b", "c");
+      expect(b).toEqual({ b: 1, c: 2 });
+      expect(b).not.toBe(input);
+      expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
+      const c = picked(input, "a", "b", "c", "d");
+      expect(c).toEqual(input);
+      expect(c).not.toBe(input);
+      expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
+      const d = picked(input);
+      expect(d).toEqual({});
+      expect(d).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
     });
   });

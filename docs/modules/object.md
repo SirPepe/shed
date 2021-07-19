@@ -7,6 +7,7 @@
 ### Functions
 
 - [omitted](object.md#omitted)
+- [picked](object.md#picked)
 
 ## Functions
 
@@ -15,7 +16,8 @@
 ▸ **omitted**<T, K\>(`obj`, ...`toOmit`): `Omit`<T, K\>
 
 Returns a new object created from the input object, but without the keys in
-`toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type.
+`toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
+and the inverse of `picked()`.
 
 #### Type parameters
 
@@ -37,4 +39,36 @@ Returns a new object created from the input object, but without the keys in
 
 #### Defined in
 
-[src/object.ts:5](https://github.com/SirPepe/shed/blob/2f24553/src/object.ts#L5)
+[src/object.ts:6](https://github.com/SirPepe/shed/blob/d946502/src/object.ts#L6)
+
+___
+
+### picked
+
+▸ **picked**<T, K\>(`obj`, ...`toKeep`): `Omit`<T, K\>
+
+Returns a new object created from the input object, but with only the keys in
+`toKeep`. Essentially the runtime-variant of TypeScript's `Pick<T, K>` type
+and the inverse of `omitted()`.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T`: `object` |
+| `K` | `K`: `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+| `...toKeep` | `K`[] |
+
+#### Returns
+
+`Omit`<T, K\>
+
+#### Defined in
+
+[src/object.ts:25](https://github.com/SirPepe/shed/blob/d946502/src/object.ts#L25)

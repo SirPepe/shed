@@ -5,6 +5,6 @@ export { fail } from "./error";
 export { identity, noop, debounceRaf } from "./function";
 export { is, isNot } from "./guard";
 export { groupBy, mapBy, partition } from "./iterable";
-export { omitted } from "./object";
+export { omitted, picked } from "./object";
 export { uppercaseFirst, lowercaseFirst } from "./string";
 export { UnsafeMap } from "./UnsafeMap";
