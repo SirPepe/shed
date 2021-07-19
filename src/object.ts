@@ -26,12 +26,9 @@ export function omitted<T extends object, K extends keyof T>(
   obj: T,
   ...toKeep: K[]
 ): Omit<T, K> {
-  const keysToKeep: Set<any> = new Set(toKeep);
   const result: any = {};
-  for (const [key, value] of Object.entries(obj)) {
-    if (keysToKeep.has(key)) {
-      result[key] = value;
-    }
+  for (const key of new Set(toKeep)) {
+    result[key] = obj[key];
   }
   return result;
 };

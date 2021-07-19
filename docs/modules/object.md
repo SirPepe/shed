@@ -39,7 +39,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:6](https://github.com/SirPepe/shed/blob/d946502/src/object.ts#L6)
+[src/object.ts:6](https://github.com/SirPepe/shed/blob/bf37162/src/object.ts#L6)
 
 ___
 
@@ -71,4 +71,4 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:25](https://github.com/SirPepe/shed/blob/d946502/src/object.ts#L25)
+[src/object.ts:25](https://github.com/SirPepe/shed/blob/bf37162/src/object.ts#L25)
