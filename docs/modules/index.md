@@ -22,8 +22,10 @@
 - [moved](index.md#moved)
 - [noop](index.md#noop)
 - [omitted](index.md#omitted)
+- [omitter](index.md#omitter)
 - [partition](index.md#partition)
 - [picked](index.md#picked)
+- [picker](index.md#picker)
 - [uppercaseFirst](index.md#uppercasefirst)
 
 ## References
@@ -124,6 +126,12 @@ Re-exports: [omitted](object.md#omitted)
 
 ___
 
+### omitter
+
+Re-exports: [omitter](object.md#omitter)
+
+___
+
 ### partition
 
 Re-exports: [partition](iterable.md#partition)
@@ -133,6 +141,12 @@ ___
 ### picked
 
 Re-exports: [picked](object.md#picked)
+
+___
+
+### picker
+
+Re-exports: [picker](object.md#picker)
 
 ___
 
