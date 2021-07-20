@@ -6,11 +6,55 @@
 
 ### Functions
 
+- [debounce](function.md#debounce)
 - [debounceRaf](function.md#debounceraf)
 - [identity](function.md#identity)
 - [noop](function.md#noop)
 
 ## Functions
+
+### debounce
+
+▸ **debounce**<T, A\>(`func`, `t?`): (`this`: `T`, ...`args`: `A`) => `void`
+
+Returns a debounced function.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `A` | `A`: `any`[] |
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `func` | (`this`: `T`, ...`args`: `A`) => `unknown` | `undefined` |
+| `t` | `number` | 1000 |
+
+#### Returns
+
+`fn`
+
+▸ (`this`, ...`args`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `this` | `T` |
+| `...args` | `A` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L36)
+
+___
 
 ### debounceRaf
 
@@ -51,7 +95,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:37](https://github.com/SirPepe/shed/blob/a77f48a/src/function.ts#L37)
+[src/function.ts:56](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L56)
 
 ___
 
@@ -88,7 +132,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/a77f48a/src/function.ts#L29)
+[src/function.ts:29](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L29)
 
 ___
 
@@ -120,4 +164,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/a77f48a/src/function.ts#L15)
+[src/function.ts:15](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L15)

@@ -31,6 +31,25 @@ export function identity<T>(x: T): T {
 }
 
 /**
+ * Returns a debounced function.
+ */
+export function debounce<T, A extends any[]>(
+  func: (this: T, ...args: A) => unknown,
+  t = 1000
+): (this: T, ...args: A) => void {
+  let handle: any;
+  return function(this: T, ...args: A): void {
+    if (typeof handle !== "undefined") {
+      globalThis.clearTimeout(handle);
+    }
+    handle = globalThis.setTimeout(() => {
+      handle = undefined;
+      func.call(this, ...args);
+    }, t);
+  };
+};
+
+/**
  * Returns a function that fires `func()` when the next frame renders, at most
  * once per frame.
  */
@@ -40,9 +59,9 @@ export function debounceRaf<T, A extends any[]>(
   let handle: number | undefined;
   return function(this: T, ...args: A): void {
     if (typeof handle !== "undefined") {
-      cancelAnimationFrame(handle);
+      globalThis.cancelAnimationFrame(handle);
     }
-    handle = requestAnimationFrame(() => {
+    handle = globalThis.requestAnimationFrame(() => {
       handle = undefined;
       func.call(this, ...args);
     });
