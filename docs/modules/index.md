@@ -10,6 +10,7 @@
 - [UnsafeMap](index.md#unsafemap)
 - [assertIs](index.md#assertis)
 - [assertIsNot](index.md#assertisnot)
+- [debounce](index.md#debounce)
 - [debounceRaf](index.md#debounceraf)
 - [fail](index.md#fail)
 - [groupBy](index.md#groupby)
@@ -51,6 +52,12 @@ ___
 ### assertIsNot
 
 Re-exports: [assertIsNot](assert.md#assertisnot)
+
+___
+
+### debounce
+
+Re-exports: [debounce](function.md#debounce)
 
 ___
 

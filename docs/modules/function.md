@@ -52,7 +52,7 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:36](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L36)
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/ad30a78/src/function.ts#L36)
 
 ___
 
@@ -95,7 +95,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:56](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L56)
+[src/function.ts:56](https://github.com/SirPepe/shed/blob/ad30a78/src/function.ts#L56)
 
 ___
 
@@ -132,7 +132,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L29)
+[src/function.ts:29](https://github.com/SirPepe/shed/blob/ad30a78/src/function.ts#L29)
 
 ___
 
@@ -164,4 +164,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/5ac37c8/src/function.ts#L15)
+[src/function.ts:15](https://github.com/SirPepe/shed/blob/ad30a78/src/function.ts#L15)

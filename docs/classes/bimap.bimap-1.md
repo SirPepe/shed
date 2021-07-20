@@ -68,7 +68,7 @@ support both key- and value-oriented approaches.
 
 #### Defined in
 
-[src/BiMap.ts:10](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L10)
+[src/BiMap.ts:10](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L10)
 
 ## Properties
 
@@ -78,7 +78,7 @@ support both key- and value-oriented approaches.
 
 #### Defined in
 
-[src/BiMap.ts:9](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L9)
+[src/BiMap.ts:9](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L9)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:10](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L10)
+[src/BiMap.ts:10](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L10)
 
 ## Accessors
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:71](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L71)
+[src/BiMap.ts:71](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L71)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:67](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L67)
+[src/BiMap.ts:67](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L67)
 
 ## Methods
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:50](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L50)
+[src/BiMap.ts:50](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L50)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:38](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L38)
+[src/BiMap.ts:38](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L38)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:44](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L44)
+[src/BiMap.ts:44](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L44)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:63](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L63)
+[src/BiMap.ts:63](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L63)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:30](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L30)
+[src/BiMap.ts:30](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L30)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:34](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L34)
+[src/BiMap.ts:34](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L34)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:22](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L22)
+[src/BiMap.ts:22](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L22)
 
 ___
 
@@ -270,7 +270,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:26](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L26)
+[src/BiMap.ts:26](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L26)
 
 ___
 
@@ -284,7 +284,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:55](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L55)
+[src/BiMap.ts:55](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L55)
 
 ___
 
@@ -305,7 +305,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:17](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L17)
+[src/BiMap.ts:17](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L17)
 
 ___
 
@@ -319,4 +319,4 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:59](https://github.com/SirPepe/shed/blob/5ac37c8/src/BiMap.ts#L59)
+[src/BiMap.ts:59](https://github.com/SirPepe/shed/blob/ad30a78/src/BiMap.ts#L59)
