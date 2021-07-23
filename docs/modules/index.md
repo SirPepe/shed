@@ -28,6 +28,7 @@
 - [picked](index.md#picked)
 - [picker](index.md#picker)
 - [uppercaseFirst](index.md#uppercasefirst)
+- [whereProp](index.md#whereprop)
 
 ## References
 
@@ -160,3 +161,9 @@ ___
 ### uppercaseFirst
 
 Re-exports: [uppercaseFirst](string.md#uppercasefirst)
+
+___
+
+### whereProp
+
+Re-exports: [whereProp](object.md#whereprop)

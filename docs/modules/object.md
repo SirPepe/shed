@@ -10,6 +10,7 @@
 - [omitter](object.md#omitter)
 - [picked](object.md#picked)
 - [picker](object.md#picker)
+- [whereProp](object.md#whereprop)
 
 ## Functions
 
@@ -41,7 +42,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:6](https://github.com/SirPepe/shed/blob/ad30a78/src/object.ts#L6)
+[src/object.ts:6](https://github.com/SirPepe/shed/blob/9c70429/src/object.ts#L6)
 
 ___
 
@@ -84,7 +85,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:25](https://github.com/SirPepe/shed/blob/ad30a78/src/object.ts#L25)
+[src/object.ts:25](https://github.com/SirPepe/shed/blob/9c70429/src/object.ts#L25)
 
 ___
 
@@ -116,7 +117,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:46](https://github.com/SirPepe/shed/blob/ad30a78/src/object.ts#L46)
+[src/object.ts:46](https://github.com/SirPepe/shed/blob/9c70429/src/object.ts#L46)
 
 ___
 
@@ -159,4 +160,47 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:62](https://github.com/SirPepe/shed/blob/ad30a78/src/object.ts#L62)
+[src/object.ts:62](https://github.com/SirPepe/shed/blob/9c70429/src/object.ts#L62)
+
+___
+
+### whereProp
+
+▸ **whereProp**<T, K\>(`prop`, `value`): (`obj`: `T`) => `boolean`
+
+Returns a predicate that checks if its input object's "prop" field contains a
+value equal to "value".
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `K` | `K`: `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `prop` | `K` |
+| `value` | `T`[`K`] |
+
+#### Returns
+
+`fn`
+
+▸ (`obj`): `boolean`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/object.ts:79](https://github.com/SirPepe/shed/blob/9c70429/src/object.ts#L79)

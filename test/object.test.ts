@@ -1,4 +1,4 @@
-import { omitted, omitter, picked, picker } from "../src/object";
+import { omitted, omitter, picked, picker, whereProp } from "../src/object";
 
 describe("object", () => {
   describe("omitted()", () => {
@@ -78,6 +78,13 @@ describe("object", () => {
       expect(d).toEqual({});
       expect(d).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
+    });
+  });
+
+  describe("whereProp()", () => {
+    test("creates a predicate function", () => {
+      const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
+      expect(input.map(whereProp("a", 1))).toEqual([ false, true, false ]);
     });
   });
 });
