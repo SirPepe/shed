@@ -1,4 +1,12 @@
 /**
+ * Collection of assert functions that not only throw errors at runtime, but
+ * also work as assertions in TypeScript. Use this module by importing
+ * `@sirpepe/shed/assert`.
+ *
+ * @module
+ */
+
+/**
  * Throws an exception when the first argument is null or undefined. The second
  * argument can be used to customize the exception, but is entirely optional.
  * This function works as a type assertion in TypeScript and is the inverse of

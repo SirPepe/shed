@@ -7,6 +7,17 @@
   "module": "dist/esm/index.js",
   "browser": "dist/min/index.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    "./*": {
+      "import": "./dist/esm/*",
+      "require": "./dist/cjs/*"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": ["./dist/types/*"]
+    }
+  },
   "directories": {
     "test": "test"
   },
@@ -21,7 +32,7 @@
     "access": "public"
   },
   "scripts": {
-    "docs": "typedoc --plugin typedoc-plugin-markdown --readme none src/*.ts",
+    "docs": "typedoc --exclude src/index.ts --plugin typedoc-plugin-markdown --readme none src/*.ts",
     "lint": "eslint src test",
     "test": "jest",
     "test-dev": "jest --watch",
@@ -30,7 +41,7 @@
     "build-js": "rollup -c",
     "build": "npm run clean && npm run build-ts && npm run build-js && npm run docs",
     "prepareRelease": "rm -rf node_modules && npm install && npm run build && npm run test",
-    "release": "npm run release-it"
+    "release": "release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

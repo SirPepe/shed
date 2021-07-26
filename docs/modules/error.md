@@ -2,6 +2,8 @@
 
 # Module: error
 
+Error utilities. Use this module by importing `@sirpepe/shed/error`.
+
 ## Table of contents
 
 ### Functions
@@ -46,4 +48,4 @@ function argumentRequired(arg = fail("Missing argument")) {}
 
 #### Defined in
 
-[src/error.ts:21](https://github.com/SirPepe/shed/blob/9c70429/src/error.ts#L21)
+[src/error.ts:27](https://github.com/SirPepe/shed/blob/7fa7472/src/error.ts#L27)

@@ -2,6 +2,10 @@
 
 # Module: assert
 
+Collection of assert functions that not only throw errors at runtime, but
+also work as assertions in TypeScript. Use this module by importing
+`@sirpepe/shed/assert`.
+
 ## Table of contents
 
 ### Functions
@@ -13,7 +17,7 @@
 
 ### assertIs
 
-▸ **assertIs**<T\>(`x`, `msg?`): asserts x is T
+▸ **assertIs**<`T`\>(`x`, `msg?`): asserts x is T
 
 Throws an exception when the first argument is null or undefined. The second
 argument can be used to customize the exception, but is entirely optional.
@@ -46,13 +50,13 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:14](https://github.com/SirPepe/shed/blob/9c70429/src/assert.ts#L14)
+[src/assert.ts:22](https://github.com/SirPepe/shed/blob/7fa7472/src/assert.ts#L22)
 
 ___
 
 ### assertIsNot
 
-▸ **assertIsNot**<T\>(`x`, `msg?`): asserts x is undefined \| null
+▸ **assertIsNot**<`T`\>(`x`, `msg?`): asserts x is undefined \| null
 
 Throws an exception when the first argument is not null or undefined. The
 second argument can be used to customize the exception, but is entirely
@@ -85,4 +89,4 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:35](https://github.com/SirPepe/shed/blob/9c70429/src/assert.ts#L35)
+[src/assert.ts:43](https://github.com/SirPepe/shed/blob/7fa7472/src/assert.ts#L43)

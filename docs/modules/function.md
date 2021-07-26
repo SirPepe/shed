@@ -2,6 +2,8 @@
 
 # Module: function
 
+Function utilities. Use this module by importing `@sirpepe/shed/function`.
+
 ## Table of contents
 
 ### Functions
@@ -15,7 +17,7 @@
 
 ### debounce
 
-▸ **debounce**<T, A\>(`func`, `t?`): (`this`: `T`, ...`args`: `A`) => `void`
+▸ **debounce**<`T`, `A`\>(`func`, `t?`): (`this`: `T`, ...`args`: `A`) => `void`
 
 Returns a debounced function.
 
@@ -24,20 +26,22 @@ Returns a debounced function.
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `A` | `A`: `any`[] |
+| `A` | extends `any`[] |
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
 | `func` | (`this`: `T`, ...`args`: `A`) => `unknown` | `undefined` |
-| `t` | `number` | 1000 |
+| `t` | `number` | `1000` |
 
 #### Returns
 
 `fn`
 
 ▸ (`this`, ...`args`): `void`
+
+Returns a debounced function.
 
 ##### Parameters
 
@@ -52,13 +56,13 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:36](https://github.com/SirPepe/shed/blob/9c70429/src/function.ts#L36)
+[src/function.ts:42](https://github.com/SirPepe/shed/blob/7fa7472/src/function.ts#L42)
 
 ___
 
 ### debounceRaf
 
-▸ **debounceRaf**<T, A\>(`func`): (`this`: `T`, ...`args`: `A`) => `void`
+▸ **debounceRaf**<`T`, `A`\>(`func`): (`this`: `T`, ...`args`: `A`) => `void`
 
 Returns a function that fires `func()` when the next frame renders, at most
 once per frame.
@@ -68,7 +72,7 @@ once per frame.
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `A` | `A`: `any`[] |
+| `A` | extends `any`[] |
 
 #### Parameters
 
@@ -82,6 +86,9 @@ once per frame.
 
 ▸ (`this`, ...`args`): `void`
 
+Returns a function that fires `func()` when the next frame renders, at most
+once per frame.
+
 ##### Parameters
 
 | Name | Type |
@@ -95,13 +102,13 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:56](https://github.com/SirPepe/shed/blob/9c70429/src/function.ts#L56)
+[src/function.ts:62](https://github.com/SirPepe/shed/blob/7fa7472/src/function.ts#L62)
 
 ___
 
 ### identity
 
-▸ **identity**<T\>(`x`): `T`
+▸ **identity**<`T`\>(`x`): `T`
 
 A unary function that does nothing and returns its argument. Useful for
 writing tests or triggering side effects on lazily-evaluated generators.
@@ -132,7 +139,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:29](https://github.com/SirPepe/shed/blob/9c70429/src/function.ts#L29)
+[src/function.ts:35](https://github.com/SirPepe/shed/blob/7fa7472/src/function.ts#L35)
 
 ___
 
@@ -164,4 +171,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:15](https://github.com/SirPepe/shed/blob/9c70429/src/function.ts#L15)
+[src/function.ts:21](https://github.com/SirPepe/shed/blob/7fa7472/src/function.ts#L21)

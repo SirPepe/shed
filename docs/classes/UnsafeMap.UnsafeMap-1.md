@@ -1,13 +1,8 @@
-[@sirpepe/shed](../README.md) / [UnsafeMap](../modules/unsafemap.md) / UnsafeMap
+[@sirpepe/shed](../README.md) / [UnsafeMap](../modules/UnsafeMap.md) / UnsafeMap
 
 # Class: UnsafeMap<K, V\>
 
-[UnsafeMap](../modules/unsafemap.md).UnsafeMap
-
-Just like a regular map, but throws when attempting to get a key that is not
-in the map (effectively adding a type assertion to `get()`). Because `get()`
-returns `V` instead of `V | undefined` this makes life in TypeScript somewhat
-easier.
+[UnsafeMap](../modules/UnsafeMap.md).UnsafeMap
 
 ## Type parameters
 
@@ -18,41 +13,41 @@ easier.
 
 ## Hierarchy
 
-- `Map`<K, V\>
+- `Map`<`K`, `V`\>
 
-  ↳ **UnsafeMap**
+  ↳ **`UnsafeMap`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](unsafemap.unsafemap-1.md#constructor)
+- [constructor](UnsafeMap.UnsafeMap-1.md#constructor)
 
 ### Properties
 
-- [[Symbol.toStringTag]](unsafemap.unsafemap-1.md#[symbol.tostringtag])
-- [errorFactory](unsafemap.unsafemap-1.md#errorfactory)
-- [size](unsafemap.unsafemap-1.md#size)
-- [[Symbol.species]](unsafemap.unsafemap-1.md#[symbol.species])
+- [[toStringTag]](UnsafeMap.UnsafeMap-1.md#[tostringtag])
+- [errorFactory](UnsafeMap.UnsafeMap-1.md#errorfactory)
+- [size](UnsafeMap.UnsafeMap-1.md#size)
+- [[species]](UnsafeMap.UnsafeMap-1.md#[species])
 
 ### Methods
 
-- [[Symbol.iterator]](unsafemap.unsafemap-1.md#[symbol.iterator])
-- [clear](unsafemap.unsafemap-1.md#clear)
-- [delete](unsafemap.unsafemap-1.md#delete)
-- [entries](unsafemap.unsafemap-1.md#entries)
-- [forEach](unsafemap.unsafemap-1.md#foreach)
-- [get](unsafemap.unsafemap-1.md#get)
-- [has](unsafemap.unsafemap-1.md#has)
-- [keys](unsafemap.unsafemap-1.md#keys)
-- [set](unsafemap.unsafemap-1.md#set)
-- [values](unsafemap.unsafemap-1.md#values)
+- [[iterator]](UnsafeMap.UnsafeMap-1.md#[iterator])
+- [clear](UnsafeMap.UnsafeMap-1.md#clear)
+- [delete](UnsafeMap.UnsafeMap-1.md#delete)
+- [entries](UnsafeMap.UnsafeMap-1.md#entries)
+- [forEach](UnsafeMap.UnsafeMap-1.md#foreach)
+- [get](UnsafeMap.UnsafeMap-1.md#get)
+- [has](UnsafeMap.UnsafeMap-1.md#has)
+- [keys](UnsafeMap.UnsafeMap-1.md#keys)
+- [set](UnsafeMap.UnsafeMap-1.md#set)
+- [values](UnsafeMap.UnsafeMap-1.md#values)
 
 ## Constructors
 
 ### constructor
 
-• **new UnsafeMap**<K, V\>(`entries?`, `errorFactory?`)
+• **new UnsafeMap**<`K`, `V`\>(`entries?`, `errorFactory?`)
 
 #### Type parameters
 
@@ -65,7 +60,7 @@ easier.
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `entries` | `Iterable`<[`K`, `V`]\> | [] |
+| `entries` | `Iterable`<[`K`, `V`]\> | `[]` |
 | `errorFactory` | (`key`: `K`) => `Error` | `undefined` |
 
 #### Overrides
@@ -74,17 +69,17 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:8](https://github.com/SirPepe/shed/blob/9c70429/src/UnsafeMap.ts#L8)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/7fa7472/src/UnsafeMap.ts#L13)
 
 ## Properties
 
-### [Symbol.toStringTag]
+### [toStringTag]
 
-• `Readonly` **[Symbol.toStringTag]**: `string`
+• `Readonly` **[toStringTag]**: `string`
 
 #### Inherited from
 
-Map.\_\_@toStringTag
+Map.\_\_@toStringTag@24
 
 #### Defined in
 
@@ -112,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:8](https://github.com/SirPepe/shed/blob/9c70429/src/UnsafeMap.ts#L8)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/7fa7472/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -130,13 +125,13 @@ node_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 ___
 
-### [Symbol.species]
+### [species]
 
-▪ `Static` `Readonly` **[Symbol.species]**: `MapConstructor`
+▪ `Static` `Readonly` **[species]**: `MapConstructor`
 
 #### Inherited from
 
-Map.\_\_@species
+Map.\_\_@species@582
 
 #### Defined in
 
@@ -144,9 +139,9 @@ node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:317
 
 ## Methods
 
-### [Symbol.iterator]
+### [iterator]
 
-▸ **[Symbol.iterator]**(): `IterableIterator`<[`K`, `V`]\>
+▸ **[iterator]**(): `IterableIterator`<[`K`, `V`]\>
 
 Returns an iterable of entries in the map.
 
@@ -156,7 +151,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator
+Map.\_\_@iterator@81
 
 #### Defined in
 
@@ -234,7 +229,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: `Map`<K, V\>) => `void` |
+| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: `Map`<`K`, `V`\>) => `void` |
 | `thisArg?` | `any` |
 
 #### Returns
@@ -271,7 +266,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:17](https://github.com/SirPepe/shed/blob/9c70429/src/UnsafeMap.ts#L17)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/7fa7472/src/UnsafeMap.ts#L21)
 
 ___
 
@@ -301,13 +296,13 @@ ___
 
 ### keys
 
-▸ **keys**(): `IterableIterator`<K\>
+▸ **keys**(): `IterableIterator`<`K`\>
 
 Returns an iterable of keys in the map
 
 #### Returns
 
-`IterableIterator`<K\>
+`IterableIterator`<`K`\>
 
 #### Inherited from
 
@@ -321,7 +316,7 @@ ___
 
 ### set
 
-▸ **set**(`key`, `value`): [UnsafeMap](unsafemap.unsafemap-1.md)<K, V\>
+▸ **set**(`key`, `value`): [`UnsafeMap`](UnsafeMap.UnsafeMap-1.md)<`K`, `V`\>
 
 #### Parameters
 
@@ -332,7 +327,7 @@ ___
 
 #### Returns
 
-[UnsafeMap](unsafemap.unsafemap-1.md)<K, V\>
+[`UnsafeMap`](UnsafeMap.UnsafeMap-1.md)<`K`, `V`\>
 
 #### Inherited from
 
@@ -346,13 +341,13 @@ ___
 
 ### values
 
-▸ **values**(): `IterableIterator`<V\>
+▸ **values**(): `IterableIterator`<`V`\>
 
 Returns an iterable of values in the map
 
 #### Returns
 
-`IterableIterator`<V\>
+`IterableIterator`<`V`\>
 
 #### Inherited from
 

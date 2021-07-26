@@ -1,4 +1,10 @@
 /**
+ * Function utilities. Use this module by importing `@sirpepe/shed/function`.
+ *
+ * @module
+ */
+
+/**
  * A function that does nothing and accepts any number of arguments. Useful for
  * writing tests. **This function is sort-of superfluous in plain JavaScript**,
  * where `Function.prototype` can also serve as a do-nothing function, but

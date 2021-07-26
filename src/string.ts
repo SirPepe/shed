@@ -1,4 +1,10 @@
 /**
+ * String utilities. Use this module by importing `@sirpepe/shed/string`.
+ *
+ * @module
+ */
+
+/**
  * Turn a string's first character to upper case.
  */
 export function uppercaseFirst(str: string): string {

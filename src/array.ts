@@ -1,4 +1,11 @@
 /**
+ * Utilities for working with arrays. Access this module by importing
+ * `@sirpepe/shed/array`.
+ *
+ * @module
+ */
+
+/**
  * Moves an element from one position in an array to another position, operating
  * in-place. See `moved()` for an immutable variant of this function.
  *

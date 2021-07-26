@@ -1,4 +1,10 @@
 /**
+ * Error utilities. Use this module by importing `@sirpepe/shed/error`.
+ *
+ * @module
+ */
+
+/**
  * A function that throws an error when called.
  *
  * Example:

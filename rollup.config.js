@@ -4,6 +4,21 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import license from "rollup-plugin-license";
 import commonjs from "@rollup/plugin-commonjs";
 
+const modules = [
+  "array",
+  "assert",
+  "BiMap",
+  "error",
+  "function",
+  "guard",
+  // "index", <- only used in the umd build
+  "iterable",
+  "object",
+  "string",
+  // "types", <- TypeScript builds the d.ts file for this
+  "UnsafeMap",
+];
+
 const extensions = [".ts", ".js"];
 
 const banner = {
@@ -60,24 +75,26 @@ const browserBaseConfig = {
 };
 
 export default [
-  {
-    input: "./src/index.ts",
-    output: {
-      file: "dist/esm/index.js",
-      format: "esm",
-      plugins: [license({ banner })],
+  ...modules.flatMap((module) => [
+    {
+      input: `./src/${module}.ts`,
+      output: {
+        file: `dist/esm/${module}.js`,
+        format: "esm",
+        plugins: [license({ banner })],
+      },
+      ...moduleBaseConfig,
     },
-    ...moduleBaseConfig,
-  },
-  {
-    input: "./src/index.ts",
-    output: {
-      file: "dist/cjs/index.js",
-      format: "cjs",
-      plugins: [license({ banner })],
-    },
-    ...moduleBaseConfig,
-  },
+    {
+      input: `./src/${module}.ts`,
+      output: {
+        file: `dist/cjs/${module}.js`,
+        format: "cjs",
+        plugins: [license({ banner })],
+      },
+      ...moduleBaseConfig,
+    }
+  ]),
   {
     input: "./src/index.ts",
     output: {

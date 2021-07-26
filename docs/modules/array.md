@@ -2,6 +2,9 @@
 
 # Module: array
 
+Utilities for working with arrays. Access this module by importing
+`@sirpepe/shed/array`.
+
 ## Table of contents
 
 ### Functions
@@ -13,7 +16,7 @@
 
 ### move
 
-▸ **move**<T\>(`arr`, `from`, `to`): `T`[]
+▸ **move**<`T`\>(`arr`, `from`, `to`): `T`[]
 
 Moves an element from one position in an array to another position, operating
 in-place. See `moved()` for an immutable variant of this function.
@@ -46,13 +49,13 @@ move(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:13](https://github.com/SirPepe/shed/blob/9c70429/src/array.ts#L13)
+[src/array.ts:20](https://github.com/SirPepe/shed/blob/7fa7472/src/array.ts#L20)
 
 ___
 
 ### moved
 
-▸ **moved**<T\>(`arr`, `from`, `to`): `T`[]
+▸ **moved**<`T`\>(`arr`, `from`, `to`): `T`[]
 
 Moves an element from one position in an array to another position, creating
 a new array. See `move()` for a mutating variant of this function.
@@ -85,4 +88,4 @@ output = moved(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:30](https://github.com/SirPepe/shed/blob/9c70429/src/array.ts#L30)
+[src/array.ts:37](https://github.com/SirPepe/shed/blob/7fa7472/src/array.ts#L37)

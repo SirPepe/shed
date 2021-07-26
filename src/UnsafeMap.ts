@@ -1,9 +1,13 @@
 /**
- * Just like a regular map, but throws when attempting to get a key that is not
- * in the map (effectively adding a type assertion to `get()`). Because `get()`
- * returns `V` instead of `V | undefined` this makes life in TypeScript somewhat
- * easier.
+ * A map that works just like a regular map, but throws when attempting to get a
+ * key that is not in the map (effectively adding a type assertion to `get()`).
+ * Because `get()` returns `V` instead of `V | undefined` this makes life in
+ * TypeScript somewhat easier. Use this module by importing
+ * `@sirpepe/shed/UnsafeMap`.
+ *
+ * @module
  */
+
 export class UnsafeMap<K, V> extends Map<K, V> {
   public errorFactory: (key: K) => Error;
   constructor(

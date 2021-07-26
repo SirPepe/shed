@@ -1,4 +1,10 @@
 /**
+ * Object utilities. Use this module by importing `@sirpepe/shed/object`.
+ *
+ * @module
+ */
+
+/**
  * Returns a new object created from the input object, but without the keys in
  * `toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
  * and the inverse of `picked()`.

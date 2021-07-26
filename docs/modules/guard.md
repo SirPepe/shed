@@ -2,6 +2,9 @@
 
 # Module: guard
 
+Collection of type guards. Use this module by importing
+`@sirpepe/shed/guard`.
+
 ## Table of contents
 
 ### Functions
@@ -13,7 +16,7 @@
 
 ### is
 
-▸ **is**<T\>(`x`): x is T
+▸ **is**<`T`\>(`x`): x is T
 
 Returns true when the argument is neither null nor undefined. Works as a type
 guard in TypeScript. The inverse of `isNot()`.
@@ -45,13 +48,13 @@ x is T
 
 #### Defined in
 
-[src/guard.ts:14](https://github.com/SirPepe/shed/blob/9c70429/src/guard.ts#L14)
+[src/guard.ts:21](https://github.com/SirPepe/shed/blob/7fa7472/src/guard.ts#L21)
 
 ___
 
 ### isNot
 
-▸ **isNot**<T\>(`x`): x is undefined \| null
+▸ **isNot**<`T`\>(`x`): x is undefined \| null
 
 Returns true when the argument is null or undefined. Works as a type guard in
 TypeScript. The inverse of `is()`.
@@ -83,4 +86,4 @@ x is undefined \| null
 
 #### Defined in
 
-[src/guard.ts:34](https://github.com/SirPepe/shed/blob/9c70429/src/guard.ts#L34)
+[src/guard.ts:41](https://github.com/SirPepe/shed/blob/7fa7472/src/guard.ts#L41)

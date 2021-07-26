@@ -1,4 +1,11 @@
 /**
+ * Collection of type guards. Use this module by importing
+ * `@sirpepe/shed/guard`.
+ *
+ * @module
+ */
+
+/**
  * Returns true when the argument is neither null nor undefined. Works as a type
  * guard in TypeScript. The inverse of `isNot()`.
  *
