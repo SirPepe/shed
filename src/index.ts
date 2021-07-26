@@ -8,3 +8,4 @@ export { groupBy, mapBy, partition } from "./iterable";
 export { omitted, omitter, picked, picker, whereProp } from "./object";
 export { uppercaseFirst, lowercaseFirst } from "./string";
 export { UnsafeMap } from "./UnsafeMap";
+export type { MapDiscriminatedUnion } from "./types";
