@@ -31,7 +31,7 @@ Turn a string's first character to lower case.
 
 #### Defined in
 
-[src/string.ts:18](https://github.com/SirPepe/shed/blob/7fa7472/src/string.ts#L18)
+[src/string.ts:18](https://github.com/SirPepe/shed/blob/38b45bb/src/string.ts#L18)
 
 ___
 
@@ -53,4 +53,4 @@ Turn a string's first character to upper case.
 
 #### Defined in
 
-[src/string.ts:10](https://github.com/SirPepe/shed/blob/7fa7472/src/string.ts#L10)
+[src/string.ts:10](https://github.com/SirPepe/shed/blob/38b45bb/src/string.ts#L10)

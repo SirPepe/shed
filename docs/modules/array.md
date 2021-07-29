@@ -49,7 +49,7 @@ move(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:20](https://github.com/SirPepe/shed/blob/7fa7472/src/array.ts#L20)
+[src/array.ts:20](https://github.com/SirPepe/shed/blob/38b45bb/src/array.ts#L20)
 
 ___
 
@@ -88,4 +88,4 @@ output = moved(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:37](https://github.com/SirPepe/shed/blob/7fa7472/src/array.ts#L37)
+[src/array.ts:37](https://github.com/SirPepe/shed/blob/38b45bb/src/array.ts#L37)
