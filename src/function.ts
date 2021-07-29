@@ -17,7 +17,7 @@
  * noop(42); // still nothing!
  * ```
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line
 export function noop (...args: any[]): void {}
 
 /**

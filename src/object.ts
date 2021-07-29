@@ -9,7 +9,7 @@
  * `toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
  * and the inverse of `picked()`.
  */
-export function omitted<T extends object, K extends keyof T>(
+export function omitted<T extends Record<string, unknown>, K extends keyof T>(
   obj: T,
   ...toOmit: K[]
 ): Omit<T, K> {
@@ -28,7 +28,7 @@ export function omitted<T extends object, K extends keyof T>(
  * but without the keys in `toOmit`. Essentially a factory function for
  * functions that call `omitted()`.
  */
- export function omitter<T extends object, K extends keyof T>(
+export function omitter<T extends Record<string, unknown>, K extends keyof T>(
   ...toOmit: K[]
 ): (obj: T) => Omit<T, K> {
   const keysToOmit: Set<any> = new Set(toOmit);
@@ -49,7 +49,7 @@ export function omitted<T extends object, K extends keyof T>(
  * `toKeep`. Essentially the runtime-variant of TypeScript's `Pick<T, K>` type
  * and the inverse of `omitted()`.
  */
- export function picked<T extends object, K extends keyof T>(
+export function picked<T extends Record<string, unknown>, K extends keyof T>(
   obj: T,
   ...toKeep: K[]
 ): Pick<T, K> {
@@ -65,7 +65,7 @@ export function omitted<T extends object, K extends keyof T>(
  * but with only the keys in `toKeep`. Essentially a factory function for
  * functions that call `picked()`.
  */
- export function picker<T extends object, K extends keyof T>(
+export function picker<T extends Record<string, unknown>, K extends keyof T>(
   ...toKeep: K[]
 ): (obj: T) => Pick<T, K> {
   const keysToKeep = new Set(toKeep);
