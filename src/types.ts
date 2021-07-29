@@ -1,6 +1,6 @@
 /**
- * Utility types for TypeScript. Use this module by importing
- * `@sirpepe/shed/types`.
+ * Utility types for TypeScript. Use this module by importing from
+ * `@sirpepe/shed/types` or `@sirpepe/shed`.
  *
  * @module
  */

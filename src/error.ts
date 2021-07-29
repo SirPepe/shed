@@ -1,5 +1,6 @@
 /**
- * Error utilities. Use this module by importing `@sirpepe/shed/error`.
+ * Error utilities. Use this module by importing from `@sirpepe/shed/error`
+ * or `@sirpepe/shed`.
  *
  * @module
  */

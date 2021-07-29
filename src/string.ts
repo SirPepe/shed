@@ -1,5 +1,6 @@
 /**
- * String utilities. Use this module by importing `@sirpepe/shed/string`.
+ * String utilities. Use this module by importing from `@sirpepe/shed/string`
+ * or `@sirpepe/shed`.
  *
  * @module
  */
