@@ -8,47 +8,47 @@
   "browser": "dist/min/index.js",
   "types": "dist/types/index.d.ts",
   "exports": {
-    "array": {
-      "import": "./dist/esm/array.js",
-      "require": "./dist/cjs/array.js"
-    },
-    "assert": {
-      "import": "./dist/esm/assert.js",
-      "require": "./dist/cjs/assert.js"
-    },
-    "BiMap": {
-      "import": "./dist/esm/BiMap.js",
-      "require": "./dist/cjs/BiMap.js"
-    },
-    "error": {
-      "import": "./dist/esm/error.js",
-      "require": "./dist/cjs/error.js"
-    },
-    "function": {
-      "import": "./dist/esm/function.js",
-      "require": "./dist/cjs/function.js"
-    },
-    "guard": {
-      "import": "./dist/esm/guard.js",
-      "require": "./dist/cjs/guard.js"
-    },
-    "index": {
+    ".": {
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
     },
-    "iterable": {
+    "./array": {
+      "import": "./dist/esm/array.js",
+      "require": "./dist/cjs/array.js"
+    },
+    "./assert": {
+      "import": "./dist/esm/assert.js",
+      "require": "./dist/cjs/assert.js"
+    },
+    "./BiMap": {
+      "import": "./dist/esm/BiMap.js",
+      "require": "./dist/cjs/BiMap.js"
+    },
+    "./error": {
+      "import": "./dist/esm/error.js",
+      "require": "./dist/cjs/error.js"
+    },
+    "./function": {
+      "import": "./dist/esm/function.js",
+      "require": "./dist/cjs/function.js"
+    },
+    "./guard": {
+      "import": "./dist/esm/guard.js",
+      "require": "./dist/cjs/guard.js"
+    },
+    "./iterable": {
       "import": "./dist/esm/iterable.js",
       "require": "./dist/cjs/iterable.js"
     },
-    "object": {
+    "./object": {
       "import": "./dist/esm/object.js",
       "require": "./dist/cjs/object.js"
     },
-    "string": {
+    "./string": {
       "import": "./dist/esm/string.js",
       "require": "./dist/cjs/string.js"
     },
-    "UnsafeMap": {
+    "./UnsafeMap": {
       "import": "./dist/esm/UnsafeMap.js",
       "require": "./dist/cjs/UnsafeMap.js"
     }
