@@ -55,9 +55,17 @@
   },
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/types/*"
-      ]
+      "array.d.ts": ["dist/types/array.d.ts"],
+      "assert.d.ts": ["dist/types/assert.d.ts"],
+      "BiMap.d.ts": ["dist/types/BiMap.d.ts"],
+      "error.d.ts": ["dist/types/error.d.ts"],
+      "function.d.ts": ["dist/types/function.d.ts"],
+      "guard.d.ts": ["dist/types/guard.d.ts"],
+      "index.d.ts": ["dist/types/index.d.ts"],
+      "iterable.d.ts": ["dist/types/iterable.d.ts"],
+      "object.d.ts": ["dist/types/object.d.ts"],
+      "string.d.ts": ["dist/types/string.d.ts"],
+      "UnsafeMap.d.ts": ["dist/types/UnsafeMap.d.ts"]
     }
   },
   "directories": {
