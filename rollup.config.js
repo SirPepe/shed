@@ -11,7 +11,7 @@ const modules = [
   "error",
   "function",
   "guard",
-  // "index", <- only used in the umd build
+  "index",
   "iterable",
   "object",
   "string",
