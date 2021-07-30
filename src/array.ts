@@ -16,6 +16,10 @@
  * move(input, 1, 3);
  * // input is now [0, 2, 3, 1, 4]
  * ```
+ *
+ * Negative `from` indices pick an element from the end of the array. Indices
+ * that out of bound are truncated to the nearest valid index - this function
+ * will never yield a sparse array.
  */
 export function move<T>(arr: T[], from: number, to: number): T[] {
   arr.splice(to, 0, ...arr.splice(from, 1));
@@ -33,6 +37,10 @@ export function move<T>(arr: T[], from: number, to: number): T[] {
  * output = moved(input, 1, 3);
  * // output is [0, 2, 3, 1, 4], input stays the same
  * ```
+ *
+ * Negative `from` indices pick an element from the end of the array. Indices
+ * that out of bound are truncated to the nearest valid index - this function
+ * will never yield a sparse array.
  */
 export function moved<T>(arr: T[], from: number, to: number,): T[] {
   arr = arr.slice();

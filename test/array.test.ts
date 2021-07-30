@@ -16,6 +16,27 @@ describe("array", () => {
       expect(c).toEqual([1, 0, 2, 3, 4]);
       expect(c).toBe(input3);
     });
+
+    test("handles negative source indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = move(input, -1, 1);
+      expect(a).toEqual([0, 4, 1, 2, 3]);
+      expect(a).toBe(input);
+    });
+
+    test("handles negative target indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = move(input, 1, -10);
+      expect(a).toEqual([1, 0, 2, 3, 4]);
+      expect(a).toBe(input);
+    });
+
+    test("handles out-of-bound indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = move(input, 1, 10);
+      expect(a).toEqual([0, 2, 3, 4, 1]);
+      expect(a).toBe(input);
+    });
   });
 
   describe("moved()", () => {
@@ -33,6 +54,27 @@ describe("array", () => {
       expect(c).toEqual([1, 0, 2, 3, 4]);
       expect(c).not.toBe(input);
       expect(input).toEqual([0, 1, 2, 3, 4]);
+    });
+
+    test("handles negative source indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = moved(input, -1, 1);
+      expect(a).toEqual([0, 4, 1, 2, 3]);
+      expect(a).not.toBe(input);
+    });
+
+    test("handles negative target indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = moved(input, 1, -10);
+      expect(a).toEqual([1, 0, 2, 3, 4]);
+      expect(a).not.toBe(input);
+    });
+
+    test("handles out-of-bound indices", () => {
+      const input = [0, 1, 2, 3, 4];
+      const a = moved(input, 1, 10);
+      expect(a).toEqual([0, 2, 3, 4, 1]);
+      expect(a).not.toBe(input);
     });
   });
 });
