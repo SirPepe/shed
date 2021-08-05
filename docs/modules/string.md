@@ -2,7 +2,8 @@
 
 # Module: string
 
-String utilities. Use this module by importing `@sirpepe/shed/string`.
+String utilities. Use this module by importing from `@sirpepe/shed/string`
+or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -31,7 +32,7 @@ Turn a string's first character to lower case.
 
 #### Defined in
 
-[src/string.ts:18](https://github.com/SirPepe/shed/blob/38b45bb/src/string.ts#L18)
+[src/string.ts:19](https://github.com/SirPepe/shed/blob/7f5f32a/src/string.ts#L19)
 
 ___
 
@@ -53,4 +54,4 @@ Turn a string's first character to upper case.
 
 #### Defined in
 
-[src/string.ts:10](https://github.com/SirPepe/shed/blob/38b45bb/src/string.ts#L10)
+[src/string.ts:11](https://github.com/SirPepe/shed/blob/7f5f32a/src/string.ts#L11)

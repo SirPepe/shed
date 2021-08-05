@@ -2,8 +2,8 @@
 
 # Module: array
 
-Utilities for working with arrays. Access this module by importing
-`@sirpepe/shed/array`.
+Utilities for working with arrays. Access this module by importing from
+`@sirpepe/shed/array` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -29,6 +29,10 @@ move(input, 1, 3);
 // input is now [0, 2, 3, 1, 4]
 ```
 
+Negative `from` indices pick an element from the end of the array. Indices
+that out of bound are truncated to the nearest valid index - this function
+will never yield a sparse array.
+
 #### Type parameters
 
 | Name |
@@ -49,7 +53,7 @@ move(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:20](https://github.com/SirPepe/shed/blob/38b45bb/src/array.ts#L20)
+[src/array.ts:24](https://github.com/SirPepe/shed/blob/7f5f32a/src/array.ts#L24)
 
 ___
 
@@ -68,6 +72,10 @@ output = moved(input, 1, 3);
 // output is [0, 2, 3, 1, 4], input stays the same
 ```
 
+Negative `from` indices pick an element from the end of the array. Indices
+that out of bound are truncated to the nearest valid index - this function
+will never yield a sparse array.
+
 #### Type parameters
 
 | Name |
@@ -88,4 +96,4 @@ output = moved(input, 1, 3);
 
 #### Defined in
 
-[src/array.ts:37](https://github.com/SirPepe/shed/blob/38b45bb/src/array.ts#L37)
+[src/array.ts:45](https://github.com/SirPepe/shed/blob/7f5f32a/src/array.ts#L45)

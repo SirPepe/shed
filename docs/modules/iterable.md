@@ -2,7 +2,8 @@
 
 # Module: iterable
 
-Iterable utilities. Use this module by importing `@sirpepe/shed/iterable`.
+Utilities for iterable objects. Use this module by importing from from
+`@sirpepe/shed/iterable` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -68,7 +69,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[src/iterable.ts:38](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L38)
+[src/iterable.ts:39](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L39)
 
 ▸ **groupBy**<`T`, `Key`\>(`input`, `selector`): `Map`<`Key`, `T`[]\>
 
@@ -92,7 +93,7 @@ const fromFunction = groupBy(input, (value) => value.y.charCodeAt(0) % 2)
 
 #### Defined in
 
-[src/iterable.ts:42](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L42)
+[src/iterable.ts:43](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L43)
 
 ___
 
@@ -131,7 +132,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:75](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L75)
+[src/iterable.ts:76](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L76)
 
 ▸ **mapBy**<`T`, `Key`\>(`values`, `selector`): `Map`<`Key`, `T`\>
 
@@ -155,7 +156,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:79](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L79)
+[src/iterable.ts:80](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L80)
 
 ___
 
@@ -192,7 +193,7 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:111](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L111)
+[src/iterable.ts:112](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L112)
 
 ▸ **partition**<`T`, `U`\>(`input`, `predicate`): [`T`[], `U`[]]
 
@@ -216,4 +217,4 @@ Examples:
 
 #### Defined in
 
-[src/iterable.ts:115](https://github.com/SirPepe/shed/blob/38b45bb/src/iterable.ts#L115)
+[src/iterable.ts:116](https://github.com/SirPepe/shed/blob/7f5f32a/src/iterable.ts#L116)

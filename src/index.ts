@@ -5,6 +5,7 @@ export { fail } from "./error";
 export { debounce, debounceRaf, identity, noop } from "./function";
 export { is, isNot } from "./guard";
 export { groupBy, mapBy, partition } from "./iterable";
+export { isReal } from "./number";
 export { omitted, omitter, picked, picker, whereProp } from "./object";
 export { uppercaseFirst, lowercaseFirst } from "./string";
 export { UnsafeMap } from "./UnsafeMap";

@@ -2,8 +2,8 @@
 
 # Module: types
 
-Utility types for TypeScript. Use this module by importing
-`@sirpepe/shed/types`.
+Utility types for TypeScript. Use this module by importing from
+`@sirpepe/shed/types` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -26,4 +26,4 @@ Utility types for TypeScript. Use this module by importing
 
 #### Defined in
 
-[src/types.ts:15](https://github.com/SirPepe/shed/blob/38b45bb/src/types.ts#L15)
+[src/types.ts:15](https://github.com/SirPepe/shed/blob/7f5f32a/src/types.ts#L15)

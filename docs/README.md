@@ -14,6 +14,7 @@
 - [function](modules/function.md)
 - [guard](modules/guard.md)
 - [iterable](modules/iterable.md)
+- [number](modules/number.md)
 - [object](modules/object.md)
 - [string](modules/string.md)
 - [types](modules/types.md)

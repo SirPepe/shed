@@ -2,7 +2,8 @@
 
 # Module: function
 
-Function utilities. Use this module by importing `@sirpepe/shed/function`.
+Function utilities. Use this module by importing from
+`@sirpepe/shed/function` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -56,7 +57,7 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:42](https://github.com/SirPepe/shed/blob/38b45bb/src/function.ts#L42)
+[src/function.ts:43](https://github.com/SirPepe/shed/blob/7f5f32a/src/function.ts#L43)
 
 ___
 
@@ -102,7 +103,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:62](https://github.com/SirPepe/shed/blob/38b45bb/src/function.ts#L62)
+[src/function.ts:63](https://github.com/SirPepe/shed/blob/7f5f32a/src/function.ts#L63)
 
 ___
 
@@ -139,7 +140,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:35](https://github.com/SirPepe/shed/blob/38b45bb/src/function.ts#L35)
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/7f5f32a/src/function.ts#L36)
 
 ___
 
@@ -171,4 +172,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:21](https://github.com/SirPepe/shed/blob/38b45bb/src/function.ts#L21)
+[src/function.ts:22](https://github.com/SirPepe/shed/blob/7f5f32a/src/function.ts#L22)

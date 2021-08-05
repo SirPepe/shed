@@ -40,6 +40,10 @@
       "import": "./dist/esm/iterable.js",
       "require": "./dist/cjs/iterable.js"
     },
+    "./number": {
+      "import": "./dist/esm/number.js",
+      "require": "./dist/cjs/number.js"
+    },
     "./object": {
       "import": "./dist/esm/object.js",
       "require": "./dist/cjs/object.js"

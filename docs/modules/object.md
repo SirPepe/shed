@@ -2,7 +2,8 @@
 
 # Module: object
 
-Object utilities. Use this module by importing `@sirpepe/shed/object`.
+Object utilities. Use this module by importing from `@sirpepe/shed/object`
+or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -28,7 +29,7 @@ and the inverse of `picked()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `object` |
+| `T` | extends `Record`<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -44,7 +45,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:12](https://github.com/SirPepe/shed/blob/38b45bb/src/object.ts#L12)
+[src/object.ts:13](https://github.com/SirPepe/shed/blob/7f5f32a/src/object.ts#L13)
 
 ___
 
@@ -60,7 +61,7 @@ functions that call `omitted()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `object` |
+| `T` | extends `Record`<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -91,7 +92,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:31](https://github.com/SirPepe/shed/blob/38b45bb/src/object.ts#L31)
+[src/object.ts:32](https://github.com/SirPepe/shed/blob/7f5f32a/src/object.ts#L32)
 
 ___
 
@@ -107,7 +108,7 @@ and the inverse of `omitted()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `object` |
+| `T` | extends `Record`<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -123,7 +124,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:52](https://github.com/SirPepe/shed/blob/38b45bb/src/object.ts#L52)
+[src/object.ts:53](https://github.com/SirPepe/shed/blob/7f5f32a/src/object.ts#L53)
 
 ___
 
@@ -139,7 +140,7 @@ functions that call `picked()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `object` |
+| `T` | extends `Record`<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -170,7 +171,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:68](https://github.com/SirPepe/shed/blob/38b45bb/src/object.ts#L68)
+[src/object.ts:69](https://github.com/SirPepe/shed/blob/7f5f32a/src/object.ts#L69)
 
 ___
 
@@ -216,4 +217,4 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:85](https://github.com/SirPepe/shed/blob/38b45bb/src/object.ts#L85)
+[src/object.ts:86](https://github.com/SirPepe/shed/blob/7f5f32a/src/object.ts#L86)

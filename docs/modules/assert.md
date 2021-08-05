@@ -3,8 +3,8 @@
 # Module: assert
 
 Collection of assert functions that not only throw errors at runtime, but
-also work as assertions in TypeScript. Use this module by importing
-`@sirpepe/shed/assert`.
+also work as assertions in TypeScript. Use this module by importing from
+`@sirpepe/shed/assert` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -50,7 +50,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:22](https://github.com/SirPepe/shed/blob/38b45bb/src/assert.ts#L22)
+[src/assert.ts:22](https://github.com/SirPepe/shed/blob/7f5f32a/src/assert.ts#L22)
 
 ___
 
@@ -89,4 +89,4 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:43](https://github.com/SirPepe/shed/blob/38b45bb/src/assert.ts#L43)
+[src/assert.ts:43](https://github.com/SirPepe/shed/blob/7f5f32a/src/assert.ts#L43)

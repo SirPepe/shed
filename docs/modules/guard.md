@@ -2,8 +2,8 @@
 
 # Module: guard
 
-Collection of type guards. Use this module by importing
-`@sirpepe/shed/guard`.
+Collection of type guards. Use this module by importing from
+`@sirpepe/shed/guard` or `@sirpepe/shed`.
 
 ## Table of contents
 
@@ -48,7 +48,7 @@ x is T
 
 #### Defined in
 
-[src/guard.ts:21](https://github.com/SirPepe/shed/blob/38b45bb/src/guard.ts#L21)
+[src/guard.ts:21](https://github.com/SirPepe/shed/blob/7f5f32a/src/guard.ts#L21)
 
 ___
 
@@ -86,4 +86,4 @@ x is undefined \| null
 
 #### Defined in
 
-[src/guard.ts:41](https://github.com/SirPepe/shed/blob/38b45bb/src/guard.ts#L41)
+[src/guard.ts:41](https://github.com/SirPepe/shed/blob/7f5f32a/src/guard.ts#L41)
