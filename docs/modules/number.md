@@ -42,4 +42,4 @@ let nope3 = isReal("Hello"); // false
 
 #### Defined in
 
-src/number.ts:22
+[src/number.ts:22](https://github.com/SirPepe/shed/blob/589b70f/src/number.ts#L22)

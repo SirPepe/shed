@@ -16,5 +16,6 @@
 - [iterable](modules/iterable.md)
 - [number](modules/number.md)
 - [object](modules/object.md)
+- [sorting](modules/sorting.md)
 - [string](modules/string.md)
 - [types](modules/types.md)

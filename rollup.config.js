@@ -15,6 +15,7 @@ const modules = [
   "iterable",
   "object",
   "string",
+  "sorting",
   // "types", <- TypeScript builds the d.ts file for this
   "UnsafeMap",
 ];
