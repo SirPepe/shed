@@ -44,7 +44,6 @@ export function omitter<T extends Record<string, unknown>, K extends keyof T>(
   }
 };
 
-
 /**
  * Returns a new object created from the input object, but with only the keys in
  * `toKeep`. Essentially the runtime-variant of TypeScript's `Pick<T, K>` type
