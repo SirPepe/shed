@@ -34,3 +34,18 @@ export function isReal(x: unknown): boolean {
   }
   return false;
 }
+
+/**
+ * Round a float value to `digits` decimal places. Examples:
+ *
+ * ```javascript
+ * roundFloat(1.555, 2); // > 1.56
+ * roundFloat(1.005, 2); // 1.01
+ * roundFloat(2 / 3, 4); // 0.6667
+ * ```
+*/
+export function roundFloat(value: number, digits: number): number {
+  const factor = 10 ** Math.round(digits);
+  return Math.round((value + Number.EPSILON) * factor) / factor;
+}
+
