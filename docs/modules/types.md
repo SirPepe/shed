@@ -26,4 +26,4 @@ Utility types for TypeScript. Use this module by importing from
 
 #### Defined in
 
-[src/types.ts:15](https://github.com/SirPepe/shed/blob/debed7e/src/types.ts#L15)
+[src/types.ts:15](https://github.com/SirPepe/shed/blob/5d7c4da/src/types.ts#L15)
