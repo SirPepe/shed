@@ -9,10 +9,58 @@ Utilities for numbers of all types. Use this module by importing from
 
 ### Functions
 
+- [ceilFloat](number.md#ceilfloat)
+- [floorFloat](number.md#floorfloat)
 - [isReal](number.md#isreal)
 - [roundFloat](number.md#roundfloat)
 
 ## Functions
+
+### ceilFloat
+
+▸ **ceilFloat**(`value`, `digits`): `number`
+
+Round up a float value to `digits` decimal places.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `digits` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/number.ts:55](https://github.com/SirPepe/shed/blob/debed7e/src/number.ts#L55)
+
+___
+
+### floorFloat
+
+▸ **floorFloat**(`value`, `digits`): `number`
+
+Round down a float value to `digits` decimal places.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `digits` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/number.ts:63](https://github.com/SirPepe/shed/blob/debed7e/src/number.ts#L63)
+
+___
 
 ### isReal
 
@@ -43,7 +91,7 @@ let nope3 = isReal("Hello"); // false
 
 #### Defined in
 
-[src/number.ts:22](https://github.com/SirPepe/shed/blob/e855f2d/src/number.ts#L22)
+[src/number.ts:22](https://github.com/SirPepe/shed/blob/debed7e/src/number.ts#L22)
 
 ___
 
@@ -72,4 +120,4 @@ roundFloat(2 / 3, 4); // 0.6667
 
 #### Defined in
 
-[src/number.ts:47](https://github.com/SirPepe/shed/blob/e855f2d/src/number.ts#L47)
+[src/number.ts:47](https://github.com/SirPepe/shed/blob/debed7e/src/number.ts#L47)
