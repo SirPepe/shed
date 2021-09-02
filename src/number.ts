@@ -49,3 +49,19 @@ export function roundFloat(value: number, digits: number): number {
   return Math.round((value + Number.EPSILON) * factor) / factor;
 }
 
+/**
+ * Round up a float value to `digits` decimal places.
+*/
+export function ceilFloat(value: number, digits: number): number {
+  const factor = 10 ** Math.round(digits);
+  return Math.ceil(value * factor) / factor;
+}
+
+/**
+ * Round down a float value to `digits` decimal places.
+*/
+export function floorFloat(value: number, digits: number): number {
+  const factor = 10 ** Math.round(digits);
+  return Math.floor(value * factor) / factor;
+}
+
