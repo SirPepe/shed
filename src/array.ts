@@ -42,7 +42,7 @@ export function move<T>(arr: T[], from: number, to: number): T[] {
  * that out of bound are truncated to the nearest valid index - this function
  * will never yield a sparse array.
  */
-export function moved<T>(arr: T[], from: number, to: number,): T[] {
+export function moved<T>(arr: T[], from: number, to: number): T[] {
   arr = arr.slice();
   arr.splice(to, 0, ...arr.splice(from, 1));
   return arr;
