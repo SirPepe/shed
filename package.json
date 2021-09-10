@@ -48,6 +48,10 @@
       "import": "./dist/esm/object.js",
       "require": "./dist/cjs/object.js"
     },
+    "./regexp": {
+      "import": "./dist/esm/regexp.js",
+      "require": "./dist/cjs/regexp.js"
+    },
     "./string": {
       "import": "./dist/esm/string.js",
       "require": "./dist/cjs/string.js"

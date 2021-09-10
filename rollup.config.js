@@ -14,6 +14,7 @@ const modules = [
   "index",
   "iterable",
   "object",
+  "regexp",
   "string",
   "sorting",
   // "types", <- TypeScript builds the d.ts file for this
