@@ -1,4 +1,4 @@
-import { isRegExp } from "../src/regexp";
+import { escapeRegExpString, isRegExp } from "../src/regexp";
 
 describe("regexp", () => {
   describe("isRegExp()", () => {
@@ -23,6 +23,21 @@ describe("regexp", () => {
       expect(isRegExp([])).toBe(false);
       expect(isRegExp(null)).toBe(false);
       expect(isRegExp(undefined)).toBe(false);
+    });
+  });
+
+  describe("escapeRegExpString()", () => {
+    test("escapes characters in the string", () => {
+      expect(escapeRegExpString("\\ ^ $ * + ? . ( ) | { } [ ]"))
+        .toBe("\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]");
+    });
+
+    test("escapes `-` in a PCRE-compatibly way", () => {
+      expect(escapeRegExpString("foo - bar")).toBe("foo \\x2d bar");
+    });
+
+    test("escapes `-` in a way compatible with the unicode flag", () => {
+      expect("-".match(new RegExp(escapeRegExpString('-'), 'u'))).toBeTruthy();
     });
   });
 });
