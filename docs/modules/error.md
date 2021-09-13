@@ -49,4 +49,4 @@ function argumentRequired(arg = fail("Missing argument")) {}
 
 #### Defined in
 
-[src/error.ts:28](https://github.com/SirPepe/shed/blob/e25a2a8/src/error.ts#L28)
+[src/error.ts:28](https://github.com/SirPepe/shed/blob/4b8ceb6/src/error.ts#L28)

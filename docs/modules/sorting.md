@@ -46,7 +46,7 @@ Example:
 
 #### Defined in
 
-[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/e25a2a8/src/sorting.ts#L18)
+[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/4b8ceb6/src/sorting.ts#L18)
 
 ___
 
@@ -82,4 +82,4 @@ Result: [12, 10, 2, 1, 0];
 
 #### Defined in
 
-[src/sorting.ts:41](https://github.com/SirPepe/shed/blob/e25a2a8/src/sorting.ts#L41)
+[src/sorting.ts:41](https://github.com/SirPepe/shed/blob/4b8ceb6/src/sorting.ts#L41)
