@@ -28,6 +28,10 @@
       "import": "./dist/esm/error.js",
       "require": "./dist/cjs/error.js"
     },
+    "./FRDY": {
+      "import": "./dist/esm/FRDY.js",
+      "require": "./dist/cjs/FRDY.js"
+    },
     "./function": {
       "import": "./dist/esm/function.js",
       "require": "./dist/cjs/function.js"
@@ -39,6 +43,10 @@
     "./iterable": {
       "import": "./dist/esm/iterable.js",
       "require": "./dist/cjs/iterable.js"
+    },
+    "./map": {
+      "import": "./dist/esm/map.js",
+      "require": "./dist/cjs/map.js"
     },
     "./number": {
       "import": "./dist/esm/number.js",
@@ -55,6 +63,10 @@
     "./string": {
       "import": "./dist/esm/string.js",
       "require": "./dist/cjs/string.js"
+    },
+    "./set": {
+      "import": "./dist/esm/set.js",
+      "require": "./dist/cjs/set.js"
     },
     "./sorting": {
       "import": "./dist/esm/sorting.js",

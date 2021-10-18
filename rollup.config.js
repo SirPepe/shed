@@ -9,13 +9,16 @@ const modules = [
   "assert",
   "BiMap",
   "error",
+  "FRDY",
   "function",
   "guard",
   "index",
   "iterable",
+  "map",
   "object",
   "regexp",
   "string",
+  "set",
   "sorting",
   // "types", <- TypeScript builds the d.ts file for this
   "UnsafeMap",
@@ -95,7 +98,7 @@ export default [
         plugins: [license({ banner })],
       },
       ...moduleBaseConfig,
-    }
+    },
   ]),
   {
     input: "./src/index.ts",

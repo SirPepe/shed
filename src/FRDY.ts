@@ -2,7 +2,8 @@
  * A JSON-based protocol that allows stringification and parsing of ECMAScript
  * maps and sets, in addition to everything else that's valid ECMAScript. Freddy
  * is way less universal than JSON, but that is the price for at least allowing
- * the exchange of maps and sets between ECMAScript environments.
+ * the exchange of maps and sets between ECMAScript environments. Use this
+ * module by importing from `@sirpepe/shed/FRDY` or `@sirpepe/shed`.
  *
  * @module
  */
