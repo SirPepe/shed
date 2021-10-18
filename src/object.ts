@@ -82,11 +82,22 @@ export function picker<T extends Record<string, unknown>, K extends keyof T>(
  * Returns a predicate that checks if its input object's "prop" field contains a
  * value equal to "value".
  */
-export function whereProp<T, K extends keyof T>(
+export function where<T, K extends keyof T>(
   prop: K,
   value: T[K]
 ): (obj: T) => boolean {
   return function comparator(obj: T) {
     return obj[prop] === value;
+  };
+}
+
+/**
+ * Returns a getter function that returns every object's "prop" value.
+ */
+export function select<T, K extends keyof T>(
+  prop: K,
+): (obj: T) => T[K] {
+  return function getter(obj: T) {
+    return obj[prop];
   };
 }
