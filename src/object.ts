@@ -22,7 +22,7 @@ export function omitted<T extends Record<string, unknown>, K extends keyof T>(
     }
   }
   return result;
-};
+}
 
 /**
  * Returns a function that returns a new object created from its input object,
@@ -33,7 +33,7 @@ export function omitter<T extends Record<string, unknown>, K extends keyof T>(
   ...toOmit: K[]
 ): (obj: T) => Omit<T, K> {
   const keysToOmit: Set<any> = new Set(toOmit);
-  return function(obj: T): Omit<T, K> {
+  return function (obj: T): Omit<T, K> {
     const result: any = {};
     for (const [key, value] of Object.entries(obj)) {
       if (!keysToOmit.has(key)) {
@@ -41,8 +41,8 @@ export function omitter<T extends Record<string, unknown>, K extends keyof T>(
       }
     }
     return result;
-  }
-};
+  };
+}
 
 /**
  * Returns a new object created from the input object, but with only the keys in
@@ -58,7 +58,7 @@ export function picked<T extends Record<string, unknown>, K extends keyof T>(
     result[key] = obj[key];
   }
   return result;
-};
+}
 
 /**
  * Returns a function that returns a new object created from its input object,
@@ -69,14 +69,14 @@ export function picker<T extends Record<string, unknown>, K extends keyof T>(
   ...toKeep: K[]
 ): (obj: T) => Pick<T, K> {
   const keysToKeep = new Set(toKeep);
-  return function(obj: T): Pick<T, K> {
+  return function (obj: T): Pick<T, K> {
     const result: any = {};
     for (const key of keysToKeep) {
       result[key] = obj[key];
     }
     return result;
-  }
-};
+  };
+}
 
 /**
  * Returns a predicate that checks if its input object's "prop" field contains a
@@ -94,9 +94,7 @@ export function where<T, K extends keyof T>(
 /**
  * Returns a getter function that returns every object's "prop" value.
  */
-export function select<T, K extends keyof T>(
-  prop: K,
-): (obj: T) => T[K] {
+export function select<T, K extends keyof T>(prop: K): (obj: T) => T[K] {
   return function getter(obj: T) {
     return obj[prop];
   };

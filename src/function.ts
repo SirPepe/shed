@@ -45,7 +45,7 @@ export function debounce<T, A extends any[]>(
   t = 1000
 ): (this: T, ...args: A) => void {
   let handle: any;
-  return function(this: T, ...args: A): void {
+  return function (this: T, ...args: A): void {
     if (typeof handle !== "undefined") {
       globalThis.clearTimeout(handle);
     }
@@ -54,17 +54,17 @@ export function debounce<T, A extends any[]>(
       func.call(this, ...args);
     }, t);
   };
-};
+}
 
 /**
  * Returns a function that fires `func()` when the next frame renders, at most
  * once per frame.
  */
 export function debounceRaf<T, A extends any[]>(
-  func: (this: T, ...args: A) => unknown,
+  func: (this: T, ...args: A) => unknown
 ): (this: T, ...args: A) => void {
   let handle: number | undefined;
-  return function(this: T, ...args: A): void {
+  return function (this: T, ...args: A): void {
     if (typeof handle !== "undefined") {
       globalThis.cancelAnimationFrame(handle);
     }
@@ -73,4 +73,4 @@ export function debounceRaf<T, A extends any[]>(
       func.call(this, ...args);
     });
   };
-};
+}

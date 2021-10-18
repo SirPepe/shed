@@ -30,7 +30,12 @@ describe("object", () => {
       expect(b).toEqual({ a: 0, d: 3 });
       expect(b).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
-      const c = omitter<typeof input, keyof typeof input>("a", "b", "c", "d")(input);
+      const c = omitter<typeof input, keyof typeof input>(
+        "a",
+        "b",
+        "c",
+        "d"
+      )(input);
       expect(c).toEqual({});
       expect(c).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
@@ -70,7 +75,12 @@ describe("object", () => {
       expect(b).toEqual({ b: 1, c: 2 });
       expect(b).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
-      const c = picker<typeof input, keyof typeof input>("a", "b", "c", "d")(input);
+      const c = picker<typeof input, keyof typeof input>(
+        "a",
+        "b",
+        "c",
+        "d"
+      )(input);
       expect(c).toEqual(input);
       expect(c).not.toBe(input);
       expect(input).toEqual({ a: 0, b: 1, c: 2, d: 3 });
@@ -84,14 +94,14 @@ describe("object", () => {
   describe("where()", () => {
     test("creates a predicate function", () => {
       const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
-      expect(input.map(where("a", 1))).toEqual([ false, true, false ]);
+      expect(input.map(where("a", 1))).toEqual([false, true, false]);
     });
   });
 
   describe("select()", () => {
     test("creates a getter function", () => {
       const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
-      expect(input.map(select("a"))).toEqual([ 0, 1, 2 ]);
+      expect(input.map(select("a"))).toEqual([0, 1, 2]);
     });
   });
 });

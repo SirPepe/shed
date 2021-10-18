@@ -28,8 +28,9 @@ describe("regexp", () => {
 
   describe("escapeRegExpString()", () => {
     test("escapes characters in the string", () => {
-      expect(escapeRegExpString("\\ ^ $ * + ? . ( ) | { } [ ]"))
-        .toBe("\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]");
+      expect(escapeRegExpString("\\ ^ $ * + ? . ( ) | { } [ ]")).toBe(
+        "\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]"
+      );
     });
 
     test("escapes `-` in a PCRE-compatibly way", () => {
@@ -37,7 +38,7 @@ describe("regexp", () => {
     });
 
     test("escapes `-` in a way compatible with the unicode flag", () => {
-      expect("-".match(new RegExp(escapeRegExpString('-'), 'u'))).toBeTruthy();
+      expect("-".match(new RegExp(escapeRegExpString("-"), "u"))).toBeTruthy();
     });
   });
 });

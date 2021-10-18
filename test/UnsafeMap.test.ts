@@ -16,7 +16,7 @@ describe("UnsafeMap", () => {
 
   it("throws when getting an undefined key", () => {
     const map = new UnsafeMap<string, number>();
-    expect(()=> map.get("a")).toThrow();
+    expect(() => map.get("a")).toThrow();
   });
 
   it("initializes from an iterable and customizes the error factory", () => {
@@ -25,9 +25,9 @@ describe("UnsafeMap", () => {
         ["q", 23],
         ["a", 42],
       ],
-      () => new Error("Fail!"),
+      () => new Error("Fail!")
     );
     expect(map.size).toBe(2);
-    expect(()=> map.get("x")).toThrow("Fail!");
+    expect(() => map.get("x")).toThrow("Fail!");
   });
 });

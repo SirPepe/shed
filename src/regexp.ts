@@ -27,6 +27,5 @@ export function isRegExp(input: unknown): boolean {
  * Escapes a string for use in regular expressions.
  */
 export function escapeRegExpString(string: string): string {
-  return string.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&').replace(/-/g, '\\x2d');
+  return string.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
 }
-

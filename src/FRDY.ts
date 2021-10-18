@@ -61,4 +61,3 @@ function reviver(_: string, value: unknown): any {
 export function parse(input: string): any {
   return JSON.parse(input, reviver);
 }
-

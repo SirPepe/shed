@@ -9,36 +9,79 @@ describe("FRDY", () => {
     });
 
     test("stringifies maps", () => {
-      expect(JSON.parse(FRDY.stringify(new Map([["foo", 23], ["bar", 42]]))))
-        .toEqual({
-          "@@__frdy_reviver": 0,
-          entries: [["foo", 23], ["bar", 42]],
-        });
+      expect(
+        JSON.parse(
+          FRDY.stringify(
+            new Map([
+              ["foo", 23],
+              ["bar", 42],
+            ])
+          )
+        )
+      ).toEqual({
+        "@@__frdy_reviver": 0,
+        entries: [
+          ["foo", 23],
+          ["bar", 42],
+        ],
+      });
     });
 
     test("stringifies nested maps", () => {
-      expect(JSON.parse(FRDY.stringify(
-        new Map([
-          ["foo", { values: new Map([[23, "foo23"], [42, "foo42"]]) }],
-          ["bar", { values: new Map([[23, "bar23"], [42, "bar42"]]) }]
-        ]))))
-        .toEqual({
-          "@@__frdy_reviver": 0,
-          entries: [
-            ["foo", {
+      expect(
+        JSON.parse(
+          FRDY.stringify(
+            new Map([
+              [
+                "foo",
+                {
+                  values: new Map([
+                    [23, "foo23"],
+                    [42, "foo42"],
+                  ]),
+                },
+              ],
+              [
+                "bar",
+                {
+                  values: new Map([
+                    [23, "bar23"],
+                    [42, "bar42"],
+                  ]),
+                },
+              ],
+            ])
+          )
+        )
+      ).toEqual({
+        "@@__frdy_reviver": 0,
+        entries: [
+          [
+            "foo",
+            {
               values: {
                 "@@__frdy_reviver": 0,
-                entries: [[23, "foo23"], [42, "foo42"]],
+                entries: [
+                  [23, "foo23"],
+                  [42, "foo42"],
+                ],
               },
-            }],
-            ["bar", {
-              values: {
-                "@@__frdy_reviver": 0,
-                entries: [[23, "bar23"], [42, "bar42"]],
-              },
-            }]
+            },
           ],
-        });
+          [
+            "bar",
+            {
+              values: {
+                "@@__frdy_reviver": 0,
+                entries: [
+                  [23, "bar23"],
+                  [42, "bar42"],
+                ],
+              },
+            },
+          ],
+        ],
+      });
     });
   });
 
@@ -51,14 +94,33 @@ describe("FRDY", () => {
   });
 
   test("parses maps", () => {
-    const value = new Map([["foo", 23], ["bar", 42]]);
+    const value = new Map([
+      ["foo", 23],
+      ["bar", 42],
+    ]);
     expect(FRDY.parse(FRDY.stringify(value))).toEqual(value);
   });
 
   test("parses nested maps", () => {
     const value = new Map([
-      ["foo", { values: new Map([[23, "foo23"], [42, "foo42"]]) }],
-      ["bar", { values: new Map([[23, "bar23"], [42, "bar42"]]) }]
+      [
+        "foo",
+        {
+          values: new Map([
+            [23, "foo23"],
+            [42, "foo42"],
+          ]),
+        },
+      ],
+      [
+        "bar",
+        {
+          values: new Map([
+            [23, "bar23"],
+            [42, "bar42"],
+          ]),
+        },
+      ],
     ]);
     expect(FRDY.parse(FRDY.stringify(value))).toEqual(value);
   });
