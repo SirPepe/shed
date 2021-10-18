@@ -41,7 +41,7 @@ assertIs(null, , "Oops"); // Error: "Oops"
 
 | Name | Type |
 | :------ | :------ |
-| `x` | `T` \| `undefined` \| ``null`` |
+| `x` | `undefined` \| ``null`` \| `T` |
 | `msg` | `string` |
 
 #### Returns
@@ -50,7 +50,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:22](https://github.com/SirPepe/shed/blob/71fe277/src/assert.ts#L22)
+[src/assert.ts:22](https://github.com/SirPepe/shed/blob/0fa77b2/src/assert.ts#L22)
 
 ___
 
@@ -80,7 +80,7 @@ assertIsNot(42, "Oops"); // Error: "Oops"
 
 | Name | Type |
 | :------ | :------ |
-| `x` | `T` \| `undefined` \| ``null`` |
+| `x` | `undefined` \| ``null`` \| `T` |
 | `msg` | `string` |
 
 #### Returns
@@ -89,4 +89,4 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:43](https://github.com/SirPepe/shed/blob/71fe277/src/assert.ts#L43)
+[src/assert.ts:43](https://github.com/SirPepe/shed/blob/0fa77b2/src/assert.ts#L43)

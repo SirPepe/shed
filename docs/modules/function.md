@@ -33,7 +33,7 @@ Returns a debounced function.
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `func` | (`this`: `T`, ...`args`: `A`) => `unknown` | `undefined` |
+| `func` | (...`args`: `A`) => `unknown` | `undefined` |
 | `t` | `number` | `1000` |
 
 #### Returns
@@ -57,7 +57,7 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:43](https://github.com/SirPepe/shed/blob/71fe277/src/function.ts#L43)
+[src/function.ts:43](https://github.com/SirPepe/shed/blob/0fa77b2/src/function.ts#L43)
 
 ___
 
@@ -79,7 +79,7 @@ once per frame.
 
 | Name | Type |
 | :------ | :------ |
-| `func` | (`this`: `T`, ...`args`: `A`) => `unknown` |
+| `func` | (...`args`: `A`) => `unknown` |
 
 #### Returns
 
@@ -103,7 +103,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:63](https://github.com/SirPepe/shed/blob/71fe277/src/function.ts#L63)
+[src/function.ts:63](https://github.com/SirPepe/shed/blob/0fa77b2/src/function.ts#L63)
 
 ___
 
@@ -140,7 +140,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:36](https://github.com/SirPepe/shed/blob/71fe277/src/function.ts#L36)
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/0fa77b2/src/function.ts#L36)
 
 ___
 
@@ -172,4 +172,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:22](https://github.com/SirPepe/shed/blob/71fe277/src/function.ts#L22)
+[src/function.ts:22](https://github.com/SirPepe/shed/blob/0fa77b2/src/function.ts#L22)

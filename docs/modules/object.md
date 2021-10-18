@@ -13,7 +13,8 @@ or `@sirpepe/shed`.
 - [omitter](object.md#omitter)
 - [picked](object.md#picked)
 - [picker](object.md#picker)
-- [whereProp](object.md#whereprop)
+- [select](object.md#select)
+- [where](object.md#where)
 
 ## Functions
 
@@ -45,7 +46,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:13](https://github.com/SirPepe/shed/blob/71fe277/src/object.ts#L13)
+[src/object.ts:13](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L13)
 
 ___
 
@@ -92,7 +93,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:32](https://github.com/SirPepe/shed/blob/71fe277/src/object.ts#L32)
+[src/object.ts:32](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L32)
 
 ___
 
@@ -124,7 +125,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:52](https://github.com/SirPepe/shed/blob/71fe277/src/object.ts#L52)
+[src/object.ts:52](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L52)
 
 ___
 
@@ -171,13 +172,56 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:68](https://github.com/SirPepe/shed/blob/71fe277/src/object.ts#L68)
+[src/object.ts:68](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L68)
 
 ___
 
-### whereProp
+### select
 
-▸ **whereProp**<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
+▸ **select**<`T`, `K`\>(`prop`): (`obj`: `T`) => `T`[`K`]
+
+Returns a getter function that returns every object's "prop" value.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `K` | extends `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `prop` | `K` |
+
+#### Returns
+
+`fn`
+
+▸ (`obj`): `T`[`K`]
+
+Returns a getter function that returns every object's "prop" value.
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+
+##### Returns
+
+`T`[`K`]
+
+#### Defined in
+
+[src/object.ts:97](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L97)
+
+___
+
+### where
+
+▸ **where**<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
 
 Returns a predicate that checks if its input object's "prop" field contains a
 value equal to "value".
@@ -217,4 +261,4 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:85](https://github.com/SirPepe/shed/blob/71fe277/src/object.ts#L85)
+[src/object.ts:85](https://github.com/SirPepe/shed/blob/0fa77b2/src/object.ts#L85)

@@ -38,10 +38,10 @@ function argumentRequired(arg = fail("Missing argument")) {}
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `reason?` | `string` |
-| `ErrorConstructor` | `ErrorConstructor` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `reason?` | `string` | `undefined` |
+| `ErrorConstructor` | `ErrorConstructor` | `Error` |
 
 #### Returns
 
@@ -49,4 +49,4 @@ function argumentRequired(arg = fail("Missing argument")) {}
 
 #### Defined in
 
-[src/error.ts:28](https://github.com/SirPepe/shed/blob/71fe277/src/error.ts#L28)
+[src/error.ts:28](https://github.com/SirPepe/shed/blob/0fa77b2/src/error.ts#L28)

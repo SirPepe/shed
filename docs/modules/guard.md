@@ -40,7 +40,7 @@ is(undefined); // false
 
 | Name | Type |
 | :------ | :------ |
-| `x` | `T` \| `undefined` \| ``null`` |
+| `x` | `undefined` \| ``null`` \| `T` |
 
 #### Returns
 
@@ -48,7 +48,7 @@ x is T
 
 #### Defined in
 
-[src/guard.ts:21](https://github.com/SirPepe/shed/blob/71fe277/src/guard.ts#L21)
+[src/guard.ts:21](https://github.com/SirPepe/shed/blob/0fa77b2/src/guard.ts#L21)
 
 ___
 
@@ -78,7 +78,7 @@ isNot(undefined); // true
 
 | Name | Type |
 | :------ | :------ |
-| `x` | `T` \| `undefined` \| ``null`` |
+| `x` | `undefined` \| ``null`` \| `T` |
 
 #### Returns
 
@@ -86,4 +86,4 @@ x is undefined \| null
 
 #### Defined in
 
-[src/guard.ts:41](https://github.com/SirPepe/shed/blob/71fe277/src/guard.ts#L41)
+[src/guard.ts:41](https://github.com/SirPepe/shed/blob/0fa77b2/src/guard.ts#L41)

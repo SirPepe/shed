@@ -69,7 +69,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/71fe277/src/UnsafeMap.ts#L13)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/0fa77b2/src/UnsafeMap.ts#L13)
 
 ## Properties
 
@@ -79,7 +79,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@24
+Map.\_\_@toStringTag@26
 
 #### Defined in
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/71fe277/src/UnsafeMap.ts#L12)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/0fa77b2/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@582
+Map.\_\_@species@589
 
 #### Defined in
 
@@ -151,7 +151,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@81
+Map.\_\_@iterator@83
 
 #### Defined in
 
@@ -266,7 +266,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/71fe277/src/UnsafeMap.ts#L21)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/0fa77b2/src/UnsafeMap.ts#L21)
 
 ___
 

@@ -15,7 +15,7 @@ Utility types for TypeScript. Use this module by importing from
 
 ### MapDiscriminatedUnion
 
-Ƭ **MapDiscriminatedUnion**<`Union`, `Key`\>: { [Value in Union[Key]]: DiscriminateUnion<Union, Key, Value\>}
+Ƭ **MapDiscriminatedUnion**<`Union`, `Key`\>: { [Value in Union[Key]]: DiscriminateUnion<Union, Key, Value\> }
 
 #### Type parameters
 
@@ -26,4 +26,4 @@ Utility types for TypeScript. Use this module by importing from
 
 #### Defined in
 
-[src/types.ts:15](https://github.com/SirPepe/shed/blob/71fe277/src/types.ts#L15)
+[src/types.ts:15](https://github.com/SirPepe/shed/blob/0fa77b2/src/types.ts#L15)

@@ -35,7 +35,7 @@ Round up a float value to `digits` decimal places.
 
 #### Defined in
 
-[src/number.ts:55](https://github.com/SirPepe/shed/blob/71fe277/src/number.ts#L55)
+[src/number.ts:55](https://github.com/SirPepe/shed/blob/0fa77b2/src/number.ts#L55)
 
 ___
 
@@ -58,7 +58,7 @@ Round down a float value to `digits` decimal places.
 
 #### Defined in
 
-[src/number.ts:63](https://github.com/SirPepe/shed/blob/71fe277/src/number.ts#L63)
+[src/number.ts:63](https://github.com/SirPepe/shed/blob/0fa77b2/src/number.ts#L63)
 
 ___
 
@@ -91,7 +91,7 @@ let nope3 = isReal("Hello"); // false
 
 #### Defined in
 
-[src/number.ts:22](https://github.com/SirPepe/shed/blob/71fe277/src/number.ts#L22)
+[src/number.ts:22](https://github.com/SirPepe/shed/blob/0fa77b2/src/number.ts#L22)
 
 ___
 
@@ -120,4 +120,4 @@ roundFloat(2 / 3, 4); // 0.6667
 
 #### Defined in
 
-[src/number.ts:47](https://github.com/SirPepe/shed/blob/71fe277/src/number.ts#L47)
+[src/number.ts:47](https://github.com/SirPepe/shed/blob/0fa77b2/src/number.ts#L47)
