@@ -27,7 +27,7 @@ function isRevivable(value: unknown): value is Revivable {
   return false;
 }
 
-function replacer(_: string, value: unknown): any {
+export function replacer(_: string, value: unknown): any {
   if (isMap(value)) {
     return {
       "@@__frdy_reviver": 0,
@@ -47,7 +47,7 @@ export function stringify(input: unknown, space?: string | number): string {
   return JSON.stringify(input, replacer, space);
 }
 
-function reviver(_: string, value: unknown): any {
+export function reviver(_: string, value: unknown): any {
   if (isRevivable(value)) {
     if (value["@@__frdy_reviver"] === 0) {
       return new Map(value.entries);
