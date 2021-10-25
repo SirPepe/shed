@@ -13,6 +13,8 @@ module by importing from `@sirpepe/shed/FRDY` or `@sirpepe/shed`.
 ### Functions
 
 - [parse](FRDY.md#parse)
+- [replacer](FRDY.md#replacer)
+- [reviver](FRDY.md#reviver)
 - [stringify](FRDY.md#stringify)
 
 ## Functions
@@ -33,7 +35,49 @@ module by importing from `@sirpepe/shed/FRDY` or `@sirpepe/shed`.
 
 #### Defined in
 
-[src/FRDY.ts:62](https://github.com/SirPepe/shed/blob/0fa77b2/src/FRDY.ts#L62)
+[src/FRDY.ts:62](https://github.com/SirPepe/shed/blob/e5c0819/src/FRDY.ts#L62)
+
+___
+
+### replacer
+
+▸ **replacer**(`_`, `value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `_` | `string` |
+| `value` | `unknown` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[src/FRDY.ts:30](https://github.com/SirPepe/shed/blob/e5c0819/src/FRDY.ts#L30)
+
+___
+
+### reviver
+
+▸ **reviver**(`_`, `value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `_` | `string` |
+| `value` | `unknown` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[src/FRDY.ts:50](https://github.com/SirPepe/shed/blob/e5c0819/src/FRDY.ts#L50)
 
 ___
 
@@ -54,4 +98,4 @@ ___
 
 #### Defined in
 
-[src/FRDY.ts:46](https://github.com/SirPepe/shed/blob/0fa77b2/src/FRDY.ts#L46)
+[src/FRDY.ts:46](https://github.com/SirPepe/shed/blob/e5c0819/src/FRDY.ts#L46)
