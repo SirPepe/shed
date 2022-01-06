@@ -19,6 +19,7 @@ const modules = [
   "regexp",
   "string",
   "set",
+  "SortedArray",
   "sorting",
   // "types", <- TypeScript builds the d.ts file for this
   "UnsafeMap",

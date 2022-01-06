@@ -11,6 +11,7 @@ export { isReal, roundFloat, ceilFloat, floorFloat } from "./number";
 export { omitted, omitter, picked, picker, where, select } from "./object";
 export { isRegExp, escapeRegExpString } from "./regexp";
 export { isSet } from "./set";
+export { SortedArray } from "./SortedArray";
 export { asc, desc } from "./sorting";
 export { uppercaseFirst, lowercaseFirst } from "./string";
 export { UnsafeMap } from "./UnsafeMap";

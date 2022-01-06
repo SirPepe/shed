@@ -29,7 +29,7 @@ Escapes a string for use in regular expressions.
 
 #### Defined in
 
-[src/regexp.ts:29](https://github.com/SirPepe/shed/blob/e5c0819/src/regexp.ts#L29)
+[src/regexp.ts:29](https://github.com/SirPepe/shed/blob/e03719b/src/regexp.ts#L29)
 
 ___
 
@@ -52,7 +52,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:5](https://github.com/SirPepe/shed/blob/e5c0819/src/regexp.ts#L5)
+[src/regexp.ts:5](https://github.com/SirPepe/shed/blob/e03719b/src/regexp.ts#L5)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -68,7 +68,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:6](https://github.com/SirPepe/shed/blob/e5c0819/src/regexp.ts#L6)
+[src/regexp.ts:6](https://github.com/SirPepe/shed/blob/e03719b/src/regexp.ts#L6)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -84,4 +84,4 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:7](https://github.com/SirPepe/shed/blob/e5c0819/src/regexp.ts#L7)
+[src/regexp.ts:7](https://github.com/SirPepe/shed/blob/e03719b/src/regexp.ts#L7)

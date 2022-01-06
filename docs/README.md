@@ -8,6 +8,7 @@
 
 - [BiMap](modules/BiMap.md)
 - [FRDY](modules/FRDY.md)
+- [SortedArray](modules/SortedArray.md)
 - [UnsafeMap](modules/UnsafeMap.md)
 - [array](modules/array.md)
 - [assert](modules/assert.md)

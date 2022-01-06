@@ -68,6 +68,10 @@
       "import": "./dist/esm/set.js",
       "require": "./dist/cjs/set.js"
     },
+    "./sortedArray": {
+      "import": "./dist/esm/SortedArray.js",
+      "require": "./dist/cjs/SortedArray.js"
+    },
     "./sorting": {
       "import": "./dist/esm/sorting.js",
       "require": "./dist/cjs/sorting.js"
