@@ -9,11 +9,9 @@ export class SortedArray<T> {
   #array: T[] = [];
   #compare: (a: T, b: T) => number;
 
-  constructor(array: T[], compare: (a: T, b: T) => number) {
+  constructor(init: Iterable<T>, compare: (a: T, b: T) => number) {
     this.#compare = compare;
-    if (array.length > 0) {
-      this.insert(...array);
-    }
+    this.insert(...init);
   }
 
   public insert(...elements: T[]): void {

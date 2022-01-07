@@ -12,6 +12,14 @@ describe("SortedArray", () => {
     expect(s.toArray()).toEqual([0, 1, 1.5, 2, 3, 4]);
   });
 
+  test("with non-array iterables as initial input", () => {
+    const s = new SortedArray(
+      new Set([3, 1, 2, 4, 0, 5]),
+      (a: number, b: number) => (a === b ? 0 : a > b ? 1 : -1)
+    );
+    expect(s.toArray()).toEqual([0, 1, 2, 3, 4, 5]);
+  });
+
   test("with objects", () => {
     const source = [
       { value: 3 },
