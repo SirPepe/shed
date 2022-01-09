@@ -103,4 +103,8 @@ export class SortedArray<T> {
   public shift(): T | undefined {
     return this.#array.shift();
   }
+
+  public at(index: number): T | undefined {
+    return this.#array.at(index);
+  }
 }

@@ -41,4 +41,13 @@ describe("SortedArray", () => {
       source[5],
     ]);
   });
+
+  test("at()", () => {
+    const s = new SortedArray([3, 1, 2, 4, 0, 5], (a: number, b: number) =>
+      a === b ? 0 : a > b ? 1 : -1
+    );
+    expect(s.at(0)).toEqual(0);
+    expect(s.at(-1)).toEqual(5);
+    expect(s.at(2)).toEqual(2);
+  });
 });
