@@ -53,7 +53,7 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:24](https://github.com/SirPepe/shed/blob/3cb710a/src/array.ts#L24)
+[src/array.ts:24](https://github.com/SirPepe/shed/blob/dd181a6/src/array.ts#L24)
 
 ___
 
@@ -96,4 +96,4 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:45](https://github.com/SirPepe/shed/blob/3cb710a/src/array.ts#L45)
+[src/array.ts:45](https://github.com/SirPepe/shed/blob/dd181a6/src/array.ts#L45)

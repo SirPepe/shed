@@ -33,4 +33,4 @@ x is Map<K, V\>
 
 #### Defined in
 
-[src/map.ts:1](https://github.com/SirPepe/shed/blob/3cb710a/src/map.ts#L1)
+[src/map.ts:1](https://github.com/SirPepe/shed/blob/dd181a6/src/map.ts#L1)

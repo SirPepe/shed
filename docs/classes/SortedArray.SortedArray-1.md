@@ -30,6 +30,7 @@
 - [[iterator]](SortedArray.SortedArray-1.md#[iterator])
 - [at](SortedArray.SortedArray-1.md#at)
 - [insert](SortedArray.SortedArray-1.md#insert)
+- [insertAll](SortedArray.SortedArray-1.md#insertall)
 - [remove](SortedArray.SortedArray-1.md#remove)
 - [search](SortedArray.SortedArray-1.md#search)
 - [shift](SortedArray.SortedArray-1.md#shift)
@@ -56,7 +57,7 @@
 
 #### Defined in
 
-[src/SortedArray.ts:12](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L12)
+[src/SortedArray.ts:12](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L12)
 
 ## Properties
 
@@ -66,7 +67,7 @@
 
 #### Defined in
 
-[src/SortedArray.ts:9](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L9)
+[src/SortedArray.ts:9](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L9)
 
 ___
 
@@ -91,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:10](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L10)
+[src/SortedArray.ts:10](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L10)
 
 ## Accessors
 
@@ -105,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:99](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L99)
+[src/SortedArray.ts:97](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L97)
 
 ## Methods
 
@@ -119,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:95](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L95)
+[src/SortedArray.ts:93](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L93)
 
 ___
 
@@ -139,13 +140,33 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:107](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L107)
+[src/SortedArray.ts:105](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L105)
 
 ___
 
 ### insert
 
-▸ **insert**(...`elements`): `void`
+▸ **insert**(`element`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `element` | `T` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/SortedArray.ts:23](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L23)
+
+___
+
+### insertAll
+
+▸ **insertAll**(...`elements`): `void`
 
 #### Parameters
 
@@ -159,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:17](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L17)
+[src/SortedArray.ts:17](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L17)
 
 ___
 
@@ -179,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:84](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L84)
+[src/SortedArray.ts:82](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L82)
 
 ___
 
@@ -199,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:64](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L64)
+[src/SortedArray.ts:62](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L62)
 
 ___
 
@@ -213,7 +234,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:103](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L103)
+[src/SortedArray.ts:101](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L101)
 
 ___
 
@@ -227,4 +248,4 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:91](https://github.com/SirPepe/shed/blob/3cb710a/src/SortedArray.ts#L91)
+[src/SortedArray.ts:89](https://github.com/SirPepe/shed/blob/dd181a6/src/SortedArray.ts#L89)
