@@ -42,6 +42,44 @@ describe("SortedArray", () => {
     ]);
   });
 
+  test("insert() with objects", () => {
+    const source = [
+      { value: 1 },
+      { value: 2 },
+      { value: 4 },
+      { value: 0 },
+      { value: 5 },
+    ];
+    const s = new SortedArray(source, (a, b) =>
+      a.value === b.value ? 0 : a.value > b.value ? 1 : -1
+    );
+    s.insert({ value: 3 });
+    expect(s.toArray()).toEqual([
+      source[3],
+      source[0],
+      source[1],
+      expect.objectContaining({ value: 3 }),
+      source[2],
+      source[4],
+    ]);
+  });
+
+  test("insertAll() with multiple objects", () => {
+    const source = [{ value: 2 }, { value: 5 }, { value: 4 }];
+    const s = new SortedArray(source, (a, b) =>
+      a.value === b.value ? 0 : a.value > b.value ? 1 : -1
+    );
+    s.insertAll({ value: 0 }, { value: 3 }, { value: 1 });
+    expect(s.toArray()).toEqual([
+      expect.objectContaining({ value: 0 }),
+      expect.objectContaining({ value: 1 }),
+      source[0],
+      expect.objectContaining({ value: 3 }),
+      source[2],
+      source[1],
+    ]);
+  });
+
   test("at()", () => {
     const s = new SortedArray([3, 1, 2, 4, 0, 5], (a: number, b: number) =>
       a === b ? 0 : a > b ? 1 : -1

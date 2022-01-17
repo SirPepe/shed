@@ -11,15 +11,16 @@ export class SortedArray<T> {
 
   constructor(init: Iterable<T>, compare: (a: T, b: T) => number) {
     this.#compare = compare;
-    this.insert(...init);
+    this.insertAll(...init);
   }
 
-  public insert(...elements: T[]): void {
-    if (elements.length === 0) {
-      return;
+  public insertAll(...elements: T[]): void {
+    for (const element of elements) {
+      this.insert(element);
     }
+  }
 
-    const [element, ...rest] = elements;
+  public insert(element: T): number {
     let high = this.#array.length - 1;
     let low = 0;
     let pos = -1;
@@ -55,10 +56,7 @@ export class SortedArray<T> {
       this.#array[index] = this.#array[--index];
     }
     this.#array[pos] = element;
-
-    if (rest.length > 0) {
-      this.insert(...rest);
-    }
+    return pos;
   }
 
   public search(element: T): number {
