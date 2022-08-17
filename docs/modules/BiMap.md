@@ -13,4 +13,4 @@ module by importing from `@sirpepe/shed/BiMap` or `@sirpepe/shed`.
 
 ### Classes
 
-- [BiMap](../classes/BiMap.BiMap-1.md)
+- [BiMap](../classes/BiMap.BiMap.md)

@@ -7,11 +7,11 @@ Utility types for TypeScript. Use this module by importing from
 
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [MapDiscriminatedUnion](types.md#mapdiscriminatedunion)
 
-## Type aliases
+## Type Aliases
 
 ### MapDiscriminatedUnion
 
@@ -26,4 +26,4 @@ Utility types for TypeScript. Use this module by importing from
 
 #### Defined in
 
-[src/types.ts:15](https://github.com/SirPepe/shed/blob/dd181a6/src/types.ts#L15)
+[src/types.ts:15](https://github.com/SirPepe/shed/blob/2ac893f/src/types.ts#L15)

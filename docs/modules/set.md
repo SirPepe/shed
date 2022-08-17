@@ -32,4 +32,4 @@ x is Set<T\>
 
 #### Defined in
 
-[src/set.ts:1](https://github.com/SirPepe/shed/blob/dd181a6/src/set.ts#L1)
+[src/set.ts:1](https://github.com/SirPepe/shed/blob/2ac893f/src/set.ts#L1)

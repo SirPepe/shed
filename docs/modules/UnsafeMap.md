@@ -12,4 +12,4 @@ TypeScript somewhat easier. Use this module by importing from
 
 ### Classes
 
-- [UnsafeMap](../classes/UnsafeMap.UnsafeMap-1.md)
+- [UnsafeMap](../classes/UnsafeMap.UnsafeMap.md)

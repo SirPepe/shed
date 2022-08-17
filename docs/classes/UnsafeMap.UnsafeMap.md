@@ -21,27 +21,27 @@
 
 ### Constructors
 
-- [constructor](UnsafeMap.UnsafeMap-1.md#constructor)
+- [constructor](UnsafeMap.UnsafeMap.md#constructor)
 
 ### Properties
 
-- [[toStringTag]](UnsafeMap.UnsafeMap-1.md#[tostringtag])
-- [errorFactory](UnsafeMap.UnsafeMap-1.md#errorfactory)
-- [size](UnsafeMap.UnsafeMap-1.md#size)
-- [[species]](UnsafeMap.UnsafeMap-1.md#[species])
+- [[toStringTag]](UnsafeMap.UnsafeMap.md#[tostringtag])
+- [errorFactory](UnsafeMap.UnsafeMap.md#errorfactory)
+- [size](UnsafeMap.UnsafeMap.md#size)
+- [[species]](UnsafeMap.UnsafeMap.md#[species])
 
 ### Methods
 
-- [[iterator]](UnsafeMap.UnsafeMap-1.md#[iterator])
-- [clear](UnsafeMap.UnsafeMap-1.md#clear)
-- [delete](UnsafeMap.UnsafeMap-1.md#delete)
-- [entries](UnsafeMap.UnsafeMap-1.md#entries)
-- [forEach](UnsafeMap.UnsafeMap-1.md#foreach)
-- [get](UnsafeMap.UnsafeMap-1.md#get)
-- [has](UnsafeMap.UnsafeMap-1.md#has)
-- [keys](UnsafeMap.UnsafeMap-1.md#keys)
-- [set](UnsafeMap.UnsafeMap-1.md#set)
-- [values](UnsafeMap.UnsafeMap-1.md#values)
+- [[iterator]](UnsafeMap.UnsafeMap.md#[iterator])
+- [clear](UnsafeMap.UnsafeMap.md#clear)
+- [delete](UnsafeMap.UnsafeMap.md#delete)
+- [entries](UnsafeMap.UnsafeMap.md#entries)
+- [forEach](UnsafeMap.UnsafeMap.md#foreach)
+- [get](UnsafeMap.UnsafeMap.md#get)
+- [has](UnsafeMap.UnsafeMap.md#has)
+- [keys](UnsafeMap.UnsafeMap.md#keys)
+- [set](UnsafeMap.UnsafeMap.md#set)
+- [values](UnsafeMap.UnsafeMap.md#values)
 
 ## Constructors
 
@@ -69,7 +69,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/dd181a6/src/UnsafeMap.ts#L13)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L13)
 
 ## Properties
 
@@ -79,7 +79,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@28
+Map.\_\_@toStringTag@27
 
 #### Defined in
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/dd181a6/src/UnsafeMap.ts#L12)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@591
+Map.\_\_@species@606
 
 #### Defined in
 
@@ -151,7 +151,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@85
+Map.\_\_@iterator@89
 
 #### Defined in
 
@@ -266,7 +266,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/dd181a6/src/UnsafeMap.ts#L21)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L21)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 ### set
 
-▸ **set**(`key`, `value`): [`UnsafeMap`](UnsafeMap.UnsafeMap-1.md)<`K`, `V`\>
+▸ **set**(`key`, `value`): [`UnsafeMap`](UnsafeMap.UnsafeMap.md)<`K`, `V`\>
 
 #### Parameters
 
@@ -327,7 +327,7 @@ ___
 
 #### Returns
 
-[`UnsafeMap`](UnsafeMap.UnsafeMap-1.md)<`K`, `V`\>
+[`UnsafeMap`](UnsafeMap.UnsafeMap.md)<`K`, `V`\>
 
 #### Inherited from
 

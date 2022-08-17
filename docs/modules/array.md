@@ -11,6 +11,7 @@ Utilities for working with arrays. Access this module by importing from
 
 - [move](array.md#move)
 - [moved](array.md#moved)
+- [range](array.md#range)
 
 ## Functions
 
@@ -53,7 +54,7 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:24](https://github.com/SirPepe/shed/blob/dd181a6/src/array.ts#L24)
+[src/array.ts:24](https://github.com/SirPepe/shed/blob/2ac893f/src/array.ts#L24)
 
 ___
 
@@ -96,4 +97,45 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:45](https://github.com/SirPepe/shed/blob/dd181a6/src/array.ts#L45)
+[src/array.ts:45](https://github.com/SirPepe/shed/blob/2ac893f/src/array.ts#L45)
+
+___
+
+### range
+
+▸ **range**(`from`): `number`[]
+
+Returns an inclusive range of numbers. If one one argument is provided, the
+range starts at 0 if the argument is positive. If the argument is negative,
+the range ends at 0.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `from` | `number` |
+
+#### Returns
+
+`number`[]
+
+#### Defined in
+
+[src/array.ts:56](https://github.com/SirPepe/shed/blob/2ac893f/src/array.ts#L56)
+
+▸ **range**(`from`, `to`): `number`[]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `from` | `number` |
+| `to` | `number` |
+
+#### Returns
+
+`number`[]
+
+#### Defined in
+
+[src/array.ts:57](https://github.com/SirPepe/shed/blob/2ac893f/src/array.ts#L57)

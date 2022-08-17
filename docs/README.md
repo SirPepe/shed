@@ -15,6 +15,7 @@
 - [error](modules/error.md)
 - [function](modules/function.md)
 - [guard](modules/guard.md)
+- [index](modules/index.md)
 - [iterable](modules/iterable.md)
 - [map](modules/map.md)
 - [number](modules/number.md)

@@ -9,4 +9,4 @@ A sorted array-like data structure. Use this module by importing from
 
 ### Classes
 
-- [SortedArray](../classes/SortedArray.SortedArray-1.md)
+- [SortedArray](../classes/SortedArray.SortedArray.md)
