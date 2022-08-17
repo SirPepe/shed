@@ -69,7 +69,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L13)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L13)
 
 ## Properties
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L12)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -266,7 +266,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/2ac893f/src/UnsafeMap.ts#L21)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L21)
 
 ___
 
