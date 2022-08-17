@@ -47,3 +47,31 @@ export function moved<T>(arr: T[], from: number, to: number): T[] {
   arr.splice(to, 0, ...arr.splice(from, 1));
   return arr;
 }
+
+/**
+ * Returns an inclusive range of numbers. If one one argument is provided, the
+ * range starts at 0 if the argument is positive. If the argument is negative,
+ * the range ends at 0.
+ */
+export function range(from: number): number[];
+export function range(from: number, to: number): number[];
+export function range(from: number, to?: number): number[] {
+  if (typeof to === "undefined") {
+    if (from >= 0) {
+      to = from;
+      from = 0;
+    } else {
+      to = 0;
+    }
+  }
+  const step = from < to ? 1 : -1;
+  const result: number[] = [];
+  while (true) { // eslint-disable-line
+    result.push(from);
+    if (from === to) {
+      break;
+    }
+    from += step;
+  }
+  return result;
+}

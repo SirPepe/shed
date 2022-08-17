@@ -1,6 +1,21 @@
-import { move, moved } from "../src/array";
+import { move, moved, range } from "../src/array";
 
 describe("array", () => {
+  describe("range()", () => {
+    test("one argument", () => {
+      expect(range(0)).toEqual([0]);
+      expect(range(5)).toEqual([0, 1, 2, 3, 4, 5]);
+      expect(range(-3)).toEqual([-3, -2, -1, 0]);
+    });
+    test("two arguments", () => {
+      expect(range(0, 0)).toEqual([0]);
+      expect(range(2, 5)).toEqual([2, 3, 4, 5]);
+      expect(range(5, 2)).toEqual([5, 4, 3, 2]);
+      expect(range(-4, -2)).toEqual([-4, -3, -2]);
+      expect(range(-2, -4)).toEqual([-2, -3, -4]);
+    });
+  });
+
   describe("move()", () => {
     test("re-arranges arrays in-place", () => {
       const input1 = [0, 1, 2, 3, 4];
