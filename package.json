@@ -1,6 +1,6 @@
 {
   "name": "@sirpepe/shed",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "sideEffects": false,
   "description": "General-purpose utilities for objects, arrays, maps and types",
   "main": "dist/cjs/index.js",
