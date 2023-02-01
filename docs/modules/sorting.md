@@ -10,6 +10,7 @@ importing from `@sirpepe/shed/string` or `@sirpepe/shed`.
 ### Functions
 
 - [asc](sorting.md#asc)
+- [byPosition](sorting.md#byposition)
 - [desc](sorting.md#desc)
 
 ## Functions
@@ -46,7 +47,32 @@ Example:
 
 #### Defined in
 
-[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/304ba9e/src/sorting.ts#L18)
+[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/af754f8/src/sorting.ts#L18)
+
+___
+
+### byPosition
+
+▸ **byPosition**(`a`, `b`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `a` | `Object` |
+| `a.x` | `number` |
+| `a.y` | `number` |
+| `b` | `Object` |
+| `b.x` | `number` |
+| `b.y` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/sorting.ts:48](https://github.com/SirPepe/shed/blob/af754f8/src/sorting.ts#L48)
 
 ___
 
@@ -82,4 +108,4 @@ Result: [12, 10, 2, 1, 0];
 
 #### Defined in
 
-[src/sorting.ts:38](https://github.com/SirPepe/shed/blob/304ba9e/src/sorting.ts#L38)
+[src/sorting.ts:38](https://github.com/SirPepe/shed/blob/af754f8/src/sorting.ts#L38)

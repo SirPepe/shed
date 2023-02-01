@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/set.ts:9](https://github.com/SirPepe/shed/blob/304ba9e/src/set.ts#L9)
+[src/set.ts:9](https://github.com/SirPepe/shed/blob/af754f8/src/set.ts#L9)
 
 ___
 
@@ -60,4 +60,4 @@ x is Set<T\>
 
 #### Defined in
 
-[src/set.ts:1](https://github.com/SirPepe/shed/blob/304ba9e/src/set.ts#L1)
+[src/set.ts:1](https://github.com/SirPepe/shed/blob/af754f8/src/set.ts#L1)
