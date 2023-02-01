@@ -64,3 +64,21 @@ export function floorFloat(value: number, digits: number): number {
   const factor = 10 ** Math.round(digits);
   return Math.floor(value * factor) / factor;
 }
+
+/*
+ * Turns a number into a string built from the given charset. Only handles
+ * positive integers and character sets without astral symbols, but does *not*
+ * verify its input.
+ */
+export function stringify(number: number, charset: string): string {
+  if (number === 0) {
+    return "0";
+  }
+  let res = "";
+  const length = charset.length;
+  while (number > 0) {
+    res = charset[number % length] + res;
+    number = Math.floor(number / length);
+  }
+  return res;
+}

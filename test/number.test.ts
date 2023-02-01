@@ -1,4 +1,10 @@
-import { ceilFloat, floorFloat, isReal, roundFloat } from "../src/number";
+import {
+  ceilFloat,
+  floorFloat,
+  isReal,
+  roundFloat,
+  stringify,
+} from "../src/number";
 
 describe("Number", () => {
   describe("isReal()", () => {
@@ -55,6 +61,31 @@ describe("Number", () => {
       expect(floorFloat(1.005, 2)).toBe(1);
       expect(floorFloat(2 / 3, 4)).toBe(0.6666);
       expect(floorFloat(2 / 3, 0)).toBe(0);
+    });
+  });
+
+  describe("stringify()", () => {
+    it("stringifies numbers", () => {
+      expect(stringify(1337, "abcdefghijklmnopqrstuvwxyz")).toBe("bzl");
+      expect(stringify(9001, "abcdefghijklmnopqrstuvwxyz")).toBe("nif");
+      expect(stringify(1337, "0123456789abcdefghijklmnopqrstuvwxyz")).toBe(
+        "115"
+      );
+      expect(stringify(9001, "0123456789abcdefghijklmnopqrstuvwxyz")).toBe(
+        "6y1"
+      );
+      expect(
+        stringify(
+          1337,
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        )
+      ).toBe("lz");
+      expect(
+        stringify(
+          9001,
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        )
+      ).toBe("2lb");
     });
   });
 });
