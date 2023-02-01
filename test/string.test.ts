@@ -1,4 +1,4 @@
-import { lowercaseFirst, uppercaseFirst } from "../src/string";
+import { lowercaseFirst, uppercaseFirst, length } from "../src/string";
 
 describe("String", () => {
   describe("capitalizeFirst()", () => {
@@ -12,6 +12,17 @@ describe("String", () => {
     it("lowercases the first letter", () => {
       expect(lowercaseFirst("ABC")).toBe("aBC");
       expect(lowercaseFirst("Вба")).toBe("вба");
+    });
+  });
+
+  describe("length()", () => {
+    it("calculates string length", () => {
+      expect(length("ABC", 2)).toBe(3);
+      expect(length("A B C ", 2)).toBe(6);
+      expect(length("AB\tC", 2)).toBe(5);
+      expect(length("A B\tC", 4)).toBe(8);
+      expect(length("Вба", 2)).toBe(3);
+      expect(length("Hello\n🤡", 2)).toBe(7);
     });
   });
 });

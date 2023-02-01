@@ -20,3 +20,18 @@ export function lowercaseFirst(str: string): string {
   const [first, ...rest] = str;
   return first.toLowerCase() + rest.join("");
 }
+
+/**
+ * Get the number of characters in a string with customizable value for tabs.
+ */
+export function length(text: string, tabSize: number): number {
+  let size = 0;
+  for (const char of text) {
+    if (char === "\t") {
+      size += tabSize;
+    } else {
+      size++;
+    }
+  }
+  return size;
+}
