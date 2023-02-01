@@ -6,9 +6,37 @@
 
 ### Functions
 
+- [addAll](set.md#addall)
 - [isSet](set.md#isset)
 
 ## Functions
+
+### addAll
+
+▸ **addAll**<`T`\>(`target`, `...groups`): `void`
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `Set`<`T`\> |
+| `...groups` | `Iterable`<`T`\>[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/set.ts:9](https://github.com/SirPepe/shed/blob/304ba9e/src/set.ts#L9)
+
+___
 
 ### isSet
 
@@ -32,4 +60,4 @@ x is Set<T\>
 
 #### Defined in
 
-[src/set.ts:1](https://github.com/SirPepe/shed/blob/ab01f4e/src/set.ts#L1)
+[src/set.ts:1](https://github.com/SirPepe/shed/blob/304ba9e/src/set.ts#L1)

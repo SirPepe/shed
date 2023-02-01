@@ -9,10 +9,34 @@ or `@sirpepe/shed`.
 
 ### Functions
 
+- [length](string.md#length)
 - [lowercaseFirst](string.md#lowercasefirst)
 - [uppercaseFirst](string.md#uppercasefirst)
 
 ## Functions
+
+### length
+
+▸ **length**(`text`, `tabSize`): `number`
+
+Get the number of characters in a string with customizable value for tabs.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `text` | `string` |
+| `tabSize` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/string.ts:27](https://github.com/SirPepe/shed/blob/304ba9e/src/string.ts#L27)
+
+___
 
 ### lowercaseFirst
 
@@ -32,7 +56,7 @@ Turn a string's first character to lower case.
 
 #### Defined in
 
-[src/string.ts:19](https://github.com/SirPepe/shed/blob/ab01f4e/src/string.ts#L19)
+[src/string.ts:19](https://github.com/SirPepe/shed/blob/304ba9e/src/string.ts#L19)
 
 ___
 
@@ -54,4 +78,4 @@ Turn a string's first character to upper case.
 
 #### Defined in
 
-[src/string.ts:11](https://github.com/SirPepe/shed/blob/ab01f4e/src/string.ts#L11)
+[src/string.ts:11](https://github.com/SirPepe/shed/blob/304ba9e/src/string.ts#L11)

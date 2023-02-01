@@ -20,7 +20,7 @@ or `@sirpepe/shed`.
 
 ### omitted
 
-▸ **omitted**<`T`, `K`\>(`obj`, ...`toOmit`): `Omit`<`T`, `K`\>
+▸ **omitted**<`T`, `K`\>(`obj`, `...toOmit`): `Omit`<`T`, `K`\>
 
 Returns a new object created from the input object, but without the keys in
 `toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
@@ -46,13 +46,13 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:13](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L13)
+[src/object.ts:13](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L13)
 
 ___
 
 ### omitter
 
-▸ **omitter**<`T`, `K`\>(...`toOmit`): (`obj`: `T`) => `Omit`<`T`, `K`\>
+▸ **omitter**<`T`, `K`\>(`...toOmit`): (`obj`: `T`) => `Omit`<`T`, `K`\>
 
 Returns a function that returns a new object created from its input object,
 but without the keys in `toOmit`. Essentially a factory function for
@@ -89,13 +89,13 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:32](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L32)
+[src/object.ts:32](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L32)
 
 ___
 
 ### picked
 
-▸ **picked**<`T`, `K`\>(`obj`, ...`toKeep`): `Pick`<`T`, `K`\>
+▸ **picked**<`T`, `K`\>(`obj`, `...toKeep`): `Pick`<`T`, `K`\>
 
 Returns a new object created from the input object, but with only the keys in
 `toKeep`. Essentially the runtime-variant of TypeScript's `Pick<T, K>` type
@@ -121,13 +121,13 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:52](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L52)
+[src/object.ts:52](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L52)
 
 ___
 
 ### picker
 
-▸ **picker**<`T`, `K`\>(...`toKeep`): (`obj`: `T`) => `Pick`<`T`, `K`\>
+▸ **picker**<`T`, `K`\>(`...toKeep`): (`obj`: `T`) => `Pick`<`T`, `K`\>
 
 Returns a function that returns a new object created from its input object,
 but with only the keys in `toKeep`. Essentially a factory function for
@@ -164,7 +164,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:68](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L68)
+[src/object.ts:68](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L68)
 
 ___
 
@@ -205,7 +205,7 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:97](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L97)
+[src/object.ts:97](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L97)
 
 ___
 
@@ -248,4 +248,4 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:85](https://github.com/SirPepe/shed/blob/ab01f4e/src/object.ts#L85)
+[src/object.ts:85](https://github.com/SirPepe/shed/blob/304ba9e/src/object.ts#L85)

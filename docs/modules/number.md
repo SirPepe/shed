@@ -13,6 +13,7 @@ Utilities for numbers of all types. Use this module by importing from
 - [floorFloat](number.md#floorfloat)
 - [isReal](number.md#isreal)
 - [roundFloat](number.md#roundfloat)
+- [stringify](number.md#stringify)
 
 ## Functions
 
@@ -35,7 +36,7 @@ Round up a float value to `digits` decimal places.
 
 #### Defined in
 
-[src/number.ts:55](https://github.com/SirPepe/shed/blob/ab01f4e/src/number.ts#L55)
+[src/number.ts:55](https://github.com/SirPepe/shed/blob/304ba9e/src/number.ts#L55)
 
 ___
 
@@ -58,7 +59,7 @@ Round down a float value to `digits` decimal places.
 
 #### Defined in
 
-[src/number.ts:63](https://github.com/SirPepe/shed/blob/ab01f4e/src/number.ts#L63)
+[src/number.ts:63](https://github.com/SirPepe/shed/blob/304ba9e/src/number.ts#L63)
 
 ___
 
@@ -91,7 +92,7 @@ let nope3 = isReal("Hello"); // false
 
 #### Defined in
 
-[src/number.ts:22](https://github.com/SirPepe/shed/blob/ab01f4e/src/number.ts#L22)
+[src/number.ts:22](https://github.com/SirPepe/shed/blob/304ba9e/src/number.ts#L22)
 
 ___
 
@@ -120,4 +121,25 @@ roundFloat(2 / 3, 4); // 0.6667
 
 #### Defined in
 
-[src/number.ts:47](https://github.com/SirPepe/shed/blob/ab01f4e/src/number.ts#L47)
+[src/number.ts:47](https://github.com/SirPepe/shed/blob/304ba9e/src/number.ts#L47)
+
+___
+
+### stringify
+
+▸ **stringify**(`number`, `charset`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `number` | `number` |
+| `charset` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/number.ts:73](https://github.com/SirPepe/shed/blob/304ba9e/src/number.ts#L73)

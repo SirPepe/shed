@@ -69,7 +69,7 @@ Map&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L13)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/304ba9e/src/UnsafeMap.ts#L13)
 
 ## Properties
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L12)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/304ba9e/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -121,7 +121,7 @@ Map.size
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:28
+node_modules/typescript/lib/lib.es2015.collection.d.ts:48
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@606
+Map.\_\_@species@607
 
 #### Defined in
 
@@ -151,7 +151,7 @@ Returns an iterable of entries in the map.
 
 #### Inherited from
 
-Map.\_\_@iterator@89
+Map.\_\_@iterator@87
 
 #### Defined in
 
@@ -173,7 +173,7 @@ Map.clear
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:22
+node_modules/typescript/lib/lib.es2015.collection.d.ts:23
 
 ___
 
@@ -191,13 +191,15 @@ ___
 
 `boolean`
 
+true if an element in the Map existed and has been removed, or false if the element does not exist.
+
 #### Inherited from
 
 Map.delete
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:23
+node_modules/typescript/lib/lib.es2015.collection.d.ts:27
 
 ___
 
@@ -225,6 +227,8 @@ ___
 
 ▸ **forEach**(`callbackfn`, `thisArg?`): `void`
 
+Executes a provided function once per each key/value pair in the Map, in insertion order.
+
 #### Parameters
 
 | Name | Type |
@@ -242,7 +246,7 @@ Map.forEach
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:24
+node_modules/typescript/lib/lib.es2015.collection.d.ts:31
 
 ___
 
@@ -266,7 +270,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/ab01f4e/src/UnsafeMap.ts#L21)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/304ba9e/src/UnsafeMap.ts#L21)
 
 ___
 
@@ -284,13 +288,15 @@ ___
 
 `boolean`
 
+boolean indicating whether an element with the specified key exists or not.
+
 #### Inherited from
 
 Map.has
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:26
+node_modules/typescript/lib/lib.es2015.collection.d.ts:40
 
 ___
 
@@ -318,6 +324,8 @@ ___
 
 ▸ **set**(`key`, `value`): [`UnsafeMap`](UnsafeMap.UnsafeMap.md)<`K`, `V`\>
 
+Adds a new element with a specified key and value to the Map. If an element with the same key already exists, the element will be updated.
+
 #### Parameters
 
 | Name | Type |
@@ -335,7 +343,7 @@ Map.set
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:27
+node_modules/typescript/lib/lib.es2015.collection.d.ts:44
 
 ___
 

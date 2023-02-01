@@ -40,7 +40,7 @@ Returns a debounced function.
 
 `fn`
 
-▸ (`this`, ...`args`): `void`
+▸ (`this`, `...args`): `void`
 
 ##### Parameters
 
@@ -55,7 +55,7 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:43](https://github.com/SirPepe/shed/blob/ab01f4e/src/function.ts#L43)
+[src/function.ts:43](https://github.com/SirPepe/shed/blob/304ba9e/src/function.ts#L43)
 
 ___
 
@@ -83,7 +83,7 @@ once per frame.
 
 `fn`
 
-▸ (`this`, ...`args`): `void`
+▸ (`this`, `...args`): `void`
 
 ##### Parameters
 
@@ -98,7 +98,7 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:63](https://github.com/SirPepe/shed/blob/ab01f4e/src/function.ts#L63)
+[src/function.ts:63](https://github.com/SirPepe/shed/blob/304ba9e/src/function.ts#L63)
 
 ___
 
@@ -135,13 +135,13 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:36](https://github.com/SirPepe/shed/blob/ab01f4e/src/function.ts#L36)
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/304ba9e/src/function.ts#L36)
 
 ___
 
 ### noop
 
-▸ **noop**(...`args`): `void`
+▸ **noop**(`...args`): `void`
 
 A function that does nothing and accepts any number of arguments. Useful for
 writing tests. **This function is sort-of superfluous in plain JavaScript**,
@@ -167,4 +167,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:22](https://github.com/SirPepe/shed/blob/ab01f4e/src/function.ts#L22)
+[src/function.ts:22](https://github.com/SirPepe/shed/blob/304ba9e/src/function.ts#L22)
