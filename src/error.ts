@@ -25,6 +25,15 @@
  * function argumentRequired(arg = fail("Missing argument")) {}
  * ```
  */
-export function fail(reason?: string, ErrorConstructor = Error): never {
-  throw new ErrorConstructor(reason);
+
+type FailOptions = {
+  ErrorConstructor?: new (reason?: string, cause?: Error) => Error;
+  cause?: Error;
+};
+
+export function fail(
+  reason?: string,
+  { ErrorConstructor = Error, cause = undefined }: FailOptions = {}
+): never {
+  throw new ErrorConstructor(reason, cause);
 }
