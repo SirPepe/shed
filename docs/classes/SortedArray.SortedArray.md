@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[src/SortedArray.ts:12](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L12)
+[src/SortedArray.ts:12](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L12)
 
 ## Properties
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[src/SortedArray.ts:9](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L9)
+[src/SortedArray.ts:9](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L9)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:10](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L10)
+[src/SortedArray.ts:10](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L10)
 
 ## Accessors
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:97](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L97)
+[src/SortedArray.ts:97](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L97)
 
 ## Methods
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:93](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L93)
+[src/SortedArray.ts:93](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L93)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:105](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L105)
+[src/SortedArray.ts:105](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L105)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:23](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L23)
+[src/SortedArray.ts:23](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L23)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:17](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L17)
+[src/SortedArray.ts:17](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L17)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:82](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L82)
+[src/SortedArray.ts:82](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L82)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:62](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L62)
+[src/SortedArray.ts:62](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L62)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:101](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L101)
+[src/SortedArray.ts:101](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L101)
 
 ___
 
@@ -248,4 +248,4 @@ ___
 
 #### Defined in
 
-[src/SortedArray.ts:89](https://github.com/SirPepe/shed/blob/32088f4/src/SortedArray.ts#L89)
+[src/SortedArray.ts:89](https://github.com/SirPepe/shed/blob/d99fc58/src/SortedArray.ts#L89)

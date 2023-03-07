@@ -15,33 +15,14 @@ or `@sirpepe/shed`.
 
 ### fail
 
-▸ **fail**(`reason?`, `ErrorConstructor?`): `never`
-
-A function that throws an error when called.
-
-Example:
-
-```
-try {
-  fail("BOOM!");
-} catch (error) {
-  console.log(error.message); // > "BOOM!"
-}
-```
-
-This is useful if you want to trigger exceptions in places where only
-expressions are allowed:
-
-```typescript
-function argumentRequired(arg = fail("Missing argument")) {}
-```
+▸ **fail**(`reason?`, `«destructured»?`): `never`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `reason?` | `string` | `undefined` |
-| `ErrorConstructor` | `ErrorConstructor` | `Error` |
+| Name | Type |
+| :------ | :------ |
+| `reason?` | `string` |
+| `«destructured»` | `FailOptions` |
 
 #### Returns
 
@@ -49,4 +30,4 @@ function argumentRequired(arg = fail("Missing argument")) {}
 
 #### Defined in
 
-[src/error.ts:28](https://github.com/SirPepe/shed/blob/32088f4/src/error.ts#L28)
+[src/error.ts:34](https://github.com/SirPepe/shed/blob/d99fc58/src/error.ts#L34)

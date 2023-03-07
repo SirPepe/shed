@@ -54,7 +54,7 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:24](https://github.com/SirPepe/shed/blob/32088f4/src/array.ts#L24)
+[src/array.ts:24](https://github.com/SirPepe/shed/blob/d99fc58/src/array.ts#L24)
 
 ___
 
@@ -97,7 +97,7 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:45](https://github.com/SirPepe/shed/blob/32088f4/src/array.ts#L45)
+[src/array.ts:45](https://github.com/SirPepe/shed/blob/d99fc58/src/array.ts#L45)
 
 ___
 
@@ -121,7 +121,7 @@ the range ends at 0.
 
 #### Defined in
 
-[src/array.ts:56](https://github.com/SirPepe/shed/blob/32088f4/src/array.ts#L56)
+[src/array.ts:56](https://github.com/SirPepe/shed/blob/d99fc58/src/array.ts#L56)
 
 ▸ **range**(`from`, `to`): `number`[]
 
@@ -138,4 +138,4 @@ the range ends at 0.
 
 #### Defined in
 
-[src/array.ts:57](https://github.com/SirPepe/shed/blob/32088f4/src/array.ts#L57)
+[src/array.ts:57](https://github.com/SirPepe/shed/blob/d99fc58/src/array.ts#L57)
