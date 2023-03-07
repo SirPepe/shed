@@ -8,7 +8,15 @@ export { is, isNot } from "./guard";
 export { groupBy, mapBy, partition } from "./iterable";
 export { isMap } from "./map";
 export { isReal, roundFloat, ceilFloat, floorFloat, stringify } from "./number";
-export { omitted, omitter, picked, picker, where, select } from "./object";
+export {
+  omitted,
+  omitter,
+  picked,
+  picker,
+  where,
+  whereNot,
+  select,
+} from "./object";
 export { isRegExp, escapeRegExpString } from "./regexp";
 export { isSet, addAll } from "./set";
 export { SortedArray } from "./SortedArray";
