@@ -1,4 +1,12 @@
-import { omitted, omitter, picked, picker, where, select } from "../src/object";
+import {
+  omitted,
+  omitter,
+  picked,
+  picker,
+  where,
+  select,
+  whereNot,
+} from "../src/object";
 
 describe("object", () => {
   describe("omitted()", () => {
@@ -95,6 +103,13 @@ describe("object", () => {
     test("creates a predicate function", () => {
       const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
       expect(input.map(where("a", 1))).toEqual([false, true, false]);
+    });
+  });
+
+  describe("whereNot()", () => {
+    test("creates a predicate function", () => {
+      const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
+      expect(input.map(whereNot("a", 1))).toEqual([true, false, true]);
     });
   });
 

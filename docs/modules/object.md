@@ -15,6 +15,7 @@ or `@sirpepe/shed`.
 - [picker](object.md#picker)
 - [select](object.md#select)
 - [where](object.md#where)
+- [whereNot](object.md#wherenot)
 
 ## Functions
 
@@ -46,7 +47,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:13](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L13)
+[src/object.ts:13](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L13)
 
 ___
 
@@ -89,7 +90,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:32](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L32)
+[src/object.ts:32](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L32)
 
 ___
 
@@ -121,7 +122,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:52](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L52)
+[src/object.ts:52](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L52)
 
 ___
 
@@ -164,7 +165,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:68](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L68)
+[src/object.ts:68](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L68)
 
 ___
 
@@ -205,7 +206,7 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:97](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L97)
+[src/object.ts:110](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L110)
 
 ___
 
@@ -248,4 +249,47 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:85](https://github.com/SirPepe/shed/blob/af754f8/src/object.ts#L85)
+[src/object.ts:85](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L85)
+
+___
+
+### whereNot
+
+▸ **whereNot**<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
+
+Returns a predicate that checks if its input object's "prop" field contains a
+value not equal to "value".
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `K` | extends `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `prop` | `K` |
+| `value` | `T`[`K`] |
+
+#### Returns
+
+`fn`
+
+▸ (`obj`): `boolean`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/object.ts:98](https://github.com/SirPepe/shed/blob/32088f4/src/object.ts#L98)
