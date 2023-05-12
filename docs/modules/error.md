@@ -30,4 +30,4 @@ or `@sirpepe/shed`.
 
 #### Defined in
 
-[src/error.ts:34](https://github.com/SirPepe/shed/blob/29be99e/src/error.ts#L34)
+[src/error.ts:34](https://github.com/SirPepe/shed/blob/dd4f9d4/src/error.ts#L34)

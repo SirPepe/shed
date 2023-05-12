@@ -12,6 +12,7 @@ Utility types for TypeScript. Use this module by importing from
 - [Drop](types.md#drop)
 - [DropFirst](types.md#dropfirst)
 - [MapDiscriminatedUnion](types.md#mapdiscriminatedunion)
+- [Optional](types.md#optional)
 - [SplitTuple](types.md#splittuple)
 
 ## Type Aliases
@@ -31,7 +32,7 @@ Drops the element at index `I` from a tuple type.
 
 #### Defined in
 
-[src/types.ts:31](https://github.com/SirPepe/shed/blob/29be99e/src/types.ts#L31)
+[src/types.ts:31](https://github.com/SirPepe/shed/blob/dd4f9d4/src/types.ts#L31)
 
 ___
 
@@ -49,7 +50,7 @@ Drops the first element from a tuple type.
 
 #### Defined in
 
-[src/types.ts:23](https://github.com/SirPepe/shed/blob/29be99e/src/types.ts#L23)
+[src/types.ts:23](https://github.com/SirPepe/shed/blob/dd4f9d4/src/types.ts#L23)
 
 ___
 
@@ -66,7 +67,26 @@ ___
 
 #### Defined in
 
-[src/types.ts:41](https://github.com/SirPepe/shed/blob/29be99e/src/types.ts#L41)
+[src/types.ts:41](https://github.com/SirPepe/shed/blob/dd4f9d4/src/types.ts#L41)
+
+___
+
+### Optional
+
+Ƭ **Optional**<`Source`, `Keys`\>: { [Key in Keys]?: Source[Key] } & `Pick`<`Source`, `Exclude`<keyof `Source`, `Keys`\>\>
+
+Makes select keys on `Source` optional
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Source` | `Source` |
+| `Keys` | extends keyof `Source` |
+
+#### Defined in
+
+[src/types.ts:48](https://github.com/SirPepe/shed/blob/dd4f9d4/src/types.ts#L48)
 
 ___
 
@@ -86,4 +106,4 @@ Splits a tuple type into a LHS and a RHS on index `I`
 
 #### Defined in
 
-[src/types.ts:13](https://github.com/SirPepe/shed/blob/29be99e/src/types.ts#L13)
+[src/types.ts:13](https://github.com/SirPepe/shed/blob/dd4f9d4/src/types.ts#L13)
