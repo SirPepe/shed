@@ -41,3 +41,10 @@ type DiscriminateUnion<Union, Key extends keyof Union, Value extends Union[Key]>
 export type MapDiscriminatedUnion<Union extends Record<Key, string>, Key extends keyof Union> = {
     [Value in Union[Key]]: DiscriminateUnion<Union, Key, Value>;
 };
+
+/**
+ * Makes select keys on `Source` optional
+ */
+export type Optional<Source, Keys extends keyof Source> = {
+  [Key in Keys]?: Source[Key];
+} & Pick<Source, Exclude<keyof Source, Keys>>;

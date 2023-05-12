@@ -23,4 +23,4 @@ export { SortedArray } from "./SortedArray";
 export { asc, desc } from "./sorting";
 export { uppercaseFirst, lowercaseFirst, length } from "./string";
 export { UnsafeMap } from "./UnsafeMap";
-export type { MapDiscriminatedUnion } from "./types";
+export type { MapDiscriminatedUnion, Optional } from "./types";
