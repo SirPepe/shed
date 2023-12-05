@@ -29,7 +29,7 @@ const extensions = [".ts", ".js"];
 
 const banner = {
   content:
-    "Shed | Copyright (C) 2021 Peter Kröner | peter@peterkroener.de | MIT",
+    "Shed | Copyright (C) 2023 Peter Kröner | peter@peterkroener.de | MIT",
   commentStyle: "ignored",
 };
 
