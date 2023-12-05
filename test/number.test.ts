@@ -66,6 +66,8 @@ describe("Number", () => {
 
   describe("stringify()", () => {
     it("stringifies numbers", () => {
+      expect(stringify(0, "abcdefghijklmnopqrstuvwxyz")).toBe("a");
+      expect(stringify(1, "abcdefghijklmnopqrstuvwxyz")).toBe("b");
       expect(stringify(1337, "abcdefghijklmnopqrstuvwxyz")).toBe("bzl");
       expect(stringify(9001, "abcdefghijklmnopqrstuvwxyz")).toBe("nif");
       expect(stringify(1337, "0123456789abcdefghijklmnopqrstuvwxyz")).toBe(

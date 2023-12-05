@@ -72,7 +72,7 @@ export function floorFloat(value: number, digits: number): number {
  */
 export function stringify(number: number, charset: string): string {
   if (number === 0) {
-    return "0";
+    return charset[0];
   }
   let res = "";
   const length = charset.length;
