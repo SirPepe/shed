@@ -2,20 +2,26 @@ module.exports = (api) => {
   if (api.env("test")) {
     return {
       presets: [
-        [ "@babel/preset-env", {
-          targets: { node: "current" },
-          modules: "commonjs",
-        } ],
-        [ "@babel/preset-typescript" ],
+        [
+          "@babel/preset-env",
+          {
+            targets: { node: "current" },
+            modules: "commonjs",
+          },
+        ],
+        ["@babel/preset-typescript"],
       ],
     };
   } else {
     return {
       presets: [
-        [ "@babel/preset-env" ],
+        [
+          "@babel/preset-env",
+          {
+            targets: "last 2 versions",
+          },
+        ],
       ],
     };
   }
 };
-
-
