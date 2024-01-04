@@ -9,67 +9,83 @@
   "exports": {
     "./array": {
       "types": "./dist/array.d.ts",
-      "import": "./dist/array.js"
+      "import": "./dist/array.js",
+      "default": "./dist/array.js"
     },
     "./assert": {
       "types": "./dist/assert.d.ts",
-      "import": "./dist/assert.js"
+      "import": "./dist/assert.js",
+      "default": "./dist/assert.js"
     },
     "./BiMap": {
       "types": "./dist/BiMap.d.ts",
-      "import": "./dist/BiMap.js"
+      "import": "./dist/BiMap.js",
+      "default": "./dist/assert.js"
     },
     "./error": {
       "types": "./dist/error.d.ts",
-      "import": "./dist/error.js"
+      "import": "./dist/error.js",
+      "default": "./dist/error.js"
     },
     "./FRDY": {
       "types": "./dist/FRDY.d.ts",
-      "import": "./dist/FRDY.js"
+      "import": "./dist/FRDY.js",
+      "default": "./dist/FRDY.js"
     },
     "./function": {
       "types": "./dist/function.d.ts",
-      "import": "./dist/function.js"
+      "import": "./dist/function.js",
+      "default": "./dist/function.js"
     },
     "./guard": {
       "types": "./dist/guard.d.ts",
-      "import": "./dist/guard.js"
+      "import": "./dist/guard.js",
+      "default": "./dist/guard.js"
     },
     "./iterable": {
       "types": "./dist/iterable.d.ts",
-      "import": "./dist/iterable.js"
+      "import": "./dist/iterable.js",
+      "default": "./dist/iterable.js"
     },
     "./number": {
       "types": "./dist/number.d.ts",
-      "import": "./dist/number.js"
+      "import": "./dist/number.js",
+      "default": "./dist/number.js"
     },
     "./object": {
       "types": "./dist/object.d.ts",
-      "import": "./dist/object.js"
+      "import": "./dist/object.js",
+      "default": "./dist/object.js"
     },
     "./regexp": {
       "types": "./dist/regexp.d.js",
-      "import": "./dist/regexp.js"
+      "import": "./dist/regexp.js",
+      "default": "./dist/regexp.js"
     },
     "./string": {
       "types": "./dist/string.d.js",
-      "import": "./dist/string.js"
+      "import": "./dist/string.js",
+      "default": "./dist/string.js"
     },
     "./set": {
       "types": "./dist/set.d.js",
-      "import": "./dist/set.js"
+      "import": "./dist/set.js",
+      "default": "./dist/set.js"
     },
     "./SortedArray": {
       "types": "./dist/SortedArray.d.js",
-      "import": "./dist/SortedArray.js"
+      "import": "./dist/SortedArray.js",
+      "default": "./dist/SortedArray.js"
     },
     "./sorting": {
       "types": "./dist/sorting.d.js",
-      "import": "./dist/sorting.js"
+      "import": "./dist/sorting.js",
+      "default": "./dist/sorting.js"
     },
     "./UnsafeMap": {
       "types": "./dist/UnsafeMap.d.js",
-      "import": "./dist/UnsafeMap.js"
+      "import": "./dist/UnsafeMap.js",
+      "default": "./dist/UnsafeMap.js"
     }
   },
   "typesVersions": {
