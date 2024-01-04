@@ -3,7 +3,7 @@
 # Module: sorting
 
 Callback functions for use with Array.prototype.sort(). Use this module by
-importing from `@sirpepe/shed/string` or `@sirpepe/shed`.
+importing from `@sirpepe/shed/sorting`.
 
 ## Table of contents
 
@@ -17,7 +17,7 @@ importing from `@sirpepe/shed/string` or `@sirpepe/shed`.
 
 ### asc
 
-▸ **asc**<`T`\>(`a`, `b`): ``1`` \| ``0`` \| ``-1``
+▸ **asc**\<`T`\>(`a`, `b`): ``1`` \| ``0`` \| ``-1``
 
 Callback for `sort()` to sort numeric input in ascending order.
 
@@ -47,7 +47,7 @@ Example:
 
 #### Defined in
 
-[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/17cb5a8/src/sorting.ts#L18)
+[src/sorting.ts:18](https://github.com/SirPepe/shed/blob/3aa9cc7/src/sorting.ts#L18)
 
 ___
 
@@ -72,13 +72,13 @@ ___
 
 #### Defined in
 
-[src/sorting.ts:48](https://github.com/SirPepe/shed/blob/17cb5a8/src/sorting.ts#L48)
+[src/sorting.ts:48](https://github.com/SirPepe/shed/blob/3aa9cc7/src/sorting.ts#L48)
 
 ___
 
 ### desc
 
-▸ **desc**<`T`\>(`a`, `b`): ``1`` \| ``0`` \| ``-1``
+▸ **desc**\<`T`\>(`a`, `b`): ``1`` \| ``0`` \| ``-1``
 
 Callback for `sort()` to sort numeric input in descending order.
 
@@ -108,4 +108,4 @@ Result: [12, 10, 2, 1, 0];
 
 #### Defined in
 
-[src/sorting.ts:38](https://github.com/SirPepe/shed/blob/17cb5a8/src/sorting.ts#L38)
+[src/sorting.ts:38](https://github.com/SirPepe/shed/blob/3aa9cc7/src/sorting.ts#L38)

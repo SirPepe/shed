@@ -2,8 +2,7 @@
 
 # Module: error
 
-Error utilities. Use this module by importing from `@sirpepe/shed/error`
-or `@sirpepe/shed`.
+Error utilities. Use this module by importing from `@sirpepe/shed/error`.
 
 ## Table of contents
 
@@ -30,4 +29,4 @@ or `@sirpepe/shed`.
 
 #### Defined in
 
-[src/error.ts:34](https://github.com/SirPepe/shed/blob/17cb5a8/src/error.ts#L34)
+[src/error.ts:33](https://github.com/SirPepe/shed/blob/3aa9cc7/src/error.ts#L33)

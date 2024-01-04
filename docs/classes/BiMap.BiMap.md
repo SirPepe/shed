@@ -1,6 +1,6 @@
 [@sirpepe/shed](../README.md) / [BiMap](../modules/BiMap.md) / BiMap
 
-# Class: BiMap<K, V\>
+# Class: BiMap\<K, V\>
 
 [BiMap](../modules/BiMap.md).BiMap
 
@@ -45,7 +45,7 @@
 
 ### constructor
 
-• **new BiMap**<`K`, `V`\>(`values?`)
+• **new BiMap**\<`K`, `V`\>(`values?`): [`BiMap`](BiMap.BiMap.md)\<`K`, `V`\>
 
 #### Type parameters
 
@@ -58,51 +58,55 @@
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `values` | `Iterable`<[`K`, `V`]\> | `[]` |
+| `values` | `Iterable`\<[`K`, `V`]\> | `[]` |
+
+#### Returns
+
+[`BiMap`](BiMap.BiMap.md)\<`K`, `V`\>
 
 #### Defined in
 
-[src/BiMap.ts:16](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L16)
+[src/BiMap.ts:16](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L16)
 
 ## Properties
 
 ### byKey
 
-• `Private` **byKey**: `Map`<`K`, `V`\>
+• `Private` **byKey**: `Map`\<`K`, `V`\>
 
 #### Defined in
 
-[src/BiMap.ts:13](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L13)
+[src/BiMap.ts:13](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L13)
 
 ___
 
 ### byVal
 
-• `Private` **byVal**: `Map`<`V`, `K`\>
+• `Private` **byVal**: `Map`\<`V`, `K`\>
 
 #### Defined in
 
-[src/BiMap.ts:14](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L14)
+[src/BiMap.ts:14](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L14)
 
 ## Accessors
 
 ### [iterator]
 
-• `get` **[iterator]**(): () => `IterableIterator`<[`K`, `V`]\>
+• `get` **[iterator]**(): () => `IterableIterator`\<[`K`, `V`]\>
 
 #### Returns
 
 `fn`
 
-▸ (): `IterableIterator`<[`K`, `V`]\>
+▸ (): `IterableIterator`\<[`K`, `V`]\>
 
 ##### Returns
 
-`IterableIterator`<[`K`, `V`]\>
+`IterableIterator`\<[`K`, `V`]\>
 
 #### Defined in
 
-[src/BiMap.ts:75](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L75)
+[src/BiMap.ts:75](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L75)
 
 ___
 
@@ -116,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:71](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L71)
+[src/BiMap.ts:71](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L71)
 
 ## Methods
 
@@ -130,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:54](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L54)
+[src/BiMap.ts:54](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L54)
 
 ___
 
@@ -150,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:42](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L42)
+[src/BiMap.ts:42](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L42)
 
 ___
 
@@ -170,21 +174,21 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:48](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L48)
+[src/BiMap.ts:48](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L48)
 
 ___
 
 ### entries
 
-▸ **entries**(): `Iterable`<[`K`, `V`]\>
+▸ **entries**(): `Iterable`\<[`K`, `V`]\>
 
 #### Returns
 
-`Iterable`<[`K`, `V`]\>
+`Iterable`\<[`K`, `V`]\>
 
 #### Defined in
 
-[src/BiMap.ts:67](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L67)
+[src/BiMap.ts:67](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L67)
 
 ___
 
@@ -204,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:34](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L34)
+[src/BiMap.ts:34](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L34)
 
 ___
 
@@ -224,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:38](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L38)
+[src/BiMap.ts:38](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L38)
 
 ___
 
@@ -244,7 +248,7 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:26](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L26)
+[src/BiMap.ts:26](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L26)
 
 ___
 
@@ -264,21 +268,21 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:30](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L30)
+[src/BiMap.ts:30](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L30)
 
 ___
 
 ### keys
 
-▸ **keys**(): `Iterable`<`K`\>
+▸ **keys**(): `Iterable`\<`K`\>
 
 #### Returns
 
-`Iterable`<`K`\>
+`Iterable`\<`K`\>
 
 #### Defined in
 
-[src/BiMap.ts:59](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L59)
+[src/BiMap.ts:59](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L59)
 
 ___
 
@@ -299,18 +303,18 @@ ___
 
 #### Defined in
 
-[src/BiMap.ts:21](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L21)
+[src/BiMap.ts:21](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L21)
 
 ___
 
 ### values
 
-▸ **values**(): `Iterable`<`V`\>
+▸ **values**(): `Iterable`\<`V`\>
 
 #### Returns
 
-`Iterable`<`V`\>
+`Iterable`\<`V`\>
 
 #### Defined in
 
-[src/BiMap.ts:63](https://github.com/SirPepe/shed/blob/17cb5a8/src/BiMap.ts#L63)
+[src/BiMap.ts:63](https://github.com/SirPepe/shed/blob/3aa9cc7/src/BiMap.ts#L63)

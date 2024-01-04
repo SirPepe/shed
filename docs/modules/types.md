@@ -3,7 +3,7 @@
 # Module: types
 
 Utility types for TypeScript. Use this module by importing from
-`@sirpepe/shed/types` or `@sirpepe/shed`.
+`@sirpepe/shed/types`.
 
 ## Table of contents
 
@@ -19,7 +19,7 @@ Utility types for TypeScript. Use this module by importing from
 
 ### Drop
 
-Ƭ **Drop**<`T`, `I`\>: [...SplitTuple<T, I\>[0], ...DropFirst<SplitTuple<T, I\>[1]\>]
+Ƭ **Drop**\<`T`, `I`\>: [...SplitTuple\<T, I\>[0], ...DropFirst\<SplitTuple\<T, I\>[1]\>]
 
 Drops the element at index `I` from a tuple type.
 
@@ -32,13 +32,13 @@ Drops the element at index `I` from a tuple type.
 
 #### Defined in
 
-[src/types.ts:31](https://github.com/SirPepe/shed/blob/17cb5a8/src/types.ts#L31)
+[src/types.ts:31](https://github.com/SirPepe/shed/blob/3aa9cc7/src/types.ts#L31)
 
 ___
 
 ### DropFirst
 
-Ƭ **DropFirst**<`T`\>: `T` extends [`any`, ...(infer Rest)] ? `Rest` : `T`
+Ƭ **DropFirst**\<`T`\>: `T` extends [`any`, ...(infer Rest)] ? `Rest` : `T`
 
 Drops the first element from a tuple type.
 
@@ -50,30 +50,30 @@ Drops the first element from a tuple type.
 
 #### Defined in
 
-[src/types.ts:23](https://github.com/SirPepe/shed/blob/17cb5a8/src/types.ts#L23)
+[src/types.ts:23](https://github.com/SirPepe/shed/blob/3aa9cc7/src/types.ts#L23)
 
 ___
 
 ### MapDiscriminatedUnion
 
-Ƭ **MapDiscriminatedUnion**<`Union`, `Key`\>: { [Value in Union[Key]]: DiscriminateUnion<Union, Key, Value\> }
+Ƭ **MapDiscriminatedUnion**\<`Union`, `Key`\>: \{ [Value in Union[Key]]: DiscriminateUnion\<Union, Key, Value\> }
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `Union` | extends `Record`<`Key`, `string`\> |
+| `Union` | extends `Record`\<`Key`, `string`\> |
 | `Key` | extends keyof `Union` |
 
 #### Defined in
 
-[src/types.ts:41](https://github.com/SirPepe/shed/blob/17cb5a8/src/types.ts#L41)
+[src/types.ts:41](https://github.com/SirPepe/shed/blob/3aa9cc7/src/types.ts#L41)
 
 ___
 
 ### Optional
 
-Ƭ **Optional**<`Source`, `Keys`\>: { [Key in Keys]?: Source[Key] } & `Pick`<`Source`, `Exclude`<keyof `Source`, `Keys`\>\>
+Ƭ **Optional**\<`Source`, `Keys`\>: \{ [Key in Keys]?: Source[Key] } & `Pick`\<`Source`, `Exclude`\<keyof `Source`, `Keys`\>\>
 
 Makes select keys on `Source` optional
 
@@ -86,13 +86,13 @@ Makes select keys on `Source` optional
 
 #### Defined in
 
-[src/types.ts:48](https://github.com/SirPepe/shed/blob/17cb5a8/src/types.ts#L48)
+[src/types.ts:48](https://github.com/SirPepe/shed/blob/3aa9cc7/src/types.ts#L48)
 
 ___
 
 ### SplitTuple
 
-Ƭ **SplitTuple**<`R`, `I`, `L`\>: `L`[``"length"``] extends `I` ? [`L`, `R`] : `R` extends [infer First, ...(infer Rest)] ? [`SplitTuple`](types.md#splittuple)<[...Rest], `I`, [...L, `First`]\> : [`L`, `R`]
+Ƭ **SplitTuple**\<`R`, `I`, `L`\>: `L`[``"length"``] extends `I` ? [`L`, `R`] : `R` extends [infer First, ...(infer Rest)] ? [`SplitTuple`](types.md#splittuple)\<[...Rest], `I`, [...L, `First`]\> : [`L`, `R`]
 
 Splits a tuple type into a LHS and a RHS on index `I`
 
@@ -106,4 +106,4 @@ Splits a tuple type into a LHS and a RHS on index `I`
 
 #### Defined in
 
-[src/types.ts:13](https://github.com/SirPepe/shed/blob/17cb5a8/src/types.ts#L13)
+[src/types.ts:13](https://github.com/SirPepe/shed/blob/3aa9cc7/src/types.ts#L13)

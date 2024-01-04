@@ -3,7 +3,7 @@
 # Module: SortedArray
 
 A sorted array-like data structure. Use this module by importing from
-`@sirpepe/shed/SortedArray` or `@sirpepe/shed`.
+`@sirpepe/shed/SortedArray`.
 
 ## Table of contents
 

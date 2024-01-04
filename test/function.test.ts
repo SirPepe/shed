@@ -3,6 +3,7 @@
  */
 
 import { noop, identity, debounce, debounceRaf } from "../src/function";
+import { jest } from "@jest/globals";
 
 describe("function", () => {
   describe("noop()", () => {

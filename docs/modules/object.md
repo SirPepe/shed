@@ -2,8 +2,7 @@
 
 # Module: object
 
-Object utilities. Use this module by importing from `@sirpepe/shed/object`
-or `@sirpepe/shed`.
+Object utilities. Use this module by importing from `@sirpepe/shed/object`.
 
 ## Table of contents
 
@@ -21,7 +20,7 @@ or `@sirpepe/shed`.
 
 ### omitted
 
-▸ **omitted**<`T`, `K`\>(`obj`, `...toOmit`): `Omit`<`T`, `K`\>
+▸ **omitted**\<`T`, `K`\>(`obj`, `...toOmit`): `Omit`\<`T`, `K`\>
 
 Returns a new object created from the input object, but without the keys in
 `toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
@@ -31,7 +30,7 @@ and the inverse of `picked()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Record`<`string`, `unknown`\> |
+| `T` | extends `Record`\<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -43,17 +42,17 @@ and the inverse of `picked()`.
 
 #### Returns
 
-`Omit`<`T`, `K`\>
+`Omit`\<`T`, `K`\>
 
 #### Defined in
 
-[src/object.ts:13](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L13)
+[src/object.ts:12](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L12)
 
 ___
 
 ### omitter
 
-▸ **omitter**<`T`, `K`\>(`...toOmit`): (`obj`: `T`) => `Omit`<`T`, `K`\>
+▸ **omitter**\<`T`, `K`\>(`...toOmit`): (`obj`: `T`) => `Omit`\<`T`, `K`\>
 
 Returns a function that returns a new object created from its input object,
 but without the keys in `toOmit`. Essentially a factory function for
@@ -63,7 +62,7 @@ functions that call `omitted()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Record`<`string`, `unknown`\> |
+| `T` | extends `Record`\<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -76,7 +75,7 @@ functions that call `omitted()`.
 
 `fn`
 
-▸ (`obj`): `Omit`<`T`, `K`\>
+▸ (`obj`): `Omit`\<`T`, `K`\>
 
 ##### Parameters
 
@@ -86,17 +85,17 @@ functions that call `omitted()`.
 
 ##### Returns
 
-`Omit`<`T`, `K`\>
+`Omit`\<`T`, `K`\>
 
 #### Defined in
 
-[src/object.ts:32](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L32)
+[src/object.ts:31](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L31)
 
 ___
 
 ### picked
 
-▸ **picked**<`T`, `K`\>(`obj`, `...toKeep`): `Pick`<`T`, `K`\>
+▸ **picked**\<`T`, `K`\>(`obj`, `...toKeep`): `Pick`\<`T`, `K`\>
 
 Returns a new object created from the input object, but with only the keys in
 `toKeep`. Essentially the runtime-variant of TypeScript's `Pick<T, K>` type
@@ -106,7 +105,7 @@ and the inverse of `omitted()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Record`<`string`, `unknown`\> |
+| `T` | extends `Record`\<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -118,17 +117,17 @@ and the inverse of `omitted()`.
 
 #### Returns
 
-`Pick`<`T`, `K`\>
+`Pick`\<`T`, `K`\>
 
 #### Defined in
 
-[src/object.ts:52](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L52)
+[src/object.ts:51](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L51)
 
 ___
 
 ### picker
 
-▸ **picker**<`T`, `K`\>(`...toKeep`): (`obj`: `T`) => `Pick`<`T`, `K`\>
+▸ **picker**\<`T`, `K`\>(`...toKeep`): (`obj`: `T`) => `Pick`\<`T`, `K`\>
 
 Returns a function that returns a new object created from its input object,
 but with only the keys in `toKeep`. Essentially a factory function for
@@ -138,7 +137,7 @@ functions that call `picked()`.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Record`<`string`, `unknown`\> |
+| `T` | extends `Record`\<`string`, `unknown`\> |
 | `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
@@ -151,7 +150,7 @@ functions that call `picked()`.
 
 `fn`
 
-▸ (`obj`): `Pick`<`T`, `K`\>
+▸ (`obj`): `Pick`\<`T`, `K`\>
 
 ##### Parameters
 
@@ -161,17 +160,17 @@ functions that call `picked()`.
 
 ##### Returns
 
-`Pick`<`T`, `K`\>
+`Pick`\<`T`, `K`\>
 
 #### Defined in
 
-[src/object.ts:68](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L68)
+[src/object.ts:67](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L67)
 
 ___
 
 ### select
 
-▸ **select**<`T`, `K`\>(`prop`): (`obj`: `T`) => `T`[`K`]
+▸ **select**\<`T`, `K`\>(`prop`): (`obj`: `T`) => `T`[`K`]
 
 Returns a getter function that returns every object's "prop" value.
 
@@ -206,13 +205,13 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:110](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L110)
+[src/object.ts:109](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L109)
 
 ___
 
 ### where
 
-▸ **where**<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
+▸ **where**\<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
 
 Returns a predicate that checks if its input object's "prop" field contains a
 value equal to "value".
@@ -249,13 +248,13 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:85](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L85)
+[src/object.ts:84](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L84)
 
 ___
 
 ### whereNot
 
-▸ **whereNot**<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
+▸ **whereNot**\<`T`, `K`\>(`prop`, `value`): (`obj`: `T`) => `boolean`
 
 Returns a predicate that checks if its input object's "prop" field contains a
 value not equal to "value".
@@ -292,4 +291,4 @@ value not equal to "value".
 
 #### Defined in
 
-[src/object.ts:98](https://github.com/SirPepe/shed/blob/17cb5a8/src/object.ts#L98)
+[src/object.ts:97](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L97)

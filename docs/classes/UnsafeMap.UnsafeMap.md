@@ -1,6 +1,6 @@
 [@sirpepe/shed](../README.md) / [UnsafeMap](../modules/UnsafeMap.md) / UnsafeMap
 
-# Class: UnsafeMap<K, V\>
+# Class: UnsafeMap\<K, V\>
 
 [UnsafeMap](../modules/UnsafeMap.md).UnsafeMap
 
@@ -13,7 +13,7 @@
 
 ## Hierarchy
 
-- `Map`<`K`, `V`\>
+- `Map`\<`K`, `V`\>
 
   ↳ **`UnsafeMap`**
 
@@ -47,7 +47,7 @@
 
 ### constructor
 
-• **new UnsafeMap**<`K`, `V`\>(`entries?`, `errorFactory?`)
+• **new UnsafeMap**\<`K`, `V`\>(`entries?`, `errorFactory?`): [`UnsafeMap`](UnsafeMap.UnsafeMap.md)\<`K`, `V`\>
 
 #### Type parameters
 
@@ -60,16 +60,20 @@
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `entries` | `Iterable`<[`K`, `V`]\> | `[]` |
+| `entries` | `Iterable`\<[`K`, `V`]\> | `[]` |
 | `errorFactory` | (`key`: `K`) => `Error` | `undefined` |
+
+#### Returns
+
+[`UnsafeMap`](UnsafeMap.UnsafeMap.md)\<`K`, `V`\>
 
 #### Overrides
 
-Map&lt;K, V\&gt;.constructor
+Map\&lt;K, V\&gt;.constructor
 
 #### Defined in
 
-[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/17cb5a8/src/UnsafeMap.ts#L13)
+[src/UnsafeMap.ts:13](https://github.com/SirPepe/shed/blob/3aa9cc7/src/UnsafeMap.ts#L13)
 
 ## Properties
 
@@ -79,11 +83,11 @@ Map&lt;K, V\&gt;.constructor
 
 #### Inherited from
 
-Map.\_\_@toStringTag@27
+Map.[toStringTag]
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:135
+node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:137
 
 ___
 
@@ -107,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/17cb5a8/src/UnsafeMap.ts#L12)
+[src/UnsafeMap.ts:12](https://github.com/SirPepe/shed/blob/3aa9cc7/src/UnsafeMap.ts#L12)
 
 ___
 
@@ -121,7 +125,7 @@ Map.size
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:48
+node_modules/typescript/lib/lib.es2015.collection.d.ts:45
 
 ___
 
@@ -131,31 +135,31 @@ ___
 
 #### Inherited from
 
-Map.\_\_@species@607
+Map.[species]
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:317
+node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:319
 
 ## Methods
 
 ### [iterator]
 
-▸ **[iterator]**(): `IterableIterator`<[`K`, `V`]\>
+▸ **[iterator]**(): `IterableIterator`\<[`K`, `V`]\>
 
 Returns an iterable of entries in the map.
 
 #### Returns
 
-`IterableIterator`<[`K`, `V`]\>
+`IterableIterator`\<[`K`, `V`]\>
 
 #### Inherited from
 
-Map.\_\_@iterator@87
+Map.[iterator]
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.iterable.d.ts:121
+node_modules/typescript/lib/lib.es2015.iterable.d.ts:119
 
 ___
 
@@ -173,7 +177,7 @@ Map.clear
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:23
+node_modules/typescript/lib/lib.es2015.collection.d.ts:20
 
 ___
 
@@ -199,19 +203,19 @@ Map.delete
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:27
+node_modules/typescript/lib/lib.es2015.collection.d.ts:24
 
 ___
 
 ### entries
 
-▸ **entries**(): `IterableIterator`<[`K`, `V`]\>
+▸ **entries**(): `IterableIterator`\<[`K`, `V`]\>
 
 Returns an iterable of key, value pairs for every entry in the map.
 
 #### Returns
 
-`IterableIterator`<[`K`, `V`]\>
+`IterableIterator`\<[`K`, `V`]\>
 
 #### Inherited from
 
@@ -219,7 +223,7 @@ Map.entries
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.iterable.d.ts:126
+node_modules/typescript/lib/lib.es2015.iterable.d.ts:124
 
 ___
 
@@ -233,7 +237,7 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 | Name | Type |
 | :------ | :------ |
-| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: `Map`<`K`, `V`\>) => `void` |
+| `callbackfn` | (`value`: `V`, `key`: `K`, `map`: `Map`\<`K`, `V`\>) => `void` |
 | `thisArg?` | `any` |
 
 #### Returns
@@ -246,7 +250,7 @@ Map.forEach
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:31
+node_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 ___
 
@@ -270,7 +274,7 @@ Map.get
 
 #### Defined in
 
-[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/17cb5a8/src/UnsafeMap.ts#L21)
+[src/UnsafeMap.ts:21](https://github.com/SirPepe/shed/blob/3aa9cc7/src/UnsafeMap.ts#L21)
 
 ___
 
@@ -296,19 +300,19 @@ Map.has
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:40
+node_modules/typescript/lib/lib.es2015.collection.d.ts:37
 
 ___
 
 ### keys
 
-▸ **keys**(): `IterableIterator`<`K`\>
+▸ **keys**(): `IterableIterator`\<`K`\>
 
 Returns an iterable of keys in the map
 
 #### Returns
 
-`IterableIterator`<`K`\>
+`IterableIterator`\<`K`\>
 
 #### Inherited from
 
@@ -316,13 +320,13 @@ Map.keys
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.iterable.d.ts:131
+node_modules/typescript/lib/lib.es2015.iterable.d.ts:129
 
 ___
 
 ### set
 
-▸ **set**(`key`, `value`): [`UnsafeMap`](UnsafeMap.UnsafeMap.md)<`K`, `V`\>
+▸ **set**(`key`, `value`): `this`
 
 Adds a new element with a specified key and value to the Map. If an element with the same key already exists, the element will be updated.
 
@@ -335,7 +339,7 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 #### Returns
 
-[`UnsafeMap`](UnsafeMap.UnsafeMap.md)<`K`, `V`\>
+`this`
 
 #### Inherited from
 
@@ -343,19 +347,19 @@ Map.set
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.collection.d.ts:44
+node_modules/typescript/lib/lib.es2015.collection.d.ts:41
 
 ___
 
 ### values
 
-▸ **values**(): `IterableIterator`<`V`\>
+▸ **values**(): `IterableIterator`\<`V`\>
 
 Returns an iterable of values in the map
 
 #### Returns
 
-`IterableIterator`<`V`\>
+`IterableIterator`\<`V`\>
 
 #### Inherited from
 
@@ -363,4 +367,4 @@ Map.values
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es2015.iterable.d.ts:136
+node_modules/typescript/lib/lib.es2015.iterable.d.ts:134

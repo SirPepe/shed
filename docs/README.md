@@ -17,7 +17,6 @@
 - [guard](modules/guard.md)
 - [index](modules/index.md)
 - [iterable](modules/iterable.md)
-- [map](modules/map.md)
 - [number](modules/number.md)
 - [object](modules/object.md)
 - [regexp](modules/regexp.md)

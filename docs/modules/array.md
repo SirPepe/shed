@@ -3,7 +3,7 @@
 # Module: array
 
 Utilities for working with arrays. Access this module by importing from
-`@sirpepe/shed/array` or `@sirpepe/shed`.
+`@sirpepe/shed/array`.
 
 ## Table of contents
 
@@ -17,7 +17,7 @@ Utilities for working with arrays. Access this module by importing from
 
 ### move
 
-▸ **move**<`T`\>(`arr`, `from`, `to`): `T`[]
+▸ **move**\<`T`\>(`arr`, `from`, `to`): `T`[]
 
 Moves an element from one position in an array to another position, operating
 in-place. See `moved()` for an immutable variant of this function.
@@ -54,13 +54,13 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:24](https://github.com/SirPepe/shed/blob/17cb5a8/src/array.ts#L24)
+[src/array.ts:24](https://github.com/SirPepe/shed/blob/3aa9cc7/src/array.ts#L24)
 
 ___
 
 ### moved
 
-▸ **moved**<`T`\>(`arr`, `from`, `to`): `T`[]
+▸ **moved**\<`T`\>(`arr`, `from`, `to`): `T`[]
 
 Moves an element from one position in an array to another position, creating
 a new array. See `move()` for a mutating variant of this function.
@@ -97,7 +97,7 @@ will never yield a sparse array.
 
 #### Defined in
 
-[src/array.ts:45](https://github.com/SirPepe/shed/blob/17cb5a8/src/array.ts#L45)
+[src/array.ts:45](https://github.com/SirPepe/shed/blob/3aa9cc7/src/array.ts#L45)
 
 ___
 
@@ -121,7 +121,7 @@ the range ends at 0.
 
 #### Defined in
 
-[src/array.ts:56](https://github.com/SirPepe/shed/blob/17cb5a8/src/array.ts#L56)
+[src/array.ts:56](https://github.com/SirPepe/shed/blob/3aa9cc7/src/array.ts#L56)
 
 ▸ **range**(`from`, `to`): `number`[]
 
@@ -138,4 +138,4 @@ the range ends at 0.
 
 #### Defined in
 
-[src/array.ts:57](https://github.com/SirPepe/shed/blob/17cb5a8/src/array.ts#L57)
+[src/array.ts:57](https://github.com/SirPepe/shed/blob/3aa9cc7/src/array.ts#L57)

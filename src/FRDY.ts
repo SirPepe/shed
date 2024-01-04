@@ -3,13 +3,10 @@
  * maps and sets, in addition to everything else that's valid ECMAScript. Freddy
  * is way less universal than JSON, but that is the price for at least allowing
  * the exchange of maps and sets between ECMAScript environments. Use this
- * module by importing from `@sirpepe/shed/FRDY` or `@sirpepe/shed`.
+ * module by importing from `@sirpepe/shed/FRDY`.
  *
  * @module
  */
-
-import { isMap } from "./map";
-import { isSet } from "./set";
 
 type Revivable = {
   "@@__frdy_reviver": 0;
@@ -28,13 +25,13 @@ function isRevivable(value: unknown): value is Revivable {
 }
 
 export function replacer(_: string, value: unknown): any {
-  if (isMap(value)) {
+  if (value instanceof Map) {
     return {
       "@@__frdy_reviver": 0,
       entries: Array.from(value.entries()),
     };
   }
-  if (isSet(value)) {
+  if (value instanceof Set) {
     return {
       "@@__frdy_reviver": 1,
       entries: Array.from(value.entries()),

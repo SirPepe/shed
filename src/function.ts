@@ -1,6 +1,6 @@
 /**
  * Function utilities. Use this module by importing from
- * `@sirpepe/shed/function` or `@sirpepe/shed`.
+ * `@sirpepe/shed/function`.
  *
  * @module
  */
