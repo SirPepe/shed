@@ -2,8 +2,7 @@
 
 # Module: string
 
-String utilities. Use this module by importing from `@sirpepe/shed/string`
-or `@sirpepe/shed`.
+String utilities. Use this module by importing from `@sirpepe/shed/string`.
 
 ## Table of contents
 
@@ -34,7 +33,7 @@ Get the number of characters in a string with customizable value for tabs.
 
 #### Defined in
 
-[src/string.ts:27](https://github.com/SirPepe/shed/blob/17cb5a8/src/string.ts#L27)
+[src/string.ts:26](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L26)
 
 ___
 
@@ -56,7 +55,7 @@ Turn a string's first character to lower case.
 
 #### Defined in
 
-[src/string.ts:19](https://github.com/SirPepe/shed/blob/17cb5a8/src/string.ts#L19)
+[src/string.ts:18](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L18)
 
 ___
 
@@ -78,4 +77,4 @@ Turn a string's first character to upper case.
 
 #### Defined in
 
-[src/string.ts:11](https://github.com/SirPepe/shed/blob/17cb5a8/src/string.ts#L11)
+[src/string.ts:10](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L10)

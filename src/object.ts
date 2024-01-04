@@ -1,6 +1,5 @@
 /**
- * Object utilities. Use this module by importing from `@sirpepe/shed/object`
- * or `@sirpepe/shed`.
+ * Object utilities. Use this module by importing from `@sirpepe/shed/object`.
  *
  * @module
  */

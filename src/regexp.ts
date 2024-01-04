@@ -1,4 +1,10 @@
 /**
+ * RegExp utilities. Use this module by importing from `@sirpepe/shed/regexp`.
+ *
+ * @module
+ */
+
+/**
  * Indicates whether `input` is either a regular expression object or a string
  * containing a valid regular expression.
  */
@@ -14,10 +20,7 @@ export function isRegExp(input: unknown): boolean {
       return false;
     }
   }
-  if (
-    typeof input === "object" &&
-    Object.prototype.toString.call(input) === "[object RegExp]"
-  ) {
+  if (typeof input === "object" && input instanceof RegExp) {
     return true;
   }
   return false;

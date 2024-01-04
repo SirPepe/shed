@@ -2,6 +2,8 @@
 
 # Module: regexp
 
+RegExp utilities. Use this module by importing from `@sirpepe/shed/regexp`.
+
 ## Table of contents
 
 ### Functions
@@ -29,7 +31,7 @@ Escapes a string for use in regular expressions.
 
 #### Defined in
 
-[src/regexp.ts:29](https://github.com/SirPepe/shed/blob/17cb5a8/src/regexp.ts#L29)
+[src/regexp.ts:32](https://github.com/SirPepe/shed/blob/3aa9cc7/src/regexp.ts#L32)
 
 ___
 
@@ -52,7 +54,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:5](https://github.com/SirPepe/shed/blob/17cb5a8/src/regexp.ts#L5)
+[src/regexp.ts:11](https://github.com/SirPepe/shed/blob/3aa9cc7/src/regexp.ts#L11)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -68,7 +70,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:6](https://github.com/SirPepe/shed/blob/17cb5a8/src/regexp.ts#L6)
+[src/regexp.ts:12](https://github.com/SirPepe/shed/blob/3aa9cc7/src/regexp.ts#L12)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -84,4 +86,4 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:7](https://github.com/SirPepe/shed/blob/17cb5a8/src/regexp.ts#L7)
+[src/regexp.ts:13](https://github.com/SirPepe/shed/blob/3aa9cc7/src/regexp.ts#L13)

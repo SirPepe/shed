@@ -1,7 +1,7 @@
 /**
  * Collection of assert functions that not only throw errors at runtime, but
  * also work as assertions in TypeScript. Use this module by importing from
- * `@sirpepe/shed/assert` or `@sirpepe/shed`.
+ * `@sirpepe/shed/assert`.
  *
  * @module
  */

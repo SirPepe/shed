@@ -1,6 +1,6 @@
 /**
  * Utilities for numbers of all types. Use this module by importing from
- * `@sirpepe/shed/number` or `@sirpepe/shed`.
+ * `@sirpepe/shed/number`.
  *
  * @module
  */

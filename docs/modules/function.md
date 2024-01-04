@@ -3,7 +3,7 @@
 # Module: function
 
 Function utilities. Use this module by importing from
-`@sirpepe/shed/function` or `@sirpepe/shed`.
+`@sirpepe/shed/function`.
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ Function utilities. Use this module by importing from
 
 ### debounce
 
-▸ **debounce**<`T`, `A`\>(`func`, `t?`): (`this`: `T`, ...`args`: `A`) => `void`
+▸ **debounce**\<`T`, `A`\>(`func`, `t?`): (`this`: `T`, ...`args`: `A`) => `void`
 
 Returns a debounced function.
 
@@ -55,13 +55,13 @@ Returns a debounced function.
 
 #### Defined in
 
-[src/function.ts:43](https://github.com/SirPepe/shed/blob/17cb5a8/src/function.ts#L43)
+[src/function.ts:43](https://github.com/SirPepe/shed/blob/3aa9cc7/src/function.ts#L43)
 
 ___
 
 ### debounceRaf
 
-▸ **debounceRaf**<`T`, `A`\>(`func`): (`this`: `T`, ...`args`: `A`) => `void`
+▸ **debounceRaf**\<`T`, `A`\>(`func`): (`this`: `T`, ...`args`: `A`) => `void`
 
 Returns a function that fires `func()` when the next frame renders, at most
 once per frame.
@@ -98,13 +98,13 @@ once per frame.
 
 #### Defined in
 
-[src/function.ts:63](https://github.com/SirPepe/shed/blob/17cb5a8/src/function.ts#L63)
+[src/function.ts:63](https://github.com/SirPepe/shed/blob/3aa9cc7/src/function.ts#L63)
 
 ___
 
 ### identity
 
-▸ **identity**<`T`\>(`x`): `T`
+▸ **identity**\<`T`\>(`x`): `T`
 
 A unary function that does nothing and returns its argument. Useful for
 writing tests or triggering side effects on lazily-evaluated generators.
@@ -135,7 +135,7 @@ input === output // > true
 
 #### Defined in
 
-[src/function.ts:36](https://github.com/SirPepe/shed/blob/17cb5a8/src/function.ts#L36)
+[src/function.ts:36](https://github.com/SirPepe/shed/blob/3aa9cc7/src/function.ts#L36)
 
 ___
 
@@ -167,4 +167,4 @@ noop(42); // still nothing!
 
 #### Defined in
 
-[src/function.ts:22](https://github.com/SirPepe/shed/blob/17cb5a8/src/function.ts#L22)
+[src/function.ts:22](https://github.com/SirPepe/shed/blob/3aa9cc7/src/function.ts#L22)

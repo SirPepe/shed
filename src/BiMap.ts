@@ -4,7 +4,7 @@
  * the bookkeeping taken care of. The API should be fairly self-explanatory - it
  * is essentially equal to that of a regular map, just with every operation
  * duplicated to support both key- and value-oriented approaches. Use this
- * module by importing from `@sirpepe/shed/BiMap` or `@sirpepe/shed`.
+ * module by importing from `@sirpepe/shed/BiMap`.
  *
  * @module
  */

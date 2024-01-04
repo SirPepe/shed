@@ -3,7 +3,7 @@
  * key that is not in the map (effectively adding a type assertion to `get()`).
  * Because `get()` returns `V` instead of `V | undefined` this makes life in
  * TypeScript somewhat easier. Use this module by importing from
- * `@sirpepe/shed/UnsafeMap` or `@sirpepe/shed`.
+ * `@sirpepe/shed/UnsafeMap`.
  *
  * @module
  */

@@ -1,6 +1,6 @@
 /**
  * Utilities for working with arrays. Access this module by importing from
- * `@sirpepe/shed/array` or `@sirpepe/shed`.
+ * `@sirpepe/shed/array`.
  *
  * @module
  */
