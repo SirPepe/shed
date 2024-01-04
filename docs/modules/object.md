@@ -46,7 +46,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:12](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L12)
+[src/object.ts:12](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L12)
 
 ___
 
@@ -89,7 +89,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:31](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L31)
+[src/object.ts:31](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L31)
 
 ___
 
@@ -121,7 +121,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:51](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L51)
+[src/object.ts:51](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L51)
 
 ___
 
@@ -164,7 +164,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:67](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L67)
+[src/object.ts:67](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L67)
 
 ___
 
@@ -205,7 +205,7 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:109](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L109)
+[src/object.ts:109](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L109)
 
 ___
 
@@ -248,7 +248,7 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:84](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L84)
+[src/object.ts:84](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L84)
 
 ___
 
@@ -291,4 +291,4 @@ value not equal to "value".
 
 #### Defined in
 
-[src/object.ts:97](https://github.com/SirPepe/shed/blob/3aa9cc7/src/object.ts#L97)
+[src/object.ts:97](https://github.com/SirPepe/shed/blob/a2b2848/src/object.ts#L97)

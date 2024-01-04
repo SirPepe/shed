@@ -33,4 +33,4 @@
 
 #### Defined in
 
-[src/set.ts:1](https://github.com/SirPepe/shed/blob/3aa9cc7/src/set.ts#L1)
+[src/set.ts:1](https://github.com/SirPepe/shed/blob/a2b2848/src/set.ts#L1)

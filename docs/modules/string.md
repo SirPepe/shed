@@ -33,7 +33,7 @@ Get the number of characters in a string with customizable value for tabs.
 
 #### Defined in
 
-[src/string.ts:26](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L26)
+[src/string.ts:26](https://github.com/SirPepe/shed/blob/a2b2848/src/string.ts#L26)
 
 ___
 
@@ -55,7 +55,7 @@ Turn a string's first character to lower case.
 
 #### Defined in
 
-[src/string.ts:18](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L18)
+[src/string.ts:18](https://github.com/SirPepe/shed/blob/a2b2848/src/string.ts#L18)
 
 ___
 
@@ -77,4 +77,4 @@ Turn a string's first character to upper case.
 
 #### Defined in
 
-[src/string.ts:10](https://github.com/SirPepe/shed/blob/3aa9cc7/src/string.ts#L10)
+[src/string.ts:10](https://github.com/SirPepe/shed/blob/a2b2848/src/string.ts#L10)
