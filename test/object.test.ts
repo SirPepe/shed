@@ -42,7 +42,7 @@ describe("object", () => {
         "a",
         "b",
         "c",
-        "d"
+        "d",
       )(input);
       expect(c).toEqual({});
       expect(c).not.toBe(input);
@@ -87,7 +87,7 @@ describe("object", () => {
         "a",
         "b",
         "c",
-        "d"
+        "d",
       )(input);
       expect(c).toEqual(input);
       expect(c).not.toBe(input);

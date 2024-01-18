@@ -8,10 +8,10 @@ describe("error", () => {
     });
     test("throw errors with specific constructors", () => {
       expect(() => fail("Oops", { ErrorConstructor: TypeError })).toThrow(
-        "Oops"
+        "Oops",
       );
       expect(() => fail("Oops", { ErrorConstructor: TypeError })).toThrow(
-        TypeError
+        TypeError,
       );
     });
   });

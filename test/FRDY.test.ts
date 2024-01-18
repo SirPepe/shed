@@ -15,9 +15,9 @@ describe("FRDY", () => {
             new Map([
               ["foo", 23],
               ["bar", 42],
-            ])
-          )
-        )
+            ]),
+          ),
+        ),
       ).toEqual({
         "@@__frdy_reviver": 0,
         entries: [
@@ -50,9 +50,9 @@ describe("FRDY", () => {
                   ]),
                 },
               ],
-            ])
-          )
-        )
+            ]),
+          ),
+        ),
       ).toEqual({
         "@@__frdy_reviver": 0,
         entries: [

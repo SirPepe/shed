@@ -82,7 +82,7 @@ describe("array", () => {
       ];
       const actual = partition<string, number>(
         input,
-        (item): item is string => typeof item === "string"
+        (item): item is string => typeof item === "string",
       );
       expect(actual).toEqual(expected);
     });

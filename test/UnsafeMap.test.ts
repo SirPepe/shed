@@ -25,7 +25,7 @@ describe("UnsafeMap", () => {
         ["q", 23],
         ["a", 42],
       ],
-      () => new Error("Fail!")
+      () => new Error("Fail!"),
     );
     expect(map.size).toBe(2);
     expect(() => map.get("x")).toThrow("Fail!");

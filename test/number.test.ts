@@ -71,22 +71,22 @@ describe("Number", () => {
       expect(stringify(1337, "abcdefghijklmnopqrstuvwxyz")).toBe("bzl");
       expect(stringify(9001, "abcdefghijklmnopqrstuvwxyz")).toBe("nif");
       expect(stringify(1337, "0123456789abcdefghijklmnopqrstuvwxyz")).toBe(
-        "115"
+        "115",
       );
       expect(stringify(9001, "0123456789abcdefghijklmnopqrstuvwxyz")).toBe(
-        "6y1"
+        "6y1",
       );
       expect(
         stringify(
           1337,
-          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        )
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        ),
       ).toBe("lz");
       expect(
         stringify(
           9001,
-          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        )
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        ),
       ).toBe("2lb");
     });
   });

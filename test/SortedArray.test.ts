@@ -3,7 +3,7 @@ import { SortedArray } from "../src/SortedArray";
 describe("SortedArray", () => {
   test("with primitive types", () => {
     const s = new SortedArray([3, 1, 2, 4, 0, 5], (a: number, b: number) =>
-      a === b ? 0 : a > b ? 1 : -1
+      a === b ? 0 : a > b ? 1 : -1,
     );
     expect(s.toArray()).toEqual([0, 1, 2, 3, 4, 5]);
     s.insert(1.5);
@@ -15,7 +15,7 @@ describe("SortedArray", () => {
   test("with non-array iterables as initial input", () => {
     const s = new SortedArray(
       new Set([3, 1, 2, 4, 0, 5]),
-      (a: number, b: number) => (a === b ? 0 : a > b ? 1 : -1)
+      (a: number, b: number) => (a === b ? 0 : a > b ? 1 : -1),
     );
     expect(s.toArray()).toEqual([0, 1, 2, 3, 4, 5]);
   });
@@ -30,7 +30,7 @@ describe("SortedArray", () => {
       { value: 5 },
     ];
     const s = new SortedArray(source, (a, b) =>
-      a.value === b.value ? 0 : a.value > b.value ? 1 : -1
+      a.value === b.value ? 0 : a.value > b.value ? 1 : -1,
     );
     expect(s.toArray()).toEqual([
       source[4],
@@ -51,7 +51,7 @@ describe("SortedArray", () => {
       { value: 5 },
     ];
     const s = new SortedArray(source, (a, b) =>
-      a.value === b.value ? 0 : a.value > b.value ? 1 : -1
+      a.value === b.value ? 0 : a.value > b.value ? 1 : -1,
     );
     s.insert({ value: 3 });
     expect(s.toArray()).toEqual([
@@ -67,7 +67,7 @@ describe("SortedArray", () => {
   test("insertAll() with multiple objects", () => {
     const source = [{ value: 2 }, { value: 5 }, { value: 4 }];
     const s = new SortedArray(source, (a, b) =>
-      a.value === b.value ? 0 : a.value > b.value ? 1 : -1
+      a.value === b.value ? 0 : a.value > b.value ? 1 : -1,
     );
     s.insertAll({ value: 0 }, { value: 3 }, { value: 1 });
     expect(s.toArray()).toEqual([
@@ -82,7 +82,7 @@ describe("SortedArray", () => {
 
   test("at()", () => {
     const s = new SortedArray([3, 1, 2, 4, 0, 5], (a: number, b: number) =>
-      a === b ? 0 : a > b ? 1 : -1
+      a === b ? 0 : a > b ? 1 : -1,
     );
     expect(s.at(0)).toEqual(0);
     expect(s.at(-1)).toEqual(5);

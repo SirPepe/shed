@@ -29,7 +29,7 @@ describe("regexp", () => {
   describe("escapeRegExpString()", () => {
     test("escapes characters in the string", () => {
       expect(escapeRegExpString("\\ ^ $ * + ? . ( ) | { } [ ]")).toBe(
-        "\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]"
+        "\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]",
       );
     });
 
