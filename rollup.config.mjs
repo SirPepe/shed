@@ -7,6 +7,7 @@ const modules = [
   "array",
   "assert",
   "BiMap",
+  "constants",
   "error",
   "FRDY",
   "function",

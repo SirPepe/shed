@@ -20,7 +20,12 @@
     "./BiMap": {
       "types": "./dist/BiMap.d.ts",
       "import": "./dist/BiMap.js",
-      "default": "./dist/assert.js"
+      "default": "./dist/BiMap.js"
+    },
+    "./constants": {
+      "types": "./dist/constants.d.ts",
+      "import": "./dist/constants.js",
+      "default": "./dist/constants.js"
     },
     "./error": {
       "types": "./dist/error.d.ts",
