@@ -35,7 +35,7 @@ module by importing from `@sirpepe/shed/FRDY`.
 
 #### Defined in
 
-[src/FRDY.ts:59](https://github.com/SirPepe/shed/blob/a2b2848/src/FRDY.ts#L59)
+[src/FRDY.ts:59](https://github.com/SirPepe/shed/blob/40637e0/src/FRDY.ts#L59)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[src/FRDY.ts:27](https://github.com/SirPepe/shed/blob/a2b2848/src/FRDY.ts#L27)
+[src/FRDY.ts:27](https://github.com/SirPepe/shed/blob/40637e0/src/FRDY.ts#L27)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[src/FRDY.ts:47](https://github.com/SirPepe/shed/blob/a2b2848/src/FRDY.ts#L47)
+[src/FRDY.ts:47](https://github.com/SirPepe/shed/blob/40637e0/src/FRDY.ts#L47)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[src/FRDY.ts:43](https://github.com/SirPepe/shed/blob/a2b2848/src/FRDY.ts#L43)
+[src/FRDY.ts:43](https://github.com/SirPepe/shed/blob/40637e0/src/FRDY.ts#L43)

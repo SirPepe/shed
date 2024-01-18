@@ -32,7 +32,7 @@ Drops the element at index `I` from a tuple type.
 
 #### Defined in
 
-[src/types.ts:31](https://github.com/SirPepe/shed/blob/a2b2848/src/types.ts#L31)
+[src/types.ts:31](https://github.com/SirPepe/shed/blob/40637e0/src/types.ts#L31)
 
 ___
 
@@ -50,7 +50,7 @@ Drops the first element from a tuple type.
 
 #### Defined in
 
-[src/types.ts:23](https://github.com/SirPepe/shed/blob/a2b2848/src/types.ts#L23)
+[src/types.ts:23](https://github.com/SirPepe/shed/blob/40637e0/src/types.ts#L23)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:41](https://github.com/SirPepe/shed/blob/a2b2848/src/types.ts#L41)
+[src/types.ts:41](https://github.com/SirPepe/shed/blob/40637e0/src/types.ts#L41)
 
 ___
 
@@ -86,7 +86,7 @@ Makes select keys on `Source` optional
 
 #### Defined in
 
-[src/types.ts:48](https://github.com/SirPepe/shed/blob/a2b2848/src/types.ts#L48)
+[src/types.ts:48](https://github.com/SirPepe/shed/blob/40637e0/src/types.ts#L48)
 
 ___
 
@@ -106,4 +106,4 @@ Splits a tuple type into a LHS and a RHS on index `I`
 
 #### Defined in
 
-[src/types.ts:13](https://github.com/SirPepe/shed/blob/a2b2848/src/types.ts#L13)
+[src/types.ts:13](https://github.com/SirPepe/shed/blob/40637e0/src/types.ts#L13)

@@ -2,6 +2,8 @@
 
 # Module: set
 
+Set utilities. Use this module by importing from `@sirpepe/shed/set`.
+
 ## Table of contents
 
 ### Functions
@@ -13,6 +15,8 @@
 ### addAll
 
 ▸ **addAll**\<`T`\>(`target`, `...groups`): `void`
+
+Bulk-add iterable contents to a target set.
 
 #### Type parameters
 
@@ -33,4 +37,4 @@
 
 #### Defined in
 
-[src/set.ts:1](https://github.com/SirPepe/shed/blob/a2b2848/src/set.ts#L1)
+[src/set.ts:10](https://github.com/SirPepe/shed/blob/40637e0/src/set.ts#L10)
