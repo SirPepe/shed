@@ -83,7 +83,7 @@ export function picker<T extends Record<string, unknown>, K extends keyof T>(
  */
 export function where<T, K extends keyof T>(
   prop: K,
-  value: T[K]
+  value: T[K],
 ): (obj: T) => boolean {
   return function comparator(obj: T) {
     return obj[prop] === value;
@@ -96,7 +96,7 @@ export function where<T, K extends keyof T>(
  */
 export function whereNot<T, K extends keyof T>(
   prop: K,
-  value: T[K]
+  value: T[K],
 ): (obj: T) => boolean {
   return function comparator(obj: T) {
     return obj[prop] !== value;

@@ -12,7 +12,7 @@ export class UnsafeMap<K, V> extends Map<K, V> {
   public errorFactory: (key: K) => Error;
   constructor(
     entries: Iterable<[K, V]> = [],
-    errorFactory = (key: K): Error => new Error(`UnsafeMap missing key ${key}`)
+    errorFactory = (key: K): Error => new Error(`UnsafeMap missing key ${key}`),
   ) {
     super(entries);
     this.errorFactory = errorFactory;

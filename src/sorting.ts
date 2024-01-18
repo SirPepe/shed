@@ -47,7 +47,7 @@ export function desc<T extends number | bigint>(a: T, b: T): 1 | 0 | -1 {
 
 export function byPosition(
   a: { x: number; y: number },
-  b: { x: number; y: number }
+  b: { x: number; y: number },
 ): number {
   if (a.y < b.y) {
     return -1;

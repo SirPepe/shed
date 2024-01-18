@@ -32,7 +32,7 @@ type FailOptions = {
 
 export function fail(
   reason?: string,
-  { ErrorConstructor = Error, cause = undefined }: FailOptions = {}
+  { ErrorConstructor = Error, cause = undefined }: FailOptions = {},
 ): never {
   throw new ErrorConstructor(reason, cause);
 }

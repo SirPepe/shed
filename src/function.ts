@@ -42,7 +42,7 @@ export function identity<T>(x: T): T {
  */
 export function debounce<T, A extends any[]>(
   func: (this: T, ...args: A) => unknown,
-  t = 1000
+  t = 1000,
 ): (this: T, ...args: A) => void {
   let handle: any;
   return function (this: T, ...args: A): void {
@@ -61,7 +61,7 @@ export function debounce<T, A extends any[]>(
  * once per frame.
  */
 export function debounceRaf<T, A extends any[]>(
-  func: (this: T, ...args: A) => unknown
+  func: (this: T, ...args: A) => unknown,
 ): (this: T, ...args: A) => void {
   let handle: number | undefined;
   return function (this: T, ...args: A): void {

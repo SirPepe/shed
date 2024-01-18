@@ -38,11 +38,11 @@
  */
 export function groupBy<T, Key extends keyof T>(
   input: Iterable<T>,
-  selector: Key
+  selector: Key,
 ): Map<T[Key], T[]>;
 export function groupBy<T, Key>(
   input: Iterable<T>,
-  selector: (element: T, index: number) => Key
+  selector: (element: T, index: number) => Key,
 ): Map<Key, T[]>;
 export function groupBy(input: Iterable<any>, selector: any): Map<any, any> {
   const result = new Map();
@@ -75,11 +75,11 @@ export function groupBy(input: Iterable<any>, selector: any): Map<any, any> {
  */
 export function mapBy<T, Key extends keyof T>(
   values: Iterable<T>,
-  selector: Key
+  selector: Key,
 ): Map<T[Key], T>;
 export function mapBy<T, Key>(
   values: Iterable<T>,
-  selector: (element: T, index: number) => Key
+  selector: (element: T, index: number) => Key,
 ): Map<Key, T>;
 export function mapBy(values: Iterable<any>, selector: any): Map<any, any> {
   const result = new Map();
@@ -90,7 +90,7 @@ export function mapBy(values: Iterable<any>, selector: any): Map<any, any> {
     const key = keySelector(value, i++);
     if (result.has(key)) {
       throw new Error(
-        `mapBy(): Key "${key}" already exists for value "${value}"`
+        `mapBy(): Key "${key}" already exists for value "${value}"`,
       );
     }
     result.set(key, value);
@@ -101,7 +101,7 @@ export function mapBy(values: Iterable<any>, selector: any): Map<any, any> {
 /**
  * Splits an iterable into two groups. The first group contains elements
  * the predicate function returns truthy for, the second group contains elements
- * the predicate returns falsey for. The predicate is invoked with one argument
+ * the predicate returns falsy for. The predicate is invoked with one argument
  * (the current value).
  *
  * Examples:
@@ -111,15 +111,15 @@ export function mapBy(values: Iterable<any>, selector: any): Map<any, any> {
  */
 export function partition<T>(
   input: Iterable<T>,
-  predicate: (element: T) => boolean
+  predicate: (element: T) => boolean,
 ): [T[], T[]];
 export function partition<T, U>(
   input: Iterable<T | U>,
-  predicate: (element: T | U) => element is T
+  predicate: (element: T | U) => element is T,
 ): [T[], U[]];
 export function partition<T>(
   input: Iterable<T>,
-  predicate: (element: T) => boolean
+  predicate: (element: T) => boolean,
 ): [T[], T[]] {
   const a = [];
   const b = [];
