@@ -31,7 +31,7 @@ Escapes a string for use in regular expressions.
 
 #### Defined in
 
-[src/regexp.ts:32](https://github.com/SirPepe/shed/blob/40637e0/src/regexp.ts#L32)
+[src/regexp.ts:32](https://github.com/SirPepe/shed/blob/eb27ad9/src/regexp.ts#L32)
 
 ___
 
@@ -54,7 +54,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:11](https://github.com/SirPepe/shed/blob/40637e0/src/regexp.ts#L11)
+[src/regexp.ts:11](https://github.com/SirPepe/shed/blob/eb27ad9/src/regexp.ts#L11)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -70,7 +70,7 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:12](https://github.com/SirPepe/shed/blob/40637e0/src/regexp.ts#L12)
+[src/regexp.ts:12](https://github.com/SirPepe/shed/blob/eb27ad9/src/regexp.ts#L12)
 
 ▸ **isRegExp**(`input`): `boolean`
 
@@ -86,4 +86,4 @@ input is RegExp
 
 #### Defined in
 
-[src/regexp.ts:13](https://github.com/SirPepe/shed/blob/40637e0/src/regexp.ts#L13)
+[src/regexp.ts:13](https://github.com/SirPepe/shed/blob/eb27ad9/src/regexp.ts#L13)

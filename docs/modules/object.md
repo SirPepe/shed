@@ -8,15 +8,45 @@ Object utilities. Use this module by importing from `@sirpepe/shed/object`.
 
 ### Functions
 
+- [getPath](object.md#getpath)
 - [omitted](object.md#omitted)
 - [omitter](object.md#omitter)
 - [picked](object.md#picked)
 - [picker](object.md#picker)
 - [select](object.md#select)
+- [setPath](object.md#setpath)
 - [where](object.md#where)
 - [whereNot](object.md#wherenot)
 
 ## Functions
+
+### getPath
+
+▸ **getPath**\<`T`, `P`\>(`obj`, `path`): [`QueryPath`](types.md#querypath)\<`T`, `P`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `P` | extends `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+| `path` | `P` |
+
+#### Returns
+
+[`QueryPath`](types.md#querypath)\<`T`, `P`\>
+
+#### Defined in
+
+[src/object.ts:127](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L127)
+
+___
 
 ### omitted
 
@@ -46,7 +76,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:12](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L12)
+[src/object.ts:14](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L14)
 
 ___
 
@@ -89,7 +119,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:31](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L31)
+[src/object.ts:33](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L33)
 
 ___
 
@@ -121,7 +151,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:51](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L51)
+[src/object.ts:53](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L53)
 
 ___
 
@@ -164,7 +194,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:67](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L67)
+[src/object.ts:69](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L69)
 
 ___
 
@@ -205,7 +235,36 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:109](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L109)
+[src/object.ts:111](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L111)
+
+___
+
+### setPath
+
+▸ **setPath**\<`T`, `P`\>(`obj`, `path`, `value`): `void`
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `P` | extends `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+| `path` | `P` |
+| `value` | [`QueryPath`](types.md#querypath)\<`T`, `P`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/object.ts:131](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L131)
 
 ___
 
@@ -248,7 +307,7 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:84](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L84)
+[src/object.ts:86](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L86)
 
 ___
 
@@ -291,4 +350,4 @@ value not equal to "value".
 
 #### Defined in
 
-[src/object.ts:97](https://github.com/SirPepe/shed/blob/40637e0/src/object.ts#L97)
+[src/object.ts:99](https://github.com/SirPepe/shed/blob/eb27ad9/src/object.ts#L99)

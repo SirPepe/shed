@@ -12,6 +12,7 @@
 - [UnsafeMap](modules/UnsafeMap.md)
 - [array](modules/array.md)
 - [assert](modules/assert.md)
+- [compress](modules/compress.md)
 - [constants](modules/constants.md)
 - [error](modules/error.md)
 - [function](modules/function.md)
