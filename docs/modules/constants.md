@@ -20,4 +20,4 @@ A 1x1 transparent PNG data URL.
 
 #### Defined in
 
-[src/constants.ts:10](https://github.com/SirPepe/shed/blob/eb27ad9/src/constants.ts#L10)
+[src/constants.ts:10](https://github.com/SirPepe/shed/blob/caecd83/src/constants.ts#L10)
