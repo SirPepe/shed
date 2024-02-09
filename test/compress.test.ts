@@ -8,7 +8,7 @@ describe("compress", () => {
       const output = await decompressFromBase64(
         await compressToBase64(input, undefined, "gzip"),
         undefined,
-        "gzip"
+        "gzip",
       );
       expect(output).toEqual(input);
     });
@@ -18,7 +18,7 @@ describe("compress", () => {
       const output = await decompressFromBase64(
         await compressToBase64(input, FRDY.replacer, "gzip"),
         FRDY.reviver,
-        "gzip"
+        "gzip",
       );
       expect(output).toEqual(input);
     });
