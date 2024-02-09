@@ -22,6 +22,11 @@
       "import": "./dist/BiMap.js",
       "default": "./dist/BiMap.js"
     },
+    "./compress": {
+      "types": "./dist/compress.d.ts",
+      "import": "./dist/compress.js",
+      "default": "./dist/compress.js"
+    },
     "./constants": {
       "types": "./dist/constants.d.ts",
       "import": "./dist/constants.js",

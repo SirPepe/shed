@@ -1,6 +1,7 @@
 export { range, move, moved } from "./array";
 export { assertIs, assertIsNot } from "./assert";
 export { BiMap } from "./BiMap";
+export { compressToBase64, decompressFromBase64 } from "./compress";
 export { TRANSPARENT_PNG_PIXEL } from "./constants";
 export { fail } from "./error";
 export * as FRDY from "./FRDY";
