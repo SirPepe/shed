@@ -48,3 +48,20 @@ export type MapDiscriminatedUnion<Union extends Record<Key, string>, Key extends
 export type Optional<Source, Keys extends keyof Source> = {
   [Key in Keys]?: Source[Key];
 } & Pick<Source, Exclude<keyof Source, Keys>>;
+
+type SplitPath<Path extends string, Segments extends string[] = []> =
+  Path extends `${infer First}.${infer Rest}`
+    ? SplitPath<Rest, [...Segments, First]>
+    : [...Segments, Path];
+
+type QuerySegments<T, Segments extends any[]> =
+  Segments extends []
+    ? T
+    : Segments[0] extends keyof T
+      ? QuerySegments<T[Segments[0]], DropFirst<Segments>>
+      : unknown;
+
+/**
+ * Returns the type of a nested object member
+ */
+export type QueryPath<T, Path extends string> = QuerySegments<T, SplitPath<Path>>;

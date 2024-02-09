@@ -4,6 +4,8 @@
  * @module
  */
 
+import type { QueryPath } from "./types";
+
 /**
  * Returns a new object created from the input object, but without the keys in
  * `toOmit`. Essentially the runtime-variant of TypeScript's `Omit<T, K>` type
@@ -110,4 +112,30 @@ export function select<T, K extends keyof T>(prop: K): (obj: T) => T[K] {
   return function getter(obj: T) {
     return obj[prop];
   };
+}
+
+function get(obj: any, segments: string[]): any {
+  for (let i = 0; i < segments.length; i++) {
+    if (!obj) {
+      return undefined;
+    }
+    obj = obj[segments[i]];
+  }
+  return obj;
+}
+
+export function getPath<T, P extends string>(obj: T, path: P): QueryPath<T, P> {
+  return get(obj, path.split("."));
+}
+
+export function setPath<T, P extends string>(
+  obj: T,
+  path: P,
+  value: QueryPath<T, P>,
+): void {
+  const segments: any[] = path.split(".");
+  const target = get(obj, segments.slice(0, -1));
+  if (target) {
+    target[segments.at(-1)] = value;
+  }
 }

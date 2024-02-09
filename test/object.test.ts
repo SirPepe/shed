@@ -6,6 +6,8 @@ import {
   where,
   select,
   whereNot,
+  getPath,
+  setPath,
 } from "../src/object";
 
 describe("object", () => {
@@ -117,6 +119,62 @@ describe("object", () => {
     test("creates a getter function", () => {
       const input = [{ a: 0 }, { a: 1 }, { a: 2 }];
       expect(input.map(select("a"))).toEqual([0, 1, 2]);
+    });
+  });
+
+  describe("getPath()", () => {
+    test("reads from paths", () => {
+      const input = {
+        foo: {
+          bar: {
+            baz: [
+              23,
+              42,
+              {
+                value: 1337,
+              },
+            ],
+          },
+        },
+      } as const;
+      expect(getPath(input, "foo")).toEqual(input.foo);
+      expect(getPath(input, "foo.bar")).toEqual(input.foo.bar);
+      expect(getPath(input, "foo.bar.baz")).toEqual(input.foo.bar.baz);
+      expect(getPath(input, "foo.bar.baz.0")).toEqual(input.foo.bar.baz[0]);
+      expect(getPath(input, "foo.bar.baz.1")).toEqual(input.foo.bar.baz[1]);
+      expect(getPath(input, "foo.bar.baz.2")).toEqual(input.foo.bar.baz[2]);
+      expect(getPath(input, "foo.bar.baz.2.value")).toEqual(
+        input.foo.bar.baz[2].value,
+      );
+    });
+
+    test("returns undefined when the path points to nothing", () => {
+      const input = {
+        foo: null,
+        bar: undefined,
+        baz: 42,
+      };
+      expect(getPath(input, "asdf")).toEqual(undefined);
+      expect(getPath(input, "asdf.nope")).toEqual(undefined);
+      expect(getPath(input, "foo")).toEqual(null);
+      expect(getPath(input, "foo.nope")).toEqual(undefined);
+      expect(getPath(input, "bar")).toEqual(undefined);
+      expect(getPath(input, "bar.nope")).toEqual(undefined);
+      expect(getPath(input, "baz")).toEqual(42);
+      expect(getPath(input, "baz.toString")).toEqual(Number.prototype.toString);
+      expect(getPath(input, "baz.toString.nope")).toEqual(undefined);
+    });
+  });
+
+  describe("setPath()", () => {
+    test("sets with paths", () => {
+      const input: any = { foo: {} };
+      setPath(input, "foo", { x: 42 });
+      expect(input.foo).toEqual({ x: 42 });
+      setPath(input, "foo.bar", 42);
+      expect(input.foo).toEqual({ x: 42, bar: 42 });
+      setPath(input, "foo.nope.nope.nope", 42);
+      expect(input.foo).toEqual({ x: 42, bar: 42 });
     });
   });
 });

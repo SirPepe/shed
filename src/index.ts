@@ -16,6 +16,8 @@ export {
   where,
   whereNot,
   select,
+  getPath,
+  setPath,
 } from "./object";
 export { isRegExp, escapeRegExpString } from "./regexp";
 export { addAll } from "./set";
