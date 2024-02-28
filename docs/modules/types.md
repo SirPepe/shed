@@ -13,6 +13,7 @@ Utility types for TypeScript. Use this module by importing from
 - [DropFirst](types.md#dropfirst)
 - [MapDiscriminatedUnion](types.md#mapdiscriminatedunion)
 - [Optional](types.md#optional)
+- [Primitive](types.md#primitive)
 - [QueryPath](types.md#querypath)
 - [SplitTuple](types.md#splittuple)
 
@@ -33,7 +34,7 @@ Drops the element at index `I` from a tuple type.
 
 #### Defined in
 
-[src/types.ts:31](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L31)
+[src/types.ts:31](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L31)
 
 ___
 
@@ -51,7 +52,7 @@ Drops the first element from a tuple type.
 
 #### Defined in
 
-[src/types.ts:23](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L23)
+[src/types.ts:23](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L23)
 
 ___
 
@@ -68,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:41](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L41)
+[src/types.ts:41](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L41)
 
 ___
 
@@ -87,7 +88,17 @@ Makes select keys on `Source` optional
 
 #### Defined in
 
-[src/types.ts:48](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L48)
+[src/types.ts:48](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L48)
+
+___
+
+### Primitive
+
+Ƭ **Primitive**: `string` \| `boolean` \| `number` \| `undefined` \| ``null`` \| `symbol` \| `bigint`
+
+#### Defined in
+
+[src/types.ts:72](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L72)
 
 ___
 
@@ -106,7 +117,7 @@ Returns the type of a nested object member
 
 #### Defined in
 
-[src/types.ts:67](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L67)
+[src/types.ts:67](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L67)
 
 ___
 
@@ -126,4 +137,4 @@ Splits a tuple type into a LHS and a RHS on index `I`
 
 #### Defined in
 
-[src/types.ts:13](https://github.com/SirPepe/shed/blob/caecd83/src/types.ts#L13)
+[src/types.ts:13](https://github.com/SirPepe/shed/blob/92a10f4/src/types.ts#L13)

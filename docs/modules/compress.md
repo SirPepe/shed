@@ -36,7 +36,7 @@ replacer `replacer` and the data format `format`.
 
 #### Defined in
 
-[src/compress.ts:32](https://github.com/SirPepe/shed/blob/caecd83/src/compress.ts#L32)
+[src/compress.ts:32](https://github.com/SirPepe/shed/blob/92a10f4/src/compress.ts#L32)
 
 ___
 
@@ -67,4 +67,4 @@ Decompress the output of `compressToBase64()`  using the JSON reviver
 
 #### Defined in
 
-[src/compress.ts:57](https://github.com/SirPepe/shed/blob/caecd83/src/compress.ts#L57)
+[src/compress.ts:57](https://github.com/SirPepe/shed/blob/92a10f4/src/compress.ts#L57)

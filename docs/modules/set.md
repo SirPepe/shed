@@ -37,4 +37,4 @@ Bulk-add iterable contents to a target set.
 
 #### Defined in
 
-[src/set.ts:10](https://github.com/SirPepe/shed/blob/caecd83/src/set.ts#L10)
+[src/set.ts:10](https://github.com/SirPepe/shed/blob/92a10f4/src/set.ts#L10)

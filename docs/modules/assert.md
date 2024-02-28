@@ -12,6 +12,7 @@ also work as assertions in TypeScript. Use this module by importing from
 
 - [assertIs](assert.md#assertis)
 - [assertIsNot](assert.md#assertisnot)
+- [assertIsPrimitive](assert.md#assertisprimitive)
 
 ## Functions
 
@@ -50,7 +51,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:22](https://github.com/SirPepe/shed/blob/caecd83/src/assert.ts#L22)
+[src/assert.ts:24](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L24)
 
 ___
 
@@ -89,4 +90,36 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:43](https://github.com/SirPepe/shed/blob/caecd83/src/assert.ts#L43)
+[src/assert.ts:46](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L46)
+
+___
+
+### assertIsPrimitive
+
+▸ **assertIsPrimitive**(`x`, `msg?`): asserts x is Primitive
+
+Throws an exception when the first argument is not not a primitive. The
+second argument can be used to customize the exception, but is entirely
+optional. This function works as a type assertion in TypeScript.
+
+Example:
+
+```typescript
+assertIsPrimitive(null, , "Oops"); // nothing happens
+assertIsPrimitive([42], "Oops"); // TypeError: "Oops"
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `x` | `any` |
+| `msg` | `string` |
+
+#### Returns
+
+asserts x is Primitive
+
+#### Defined in
+
+[src/assert.ts:68](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L68)
