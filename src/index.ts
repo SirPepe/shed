@@ -1,5 +1,5 @@
 export { range, move, moved } from "./array";
-export { assertIs, assertIsNot } from "./assert";
+export { assertIs, assertIsNot, assertIsPrimitive } from "./assert";
 export { BiMap } from "./BiMap";
 export { compressToBase64, decompressFromBase64 } from "./compress";
 export { TRANSPARENT_PNG_PIXEL } from "./constants";
@@ -25,5 +25,6 @@ export { addAll } from "./set";
 export { SortedArray } from "./SortedArray";
 export { asc, desc } from "./sorting";
 export { uppercaseFirst, lowercaseFirst, length } from "./string";
+export { TrieMap } from "./TrieMap";
 export { UnsafeMap } from "./UnsafeMap";
-export type { MapDiscriminatedUnion, Optional } from "./types";
+export type { Primitive, MapDiscriminatedUnion, Optional } from "./types";

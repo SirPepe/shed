@@ -6,6 +6,8 @@
  * @module
  */
 
+import type { Primitive } from "./types";
+
 /**
  * Throws an exception when the first argument is null or undefined. The second
  * argument can be used to customize the exception, but is entirely optional.
@@ -27,6 +29,7 @@ export function assertIs<T>(
     throw new Error(msg);
   }
 }
+
 /**
  * Throws an exception when the first argument is not null or undefined. The
  * second argument can be used to customize the exception, but is entirely
@@ -48,4 +51,25 @@ export function assertIsNot<T>(
     return;
   }
   throw new Error(msg);
+}
+
+/**
+ * Throws an exception when the first argument is not not a primitive. The
+ * second argument can be used to customize the exception, but is entirely
+ * optional. This function works as a type assertion in TypeScript.
+ *
+ * Example:
+ *
+ * ```typescript
+ * assertIsPrimitive(null, , "Oops"); // nothing happens
+ * assertIsPrimitive([42], "Oops"); // TypeError: "Oops"
+ * ```
+ */
+export function assertIsPrimitive(
+  x: any,
+  msg = `Expected value to be primitive, but found ${typeof x}`,
+): asserts x is Primitive {
+  if ((typeof x === "object" && x !== null) || typeof x === "function") {
+    throw new TypeError(msg);
+  }
 }

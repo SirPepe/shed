@@ -92,6 +92,11 @@
       "import": "./dist/sorting.js",
       "default": "./dist/sorting.js"
     },
+    "./TrieMap": {
+      "types": "./dist/TrieMap.d.js",
+      "import": "./dist/TrieMap.js",
+      "default": "./dist/TrieMap.js"
+    },
     "./UnsafeMap": {
       "types": "./dist/UnsafeMap.d.js",
       "import": "./dist/UnsafeMap.js",

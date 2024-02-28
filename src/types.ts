@@ -65,3 +65,15 @@ type QuerySegments<T, Segments extends any[]> =
  * Returns the type of a nested object member
  */
 export type QueryPath<T, Path extends string> = QuerySegments<T, SplitPath<Path>>;
+
+/*
+ * Any non-object
+ */
+export type Primitive =
+| string
+| boolean
+| number
+| undefined
+| null
+| symbol
+| bigint;
