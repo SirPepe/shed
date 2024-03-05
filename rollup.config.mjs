@@ -22,6 +22,7 @@ const modules = [
   "set",
   "SortedArray",
   "sorting",
+  "TrieMap",
   // "types", <- TypeScript builds the d.ts file for this
   "UnsafeMap",
 ];
