@@ -44,7 +44,7 @@ Object utilities. Use this module by importing from `@sirpepe/shed/object`.
 
 #### Defined in
 
-[src/object.ts:127](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L127)
+[src/object.ts:127](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L127)
 
 ___
 
@@ -76,7 +76,7 @@ and the inverse of `picked()`.
 
 #### Defined in
 
-[src/object.ts:14](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L14)
+[src/object.ts:14](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L14)
 
 ___
 
@@ -119,7 +119,7 @@ functions that call `omitted()`.
 
 #### Defined in
 
-[src/object.ts:33](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L33)
+[src/object.ts:33](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L33)
 
 ___
 
@@ -151,7 +151,7 @@ and the inverse of `omitted()`.
 
 #### Defined in
 
-[src/object.ts:53](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L53)
+[src/object.ts:53](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L53)
 
 ___
 
@@ -194,7 +194,7 @@ functions that call `picked()`.
 
 #### Defined in
 
-[src/object.ts:69](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L69)
+[src/object.ts:69](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L69)
 
 ___
 
@@ -235,7 +235,7 @@ Returns a getter function that returns every object's "prop" value.
 
 #### Defined in
 
-[src/object.ts:111](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L111)
+[src/object.ts:111](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L111)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[src/object.ts:131](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L131)
+[src/object.ts:131](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L131)
 
 ___
 
@@ -307,7 +307,7 @@ value equal to "value".
 
 #### Defined in
 
-[src/object.ts:86](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L86)
+[src/object.ts:86](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L86)
 
 ___
 
@@ -350,4 +350,4 @@ value not equal to "value".
 
 #### Defined in
 
-[src/object.ts:99](https://github.com/SirPepe/shed/blob/92a10f4/src/object.ts#L99)
+[src/object.ts:99](https://github.com/SirPepe/shed/blob/3f21ef8/src/object.ts#L99)

@@ -29,4 +29,4 @@ Error utilities. Use this module by importing from `@sirpepe/shed/error`.
 
 #### Defined in
 
-[src/error.ts:33](https://github.com/SirPepe/shed/blob/92a10f4/src/error.ts#L33)
+[src/error.ts:33](https://github.com/SirPepe/shed/blob/3f21ef8/src/error.ts#L33)

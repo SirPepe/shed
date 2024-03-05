@@ -51,7 +51,7 @@ asserts x is T
 
 #### Defined in
 
-[src/assert.ts:24](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L24)
+[src/assert.ts:24](https://github.com/SirPepe/shed/blob/3f21ef8/src/assert.ts#L24)
 
 ___
 
@@ -90,7 +90,7 @@ asserts x is undefined \| null
 
 #### Defined in
 
-[src/assert.ts:46](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L46)
+[src/assert.ts:46](https://github.com/SirPepe/shed/blob/3f21ef8/src/assert.ts#L46)
 
 ___
 
@@ -122,4 +122,4 @@ asserts x is Primitive
 
 #### Defined in
 
-[src/assert.ts:68](https://github.com/SirPepe/shed/blob/92a10f4/src/assert.ts#L68)
+[src/assert.ts:68](https://github.com/SirPepe/shed/blob/3f21ef8/src/assert.ts#L68)

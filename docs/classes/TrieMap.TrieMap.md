@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[src/TrieMap.ts:23](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L23)
+[src/TrieMap.ts:23](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L23)
 
 ## Properties
 
@@ -71,7 +71,7 @@
 
 #### Defined in
 
-[src/TrieMap.ts:21](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L21)
+[src/TrieMap.ts:21](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L21)
 
 ## Accessors
 
@@ -85,7 +85,7 @@
 
 #### Defined in
 
-[src/TrieMap.ts:121](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L121)
+[src/TrieMap.ts:121](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L121)
 
 ## Methods
 
@@ -99,7 +99,7 @@
 
 #### Defined in
 
-[src/TrieMap.ts:117](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L117)
+[src/TrieMap.ts:117](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L117)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:81](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L81)
+[src/TrieMap.ts:81](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L81)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:69](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L69)
+[src/TrieMap.ts:69](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L69)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:43](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L43)
+[src/TrieMap.ts:43](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L43)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:57](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L57)
+[src/TrieMap.ts:57](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L57)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:105](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L105)
+[src/TrieMap.ts:105](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L105)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:29](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L29)
+[src/TrieMap.ts:29](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L29)
 
 ___
 
@@ -234,4 +234,4 @@ ___
 
 #### Defined in
 
-[src/TrieMap.ts:125](https://github.com/SirPepe/shed/blob/92a10f4/src/TrieMap.ts#L125)
+[src/TrieMap.ts:125](https://github.com/SirPepe/shed/blob/3f21ef8/src/TrieMap.ts#L125)
