@@ -114,25 +114,45 @@ export function select<T, K extends keyof T>(prop: K): (obj: T) => T[K] {
   };
 }
 
-function get(obj: any, segments: string[]): any {
+function get(target: any, segments: string[]): any {
   for (let i = 0; i < segments.length; i++) {
-    if (!obj) {
+    if (!target) {
       return undefined;
     }
-    obj = obj[segments[i]];
+    target = target[segments[i]];
   }
-  return obj;
+  return target;
 }
 
-export function getPath<T, P extends string>(obj: T, path: P): QueryPath<T, P> {
+export function getPath<T extends object>(obj: T, path: "."): T;
+export function getPath<T extends object, P extends string>(
+  obj: T,
+  path: P,
+): QueryPath<T, P>;
+export function getPath<T extends object, P extends string>(
+  obj: T,
+  path: P,
+): any {
+  if (path === ".") {
+    return obj;
+  }
   return get(obj, path.split("."));
 }
 
-export function setPath<T, P extends string>(
+export function setPath<T extends object>(obj: T, path: ".", value: T): void;
+export function setPath<T extends object, P extends string>(
   obj: T,
   path: P,
-  value: QueryPath<T, P>,
+  val: QueryPath<T, P>,
+): void;
+export function setPath<T extends object, P extends string>(
+  obj: T,
+  path: P,
+  value: any,
 ): void {
+  if (path === ".") {
+    Object.assign(obj, value);
+  }
   const segments: any[] = path.split(".");
   const target = get(obj, segments.slice(0, -1));
   if (target) {

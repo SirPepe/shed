@@ -137,6 +137,7 @@ describe("object", () => {
           },
         },
       } as const;
+      expect(getPath(input, ".")).toEqual(input);
       expect(getPath(input, "foo")).toEqual(input.foo);
       expect(getPath(input, "foo.bar")).toEqual(input.foo.bar);
       expect(getPath(input, "foo.bar.baz")).toEqual(input.foo.bar.baz);
@@ -175,6 +176,12 @@ describe("object", () => {
       expect(input.foo).toEqual({ x: 42, bar: 42 });
       setPath(input, "foo.nope.nope.nope", 42);
       expect(input.foo).toEqual({ x: 42, bar: 42 });
+    });
+
+    test("sets the root", () => {
+      const input: any = { foo: {} };
+      setPath(input, ".", { bar: { x: 42 } });
+      expect(input).toEqual({ foo: {}, bar: { x: 42 } });
     });
   });
 });
