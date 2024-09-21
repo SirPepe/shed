@@ -27,4 +27,15 @@ export { asc, desc } from "./sorting";
 export { uppercaseFirst, lowercaseFirst, length } from "./string";
 export { TrieMap } from "./TrieMap";
 export { UnsafeMap } from "./UnsafeMap";
-export type { Primitive, MapDiscriminatedUnion, Optional } from "./types";
+export type {
+  SplitTuple,
+  DropFirst,
+  Drop,
+  MapDiscriminatedUnion,
+  Optional,
+  NonOptional,
+  QueryPath,
+  Trim,
+  Split,
+  Primitive,
+} from "./types";
