@@ -1,29 +1,29 @@
-@sirpepe/shed
+**@sirpepe/shed** • **Docs**
+
+***
 
 # @sirpepe/shed
 
-## Table of contents
+## Modules
 
-### Modules
-
-- [BiMap](modules/BiMap.md)
-- [FRDY](modules/FRDY.md)
-- [SortedArray](modules/SortedArray.md)
-- [TrieMap](modules/TrieMap.md)
-- [UnsafeMap](modules/UnsafeMap.md)
-- [array](modules/array.md)
-- [assert](modules/assert.md)
-- [compress](modules/compress.md)
-- [constants](modules/constants.md)
-- [error](modules/error.md)
-- [function](modules/function.md)
-- [guard](modules/guard.md)
-- [index](modules/index.md)
-- [iterable](modules/iterable.md)
-- [number](modules/number.md)
-- [object](modules/object.md)
-- [regexp](modules/regexp.md)
-- [set](modules/set.md)
-- [sorting](modules/sorting.md)
-- [string](modules/string.md)
-- [types](modules/types.md)
+- [array](array/README.md)
+- [assert](assert/README.md)
+- [BiMap](BiMap/README.md)
+- [compress](compress/README.md)
+- [constants](constants/README.md)
+- [error](error/README.md)
+- [FRDY](FRDY/README.md)
+- [function](function/README.md)
+- [guard](guard/README.md)
+- [index](index/README.md)
+- [iterable](iterable/README.md)
+- [number](number/README.md)
+- [object](object/README.md)
+- [regexp](regexp/README.md)
+- [set](set/README.md)
+- [SortedArray](SortedArray/README.md)
+- [sorting](sorting/README.md)
+- [string](string/README.md)
+- [TrieMap](TrieMap/README.md)
+- [types](types/README.md)
+- [UnsafeMap](UnsafeMap/README.md)

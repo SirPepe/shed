@@ -13,7 +13,6 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/object-literal-key-quotes": "off",
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/no-object-literal-type-assertion": "off",

@@ -16,7 +16,7 @@ export function isRegExp(input: unknown): boolean {
     try {
       new RegExp(input);
       return true;
-    } catch (e) {
+    } catch {
       return false;
     }
   }
