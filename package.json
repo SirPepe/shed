@@ -97,6 +97,9 @@
       "import": "./dist/TrieMap.js",
       "default": "./dist/TrieMap.js"
     },
+    "./types": {
+      "types": "./dist/types.d.js"
+    },
     "./UnsafeMap": {
       "types": "./dist/UnsafeMap.d.js",
       "import": "./dist/UnsafeMap.js",
