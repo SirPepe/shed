@@ -21,12 +21,19 @@ export function lowercaseFirst(str: string): string {
 }
 
 /**
- * Get the number of characters in a string with customizable value for tabs.
+ * Get the number of characters/graphemes in a string.
+ */
+export function countGraphemes(text: string): number {
+  return Array.from(new Intl.Segmenter().segment(text)).length;
+}
+
+/**
+ * Get the number of characters/graphemes in a string.
  */
 export function length(text: string, tabSize: number): number {
   let size = 0;
-  for (const char of text) {
-    if (char === "\t") {
+  for (const { segment } of new Intl.Segmenter().segment(text)) {
+    if (segment === "\t") {
       size += tabSize;
     } else {
       size++;

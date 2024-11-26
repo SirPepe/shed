@@ -1,4 +1,9 @@
-import { lowercaseFirst, uppercaseFirst, length } from "../src/string";
+import {
+  lowercaseFirst,
+  uppercaseFirst,
+  length,
+  countGraphemes,
+} from "../src/string";
 
 describe("String", () => {
   describe("capitalizeFirst()", () => {
@@ -23,6 +28,13 @@ describe("String", () => {
       expect(length("A B\tC", 4)).toBe(8);
       expect(length("Вба", 2)).toBe(3);
       expect(length("Hello\n🤡", 2)).toBe(7);
+    });
+  });
+
+  describe("countGraphemes()", () => {
+    it("counts graphemes", () => {
+      expect(countGraphemes("ABC")).toBe(3);
+      expect(countGraphemes("Hello\n🤡")).toBe(7);
     });
   });
 });

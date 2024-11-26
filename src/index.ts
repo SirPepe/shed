@@ -24,7 +24,12 @@ export { isRegExp, escapeRegExpString } from "./regexp";
 export { addAll } from "./set";
 export { SortedArray } from "./SortedArray";
 export { asc, desc } from "./sorting";
-export { uppercaseFirst, lowercaseFirst, length } from "./string";
+export {
+  uppercaseFirst,
+  lowercaseFirst,
+  length,
+  countGraphemes,
+} from "./string";
 export { TrieMap } from "./TrieMap";
 export { UnsafeMap } from "./UnsafeMap";
 export type {
