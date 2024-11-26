@@ -127,16 +127,15 @@
     "access": "public"
   },
   "scripts": {
-    "docs": "typedoc --exclude src/index.ts --plugin typedoc-plugin-markdown --readme none src/*.ts",
     "lint": "eslint src test",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test-dev": "jest --watch",
-    "clean": "rm -rf dist && rm -rf docs",
+    "clean": "rm -rf dist",
     "build-ts": "tsc -p tsconfig.build.json -d --emitDeclarationOnly --declarationDir dist",
     "build-js": "rollup -c",
-    "build": "npm run clean && npm run lint && npm run build-ts && npm run build-js && npm run docs",
+    "build": "npm run clean && npm run lint && npm run build-ts && npm run build-js",
     "prepareRelease": "rm -rf node_modules && npm install && npm run build && npm run test",
-    "release": "release-it"
+    "release": "npm run prepareRelease && release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -156,8 +155,6 @@
     "release-it": "^17.0.0",
     "rollup": "^4.9.0",
     "rollup-plugin-license": "^3.0.0",
-    "typedoc": "^0.26.0",
-    "typedoc-plugin-markdown": "^4.0.0",
     "typescript": "^5.6.0"
   },
   "dependencies": {

@@ -1,8 +1,6 @@
 /**
  * Utility types for TypeScript. Use this module by importing from
  * `@sirpepe/shed/types`.
- *
- * @module
  */
 
 /* eslint-disable */

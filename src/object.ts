@@ -1,7 +1,5 @@
 /**
  * Object utilities. Use this module by importing from `@sirpepe/shed/object`.
- *
- * @module
  */
 
 import type { QueryPath } from "./types";

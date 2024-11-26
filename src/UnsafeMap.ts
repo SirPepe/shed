@@ -4,8 +4,6 @@
  * Because `get()` returns `V` instead of `V | undefined` this makes life in
  * TypeScript somewhat easier. Use this module by importing from
  * `@sirpepe/shed/UnsafeMap`.
- *
- * @module
  */
 
 export class UnsafeMap<K, V> extends Map<K, V> {

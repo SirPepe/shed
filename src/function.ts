@@ -1,8 +1,6 @@
 /**
  * Function utilities. Use this module by importing from
  * `@sirpepe/shed/function`.
- *
- * @module
  */
 
 /**
@@ -19,7 +17,7 @@
  * ```
  */
 // eslint-disable-next-line
-export function noop (...args: any[]): void {}
+export function noop(...args: any[]): void {}
 
 /**
  * A unary function that does nothing and returns its argument. Useful for

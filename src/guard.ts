@@ -1,8 +1,6 @@
 /**
  * Collection of type guards. Use this module by importing from
  * `@sirpepe/shed/guard`.
- *
- * @module
  */
 
 /**

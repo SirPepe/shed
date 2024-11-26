@@ -4,8 +4,6 @@
  * is way less universal than JSON, but that is the price for at least allowing
  * the exchange of maps and sets between ECMAScript environments. Use this
  * module by importing from `@sirpepe/shed/FRDY`.
- *
- * @module
  */
 
 type Revivable = {

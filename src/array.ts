@@ -1,8 +1,6 @@
 /**
  * Utilities for working with arrays. Access this module by importing from
  * `@sirpepe/shed/array`.
- *
- * @module
  */
 
 /**
@@ -66,7 +64,8 @@ export function range(from: number, to?: number): number[] {
   }
   const step = from < to ? 1 : -1;
   const result: number[] = [];
-  while (true) { // eslint-disable-line
+  // eslint-disable-next-line
+  while (true) {
     result.push(from);
     if (from === to) {
       break;

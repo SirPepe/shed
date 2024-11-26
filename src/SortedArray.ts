@@ -1,8 +1,6 @@
 /**
  * A sorted array-like data structure. Use this module by importing from
  * `@sirpepe/shed/SortedArray`.
- *
- * @module
  */
 
 export class SortedArray<T> {

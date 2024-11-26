@@ -1,8 +1,6 @@
 /**
  * Callback functions for use with Array.prototype.sort(). Use this module by
  * importing from `@sirpepe/shed/sorting`.
- *
- * @module
  */
 
 /**

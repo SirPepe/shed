@@ -1,7 +1,5 @@
 /**
  * Useful constants. Use this module by importing from `@sirpepe/shed/constants`.
- *
- * @module
  */
 
 /**

@@ -2,8 +2,6 @@
  * Compress/decompress JSON-serializable objects with native compression streams
  * and encode/decode to/from url-safe base 64. Use this module by importing from
  * `@sirpepe/shed/compress`.
- *
- * @module
  */
 
 const encodeTo: Record<string, string> = { "+": "-", "/": "_" };

@@ -1,7 +1,5 @@
 /**
  * Set utilities. Use this module by importing from `@sirpepe/shed/set`.
- *
- * @module
  */
 
 /**

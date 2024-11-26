@@ -1,8 +1,6 @@
 /**
  * Utilities for iterable objects. Use this module by importing from from
  * `@sirpepe/shed/iterable`.
- *
- * @module
  */
 
 /**

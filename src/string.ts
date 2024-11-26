@@ -1,7 +1,5 @@
 /**
  * String utilities. Use this module by importing from `@sirpepe/shed/string`.
- *
- * @module
  */
 
 /**

@@ -5,8 +5,6 @@
  *   - no `size` (which is hard to implement when `prune()` exists)
  *   - no support for objects in paths (for fear of memory leaks)
  * Use this module by importing from `@sirpepe/shed/TrieMap`.
- *
- * @module
  */
 
 import { assertIsPrimitive } from "./assert";
