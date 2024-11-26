@@ -4,7 +4,6 @@
  *   - additional `prune()` method
  *   - no `size` (which is hard to implement when `prune()` exists)
  *   - no support for objects in paths (for fear of memory leaks)
- *   - no iterator support
  * Use this module by importing from `@sirpepe/shed/TrieMap`.
  *
  * @module
@@ -19,6 +18,22 @@ type Backend<K, V> = Map<K | typeof DATA_KEY, V | Backend<K, V>>;
 
 export class TrieMap<K extends Primitive, V> {
   #backend: Backend<K, V> = new Map();
+
+  static *#unwrapBackend<K, V>(
+    backend: Backend<K, V>,
+  ): IterableIterator<V, undefined, undefined> {
+    for (const [key, value] of backend) {
+      if (key === DATA_KEY) {
+        yield value as V;
+      } else {
+        yield* this.#unwrapBackend(value as Backend<K, V>);
+      }
+    }
+  }
+
+  [Symbol.iterator]() {
+    return TrieMap.#unwrapBackend(this.#backend);
+  }
 
   constructor(initialEntries: [K[], V][] = []) {
     for (const [path, value] of initialEntries) {

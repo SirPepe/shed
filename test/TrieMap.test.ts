@@ -33,6 +33,7 @@ describe("TrieMap", () => {
     expect(map.get(["a", "b", "c", "d", "e"])).toBe(1337);
     expect(map.get(["a", "b", "c", "d", "e", "f"])).toBe(undefined);
     expect(map.get(["a", "b", "c", "d", "e", "f", "g"])).toBe(undefined);
+    expect(Array.from(map)).toEqual([23, 42, 1337]);
   });
 
   it("initializes from entries", () => {
