@@ -1,6 +1,6 @@
 {
   "name": "@sirpepe/shed",
-  "version": "4.6.1",
+  "version": "4.7.0",
   "sideEffects": false,
   "description": "General-purpose utilities for objects, arrays, maps and types",
   "type": "module",
