@@ -25,7 +25,7 @@
 
 type FailOptions = {
   ErrorConstructor?: new (reason?: string, cause?: Error) => Error;
-  cause?: Error;
+  cause?: any;
 };
 
 export function fail(
