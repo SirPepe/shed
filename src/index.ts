@@ -20,6 +20,7 @@ export {
   select,
   getPath,
   setPath,
+  trap,
 } from "./object";
 export { isRegExp, escapeRegExpString } from "./regexp";
 export { addAll } from "./set";

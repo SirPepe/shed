@@ -8,9 +8,22 @@ import {
   whereNot,
   getPath,
   setPath,
+  trap,
 } from "../src/object";
 
 describe("object", () => {
+  describe("trap()", () => {
+    test("Traps all operations", () => {
+      const obj = trap("It's a trap!");
+      expect(() => obj.foo).toThrow(new Error("It's a trap!"));
+    });
+    test("Traps all operations with a message generator", () => {
+      const obj = trap((x) => `NOPE: ${x}`);
+      expect(() => obj.foo).toThrow(new Error("NOPE: get"));
+      expect(() => (obj.foo = 42)).toThrow(new Error("NOPE: set"));
+    });
+  });
+
   describe("omitted()", () => {
     test("creates new objects minus some keys", () => {
       const input = { a: 0, b: 1, c: 2, d: 3 };

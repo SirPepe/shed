@@ -10,6 +10,7 @@ import { fail } from "./error";
  */
 export function trap<T extends object = any>(
   message: string | ((trap: keyof ProxyHandler<any>) => string),
+  ErrorConstructor?: new (reason?: string, cause?: Error) => Error,
 ): T {
   return new Proxy<T>(
     {} as any,
@@ -32,7 +33,11 @@ export function trap<T extends object = any>(
         ] as const
       ).map((trap) => [
         trap,
-        () => fail(typeof message === "function" ? message(trap) : message),
+        () =>
+          fail(typeof message === "function" ? message(trap) : message, {
+            ErrorConstructor,
+            cause: "The object is a trap",
+          }),
       ]),
     ),
   );
