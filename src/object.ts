@@ -3,6 +3,40 @@
  */
 
 import type { QueryPath } from "./types";
+import { fail } from "./error";
+
+/**
+ * Returns an unusable object that throws when accessed in any way.
+ */
+export function trap<T extends object = any>(
+  message: string | ((trap: keyof ProxyHandler<any>) => string),
+): T {
+  return new Proxy<T>(
+    {} as any,
+    Object.fromEntries(
+      (
+        [
+          "apply",
+          "construct",
+          "defineProperty",
+          "deleteProperty",
+          "get",
+          "getOwnPropertyDescriptor",
+          "getPrototypeOf",
+          "has",
+          "isExtensible",
+          "ownKeys",
+          "preventExtensions",
+          "set",
+          "setPrototypeOf",
+        ] as const
+      ).map((trap) => [
+        trap,
+        () => fail(typeof message === "function" ? message(trap) : message),
+      ]),
+    ),
+  );
+}
 
 /**
  * Returns a new object created from the input object, but without the keys in

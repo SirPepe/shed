@@ -4,24 +4,7 @@
  * `@sirpepe/shed/compress`.
  */
 
-const encodeTo: Record<string, string> = { "+": "-", "/": "_" };
-const decodeFrom: Record<string, string> = { "-": "+", _: "/", ".": "=" };
-
-// Required for chrome: https://issues.chromium.org/issues/40612900
-(ReadableStream.prototype as any)[Symbol.asyncIterator] ??= async function* () {
-  const reader = this.getReader();
-  try {
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) {
-        return;
-      }
-      yield value;
-    }
-  } finally {
-    reader.releaseLock();
-  }
-};
+import { fromBase64, toBase64 } from "./base64";
 
 /**
  * Compress a JSON-serializable object to url-safe base64 using the JSON
@@ -34,14 +17,11 @@ export async function compressToBase64(
 ): Promise<string> {
   try {
     const json = JSON.stringify(inputData, replacer);
-    const compressionStream = new Blob([json])
+    const stream = new Blob([json])
       .stream()
       .pipeThrough(new CompressionStream(format));
-    let binString = "";
-    for await (const bytes of compressionStream as any) {
-      binString += String.fromCodePoint(...bytes);
-    }
-    return btoa(binString).replace(/[+/]/g, (x) => encodeTo[x]);
+    const bytes = await new Response(stream).bytes();
+    return toBase64(bytes);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     throw new Error(`Unable to compress input (${message})`, { cause: err });
@@ -58,20 +38,12 @@ export async function decompressFromBase64<T = any>(
   format: ConstructorParameters<typeof DecompressionStream>[0] = "deflate-raw",
 ): Promise<T> {
   try {
-    inputBase64 = inputBase64.replace(/[-_.]/g, (x) => decodeFrom[x]);
-    const binString = atob(inputBase64);
-    const inputBytes = Uint8Array.from(
-      binString,
-      (s): number => s.codePointAt(0) as number,
-    );
-    const decompressionStream = new Blob([inputBytes])
+    const bytes = fromBase64(inputBase64);
+    const stream = new Blob([bytes])
       .stream()
       .pipeThrough(new DecompressionStream(format));
-    let json = "";
-    for await (const bytes of decompressionStream as any) {
-      json += new TextDecoder().decode(bytes);
-    }
-    return JSON.parse(json, reviver);
+    const jsonText = await new Response(stream).text();
+    return JSON.parse(jsonText, reviver);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     throw new Error(`Unable to decompress input (${message})`, { cause: err });

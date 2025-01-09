@@ -6,6 +6,7 @@ import license from "rollup-plugin-license";
 const modules = [
   "array",
   "assert",
+  "base64",
   "BiMap",
   "compress",
   "constants",
