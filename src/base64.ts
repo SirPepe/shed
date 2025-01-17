@@ -16,8 +16,11 @@ export function toBase64(input: Uint8Array): string {
 
 // Re-adds removed padding and decodes replacement characters
 export function fromBase64(input: string) {
-  input += Array(5 - (input.length % 4)).join("=");
-  input = input.replace(/[-_]/g, (x) => decodeFrom[x]);
-  const binString = atob(input);
+  if (input === "") {
+    return new Uint8Array();
+  }
+  let padded = input + "===".slice((input.length + 3) % 4);
+  padded = padded.replace(/[-_]/g, (x) => decodeFrom[x]);
+  const binString = atob(padded);
   return Uint8Array.from(binString, (s): number => s.codePointAt(0) as number);
 }
